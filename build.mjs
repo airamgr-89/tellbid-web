@@ -81,6 +81,7 @@ function readMeta(html, name) {
   const meta = { page: name, title: 'TellBid', description: '', noindex: false };
   if (!m) return { meta, body: html };
   for (const part of m[1].split(/\r?\n/)) {
+    if (part.trim().startsWith('#')) continue;
     const [k, ...v] = part.split(':');
     const key = k.trim();
     if (!key) continue;

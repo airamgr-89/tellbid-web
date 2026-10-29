@@ -33,7 +33,7 @@ En **Sites › Websites › (sitio de tellbid.io) › Settings**:
 En cada página:
 
 1. Deja **una sola sección** a ancho completo, con una fila y una columna, y quita el header y el footer de GHL. El header y el footer ya vienen en el fragmento.
-2. Agrega un elemento **Code (Código)** y pega el archivo completo de `dist/pages/`.
+2. Agrega un elemento **Code (Código)** y pega el archivo completo de **`dist/pages/`** (nunca el de `src/pages/`, que no trae estilos). Para copiarlo: `npm run copiar -- home` (o el nombre de la página).
 3. En **Page settings › SEO meta data**, copia el título, la descripción, el canonical y la imagen OG de `seo/paginas.md`.
 4. En `/soporte`, `/privacy-policy` y `/terms-of-service`, marca **noindex**. El fragmento no lo agrega por su cuenta.
 5. Guarda y abre la vista previa. Si queda un margen blanco alrededor, el script ya quita el padding de los contenedores de GHL. Revisa que la sección no tenga un ancho máximo fijo en sus ajustes.
