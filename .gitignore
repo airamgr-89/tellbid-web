@@ -15,3 +15,6 @@ content/
 
 .DS_Store
 Thumbs.db
+
+# Originales de logos descargados (las versiones optimizadas están en assets/img/clientes)
+assets/img/clientes-src/
