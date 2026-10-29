@@ -1,0 +1,274 @@
+<!---
+page: styletile
+css: home
+title: TellBid · Sistema de diseño (muestra)
+description: Página interna de muestra del sistema de diseño.
+noindex
+--->
+<!-- @include header -->
+<main class="tb-main" id="tb-main">
+
+  <!-- ========== Hero oscuro (muestra de la dirección) ========== -->
+  <!-- Hero: en móvil el orden es titular → animación → texto → botones (ver sections/hero.css) -->
+  <section class="tb-sec tb-hero" data-tb-theme="dark" aria-labelledby="st-hero-h">
+    <!-- @include hero-bg -->
+    <div class="tb-wrap tb-hero-grid">
+      <div class="tb-hero-copy">
+        <span class="tb-badge tb-hero-badge"><b>Growth Partner</b> Tecnología para negocios hispanos</span>
+        <h1 id="st-hero-h" class="tb-h1 tb-hero-h">Tu empresa en piloto automático. <span class="tb-h-second">Nosotros lo hacemos posible.</span></h1>
+        <p class="tb-lead tb-hero-lead">Implementamos tu CRM, automatizamos tus ventas, tu atención y tu marketing, y desarrollamos el software que tu empresa necesita. Todo conectado y con un equipo humano que te acompaña en español.</p>
+        <div class="tb-ctas tb-hero-ctas">
+          <a class="tb-btn tb-btn-primary tb-btn-lg" href="/diagnostico" data-tb-cta="hero">Agenda tu diagnóstico gratis <svg class="tb-ic tb-ic-go" aria-hidden="true"><use href="#tb-i-arrow" /></svg></a>
+          <a class="tb-btn tb-btn-secondary tb-btn-lg" href="/soluciones">Ver soluciones</a>
+        </div>
+        <ul class="tb-checks tb-checks-row tb-hero-trust">
+          <li>Diagnóstico sin costo</li>
+          <li>Implementación llave en mano</li>
+          <li>Soporte humano en español</li>
+        </ul>
+      </div>
+      <div class="tb-hero-visual">
+        <!-- @include hero-engine -->
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== Color ========== -->
+  <section class="tb-sec" aria-labelledby="st-color-h">
+    <div class="tb-wrap">
+      <div class="tb-head">
+        <p class="tb-eyebrow">Sistema de diseño</p>
+        <h2 id="st-color-h" class="tb-h2">Color y tipografía</h2>
+        <p class="tb-lead">Paleta OKLCH generada desde la marca. Base clara y luminosa; los bloques oscuros se reservan para los momentos de impacto.</p>
+      </div>
+      <div class="tb-st-swatches">
+        <div class="tb-st-ramp" data-name="violet"><span style="background:#e9dfff"></span><span style="background:#b6a5ff"></span><span style="background:#876cff"></span><span style="background:#5d34d2"></span><span style="background:#370093"></span><span style="background:#15004c"></span></div>
+        <div class="tb-st-ramp" data-name="blue"><span style="background:#bceeff"></span><span style="background:#80b6ff"></span><span style="background:#4c7fff"></span><span style="background:#2249d7"></span><span style="background:#081097"></span><span style="background:#06004e"></span></div>
+        <div class="tb-st-ramp" data-name="cyan"><span style="background:#9dffff"></span><span style="background:#4bd2ea"></span><span style="background:#00a0b9"></span><span style="background:#00576e"></span><span style="background:#004055"></span><span style="background:#001423"></span></div>
+        <div class="tb-st-ramp" data-name="neutral"><span style="background:#f6f4ff"></span><span style="background:#b3bce0"></span><span style="background:#818aaf"></span><span style="background:#535b7e"></span><span style="background:#181d36"></span><span style="background:#070b1a"></span></div>
+        <div class="tb-st-ramp" data-name="estados"><span style="background:#4adc9c"></span><span style="background:#005f26"></span><span style="background:#fb7184"></span><span style="background:#aa1a3f"></span><span style="background:#ebb431"></span><span style="background:#a16700"></span></div>
+      </div>
+      <div class="tb-st-type">
+        <p class="tb-small">H1 · Plus Jakarta Sans 800 · 40–68 px</p>
+        <p class="tb-h1">Más ventas, menos trabajo manual</p>
+        <p class="tb-small">H2 · 30–48 px</p>
+        <p class="tb-h2">Un solo equipo para crecer</p>
+        <p class="tb-small">H3 · 20–24 px</p>
+        <p class="tb-h3">Responde a cada cliente en segundos, a cualquier hora</p>
+        <p class="tb-small">Lead · Inter 17–20 px</p>
+        <p class="tb-lead">No te faltan clientes: te faltan tiempo y un sistema. Así se escapa el dinero todos los días.</p>
+        <p class="tb-small">Texto · Inter 16 px</p>
+        <p class="tb-body">Diagnóstico, migración de tus contactos, configuración de pipelines, agenda y bandeja, flujos de automatización, agentes de IA, integraciones y capacitación de tu equipo.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== Botones y piezas pequeñas ========== -->
+  <section class="tb-sec tb-sec-soft" aria-labelledby="st-btn-h">
+    <div class="tb-wrap">
+      <div class="tb-head">
+        <p class="tb-eyebrow">Acciones</p>
+        <h2 id="st-btn-h" class="tb-h2">Botones, enlaces y etiquetas</h2>
+      </div>
+      <div class="tb-grid tb-g2">
+        <div class="tb-panel">
+          <div class="tb-row">
+            <a class="tb-btn tb-btn-primary" href="#">Agenda tu diagnóstico <svg class="tb-ic tb-ic-go" aria-hidden="true"><use href="#tb-i-arrow" /></svg></a>
+            <a class="tb-btn tb-btn-secondary" href="#">Ver soluciones</a>
+            <a class="tb-btn tb-btn-wa" href="#"><svg class="tb-ic" aria-hidden="true"><use href="#tb-i-wa" /></svg>WhatsApp</a>
+          </div>
+          <div class="tb-row" style="margin-top:20px">
+            <a class="tb-btn tb-btn-primary tb-btn-sm" href="#">Pequeño</a>
+            <a class="tb-btn tb-btn-quiet" href="#">Botón discreto</a>
+            <a class="tb-link" href="#">Cómo lo implementamos <svg class="tb-ic tb-ic-sm" aria-hidden="true"><use href="#tb-i-arrow" /></svg></a>
+          </div>
+          <div class="tb-chips" style="margin-top:24px">
+            <span class="tb-chip"><span class="tb-chip-dot" style="--tb-ch:var(--tb-ch-whatsapp)"></span>WhatsApp</span>
+            <span class="tb-chip"><span class="tb-chip-dot" style="--tb-ch:var(--tb-ch-instagram)"></span>Instagram</span>
+            <span class="tb-chip"><span class="tb-chip-dot" style="--tb-ch:var(--tb-ch-messenger)"></span>Messenger</span>
+            <span class="tb-chip"><span class="tb-chip-dot" style="--tb-ch:var(--tb-ch-google)"></span>Google</span>
+            <span class="tb-chip">Clínicas y spas</span>
+          </div>
+          <p style="margin-top:20px"><span class="tb-live">IA activa 24/7</span></p>
+        </div>
+        <div class="tb-panel" data-tb-theme="dark">
+          <div class="tb-row">
+            <a class="tb-btn tb-btn-primary" href="#">Agenda tu diagnóstico <svg class="tb-ic tb-ic-go" aria-hidden="true"><use href="#tb-i-arrow" /></svg></a>
+            <a class="tb-btn tb-btn-secondary" href="#">Ver soluciones</a>
+            <a class="tb-btn tb-btn-wa" href="#"><svg class="tb-ic" aria-hidden="true"><use href="#tb-i-wa" /></svg>WhatsApp</a>
+          </div>
+          <div class="tb-row" style="margin-top:20px">
+            <a class="tb-btn tb-btn-quiet" href="#">Botón discreto</a>
+            <a class="tb-link" href="#">Cuéntanos tu proyecto <svg class="tb-ic tb-ic-sm" aria-hidden="true"><use href="#tb-i-arrow" /></svg></a>
+          </div>
+          <div class="tb-chips" style="margin-top:24px">
+            <span class="tb-chip">Integraciones con APIs</span><span class="tb-chip">Portales de clientes</span><span class="tb-chip">Apps web y móviles</span>
+          </div>
+          <p style="margin-top:20px"><span class="tb-live">Activo</span></p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== Tarjetas ========== -->
+  <section class="tb-sec" aria-labelledby="st-cards-h">
+    <div class="tb-wrap">
+      <div class="tb-head">
+        <p class="tb-eyebrow">El problema</p>
+        <h2 id="st-cards-h" class="tb-h2">¿Tu empresa depende de que alguien se acuerde?</h2>
+        <p class="tb-lead">No te faltan clientes: te faltan tiempo y un sistema. Así se escapa el dinero todos los días.</p>
+      </div>
+      <div class="tb-grid tb-g3">
+        <article class="tb-card tb-pain">
+          <div class="tb-ic-box is-red"><svg class="tb-ic" aria-hidden="true"><use href="#tb-i-moon" /></svg></div>
+          <h3>Mensajes que nadie contesta a tiempo</h3>
+          <p>Te escriben de noche o en hora pico, y quien responde primero se queda con la venta.</p>
+          <a class="tb-pain-cost" href="#"><svg class="tb-ic tb-ic-sm" aria-hidden="true"><use href="#tb-i-check" /></svg>Atención 24/7 con IA</a>
+        </article>
+        <article class="tb-card tb-pain">
+          <div class="tb-ic-box is-red"><svg class="tb-ic" aria-hidden="true"><use href="#tb-i-calx" /></svg></div>
+          <h3>Citas a las que nadie llega</h3>
+          <p>Cada inasistencia es tiempo, personal y espacio que ya pagaste.</p>
+          <a class="tb-pain-cost" href="#"><svg class="tb-ic tb-ic-sm" aria-hidden="true"><use href="#tb-i-check" /></svg>Recordatorios automáticos</a>
+        </article>
+        <article class="tb-card tb-pain">
+          <div class="tb-ic-box is-red"><svg class="tb-ic" aria-hidden="true"><use href="#tb-i-layers" /></svg></div>
+          <h3>Cinco herramientas que no se hablan</h3>
+          <p>Pagas web, formularios, email, agenda y CRM por separado, y los datos se pierden entre una y otra.</p>
+          <a class="tb-pain-cost" href="#"><svg class="tb-ic tb-ic-sm" aria-hidden="true"><use href="#tb-i-check" /></svg>Todo en un solo sistema</a>
+        </article>
+      </div>
+
+      <div class="tb-grid tb-g2" style="margin-top:48px">
+        <article class="tb-service">
+          <div class="tb-ic-box"><svg class="tb-ic" aria-hidden="true"><use href="#tb-i-inbox" /></svg></div>
+          <h3>CRM todo en uno, gestionado</h3>
+          <p>La plataforma que centraliza clientes, conversaciones, agenda, ventas y marketing, configurada y mantenida por nosotros.</p>
+          <ul class="tb-checks">
+            <li>Bandeja unificada con WhatsApp API</li>
+            <li>Agenda, pipeline y automatizaciones</li>
+            <li>Soporte humano en español</li>
+          </ul>
+          <div class="tb-service-foot">
+            <p class="tb-price">Desde <span>$99</span> <small>USD/mes</small></p>
+            <a class="tb-link" href="/servicios#crm">Ver servicio <svg class="tb-ic tb-ic-sm" aria-hidden="true"><use href="#tb-i-arrow" /></svg></a>
+          </div>
+        </article>
+        <article class="tb-case">
+          <p class="tb-case-sector">Salud y estética · [PENDIENTE]</p>
+          <h3>Nombre del cliente: reto en una línea</h3>
+          <div class="tb-chips"><span class="tb-chip">Agenda con IA</span><span class="tb-chip">Recordatorios</span><span class="tb-chip">Reseñas</span></div>
+          <div class="tb-case-stats">
+            <div><span class="tb-stat-n" data-tb-count="38" data-tb-suffix="%">38%</span><span class="tb-stat-l">Ejemplo de métrica (no publicar)</span></div>
+            <div><span class="tb-stat-n" data-tb-count="2.4" data-tb-suffix="×">2.4×</span><span class="tb-stat-l">Ejemplo de métrica (no publicar)</span></div>
+          </div>
+          <blockquote>«Cita corta del cliente sobre el resultado.»</blockquote>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== Tabs ========== -->
+  <section class="tb-sec tb-sec-soft" aria-labelledby="st-tabs-h">
+    <div class="tb-wrap">
+      <div class="tb-head">
+        <p class="tb-eyebrow">Soluciones</p>
+        <h2 id="st-tabs-h" class="tb-h2">Lo que tu empresa consigue con un sistema bien implementado</h2>
+      </div>
+      <div data-tb-tabs>
+        <div class="tb-tablist" role="tablist" aria-label="Soluciones">
+          <button class="tb-tab" role="tab" id="st-t1" aria-controls="st-p1" aria-selected="true">Atiende 24/7</button>
+          <button class="tb-tab" role="tab" id="st-t2" aria-controls="st-p2" aria-selected="false" tabindex="-1">Llena tu agenda</button>
+          <button class="tb-tab" role="tab" id="st-t3" aria-controls="st-p3" aria-selected="false" tabindex="-1">Controla tus ventas</button>
+        </div>
+        <div class="tb-tabpanel tb-split" role="tabpanel" id="st-p1" aria-labelledby="st-t1">
+          <div>
+            <h3 class="tb-h3">Responde a cada cliente en segundos, a cualquier hora</h3>
+            <ul class="tb-checks" style="margin-top:20px">
+              <li>WhatsApp, Instagram, Messenger, Google, SMS, email y chat web en una sola bandeja.</li>
+              <li>Agentes de IA que responden, califican y agendan por ti.</li>
+              <li>Tu equipo toma la conversación cuando hace falta, con todo el historial.</li>
+            </ul>
+          </div>
+          <div class="tb-video" data-tb-video="" style="background-image:linear-gradient(135deg,#15004c,#0a1024)">
+            <button class="tb-video-btn" type="button" aria-label="Ver video: atención 24/7"><span class="tb-video-play"><svg class="tb-ic" aria-hidden="true"><use href="#tb-i-play" /></svg></span>Ver video · 30 s</button>
+          </div>
+        </div>
+        <div class="tb-tabpanel" role="tabpanel" id="st-p2" aria-labelledby="st-t2" hidden>
+          <h3 class="tb-h3">Cada cita perdida es dinero perdido. Recupéralo.</h3>
+        </div>
+        <div class="tb-tabpanel" role="tabpanel" id="st-p3" aria-labelledby="st-t3" hidden>
+          <h3 class="tb-h3">Sabes en qué etapa está cada venta, y ningún cliente se te escapa</h3>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== Método ========== -->
+  <section class="tb-sec" aria-labelledby="st-steps-h">
+    <div class="tb-wrap">
+      <div class="tb-head">
+        <p class="tb-eyebrow">Cómo trabajamos</p>
+        <h2 id="st-steps-h" class="tb-h2">De la idea al sistema funcionando, contigo en cada paso</h2>
+      </div>
+      <ol class="tb-steps">
+        <li class="tb-step"><span class="tb-step-n">1</span><h3>Diagnóstico</h3><p>Analizamos cómo vendes y atiendes hoy, y dónde se te escapa el dinero.</p></li>
+        <li class="tb-step"><span class="tb-step-n">2</span><h3>Diseño de la solución</h3><p>Te proponemos el sistema, las automatizaciones y las integraciones, con un plan y un precio claros.</p></li>
+        <li class="tb-step"><span class="tb-step-n">3</span><h3>Implementación</h3><p>Lo configuramos, migramos tus datos, capacitamos a tu equipo y lo dejamos funcionando.</p></li>
+        <li class="tb-step"><span class="tb-step-n">4</span><h3>Acompañamiento y crecimiento</h3><p>Soporte humano, sesiones de estrategia y mejoras continuas a medida que creces.</p></li>
+      </ol>
+    </div>
+  </section>
+
+  <!-- ========== Comparativa + FAQ ========== -->
+  <section class="tb-sec tb-sec-soft" aria-labelledby="st-comp-h">
+    <div class="tb-wrap">
+      <div class="tb-head">
+        <p class="tb-eyebrow">Antes y después</p>
+        <h2 id="st-comp-h" class="tb-h2">Herramientas sueltas vs. un Growth Partner</h2>
+      </div>
+      <table class="tb-compare">
+        <thead><tr><th scope="col">Necesidad</th><th scope="col">Por tu cuenta</th><th scope="col" class="is-us">Con TellBid</th></tr></thead>
+        <tbody>
+          <tr><td>Implementación</td><td class="is-them" data-label="Por tu cuenta"><span class="tb-mark"><svg class="tb-ic tb-ic-sm" aria-hidden="true"><use href="#tb-i-x" /></svg>Lo configuras tú, entre tutoriales</span></td><td class="is-us" data-label="Con TellBid"><span class="tb-mark"><svg class="tb-ic tb-ic-sm" aria-hidden="true"><use href="#tb-i-check" /></svg>Lo implementamos por ti, llave en mano</span></td></tr>
+          <tr><td>Herramientas</td><td class="is-them" data-label="Por tu cuenta"><span class="tb-mark"><svg class="tb-ic tb-ic-sm" aria-hidden="true"><use href="#tb-i-x" /></svg>5 suscripciones que no se hablan</span></td><td class="is-us" data-label="Con TellBid"><span class="tb-mark"><svg class="tb-ic tb-ic-sm" aria-hidden="true"><use href="#tb-i-check" /></svg>Un solo sistema conectado</span></td></tr>
+          <tr><td>Soporte</td><td class="is-them" data-label="Por tu cuenta"><span class="tb-mark"><svg class="tb-ic tb-ic-sm" aria-hidden="true"><use href="#tb-i-x" /></svg>Tickets en inglés</span></td><td class="is-us" data-label="Con TellBid"><span class="tb-mark"><svg class="tb-ic tb-ic-sm" aria-hidden="true"><use href="#tb-i-check" /></svg>Personas reales, en español</span></td></tr>
+        </tbody>
+      </table>
+
+      <div class="tb-faq" style="margin-top:64px">
+        <details open>
+          <summary><h3>¿Ustedes venden un software o un servicio?</h3><span class="tb-faq-ic" aria-hidden="true"></span></summary>
+          <p class="tb-faq-a">Un servicio completo. Te damos la plataforma, pero lo importante es que la configuramos, la conectamos con tus herramientas y la mantenemos funcionando contigo.</p>
+        </details>
+        <details>
+          <summary><h3>¿Necesito conocimientos técnicos?</h3><span class="tb-faq-ic" aria-hidden="true"></span></summary>
+          <p class="tb-faq-a">No. Nosotros nos encargamos de la parte técnica y te enseñamos a usar lo que necesitas en el día a día.</p>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== CTA final oscuro ========== -->
+  <section class="tb-sec" data-tb-theme="dark" aria-labelledby="st-cta-h">
+    <div class="tb-wrap tb-wrap-narrow tb-head-center">
+      <h2 id="st-cta-h" class="tb-h2">Esta noche alguien le va a escribir a tu negocio. <span class="tb-h-second">¿Quién le va a responder?</span></h2>
+      <p class="tb-lead" style="margin:20px auto 0">Agenda tu diagnóstico y te mostramos, con tu caso real, cómo dejar tu empresa en piloto automático.</p>
+      <div class="tb-ctas" style="justify-content:center">
+        <a class="tb-btn tb-btn-primary tb-btn-lg" href="/diagnostico">Agenda tu diagnóstico gratis <svg class="tb-ic tb-ic-go" aria-hidden="true"><use href="#tb-i-arrow" /></svg></a>
+        <a class="tb-btn tb-btn-wa tb-btn-lg" href="https://wa.me/19047806780"><svg class="tb-ic" aria-hidden="true"><use href="#tb-i-wa" /></svg>Escríbenos por WhatsApp</a>
+      </div>
+    </div>
+  </section>
+</main>
+<!-- @include footer -->
+
+<style>
+  /* Solo para esta página de muestra */
+  #tb-site .tb-st-swatches { display: grid; gap: 10px; }
+  #tb-site .tb-st-ramp { display: grid; grid-template-columns: 90px repeat(6, 1fr); gap: 6px; align-items: center; }
+  #tb-site .tb-st-ramp::before { content: attr(data-name); font-size: 14px; font-weight: 600; color: var(--tb-text-dim); order: -1; }
+  #tb-site .tb-st-ramp span { height: 44px; border-radius: 10px; border: 1px solid rgba(11,16,36,.06); }
+  #tb-site .tb-st-type { margin-top: 56px; display: grid; gap: 6px; }
+  #tb-site .tb-st-type .tb-small { margin-top: 18px; }
+</style>

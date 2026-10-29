@@ -1,0 +1,53 @@
+/* ============================================================
+   Editor de código animado (software a la medida)
+   ============================================================ */
+#tb-site .tb-ce-win { border-radius: 20px; overflow: hidden; background: #0a0f22; border: 1px solid rgba(255,255,255,.1); box-shadow: 0 50px 100px -40px rgba(0,0,0,.9), 0 0 80px -30px rgba(124,92,255,.45); }
+#tb-site .tb-ce-bar { height: 46px; display: flex; align-items: center; gap: 14px; padding: 0 16px; border-bottom: 1px solid rgba(255,255,255,.08); background: rgba(255,255,255,.02); }
+#tb-site .tb-ce-bar .tb-he-dots i { background: rgba(255,255,255,.18); }
+#tb-site .tb-ce-tab { display: inline-flex; align-items: center; gap: 6px; padding: 5px 10px; border-radius: 8px; background: rgba(255,255,255,.06); font-size: 12.5px; font-weight: 600; color: var(--tb-neutral-200); }
+#tb-site .tb-ce-tab .tb-ic { color: var(--tb-cyan-200); }
+#tb-site .tb-ce-state { margin-left: auto; font-size: 12.5px; font-weight: 600; }
+#tb-site .tb-ce-state-run { display: inline-flex; align-items: center; gap: 6px; color: var(--tb-neutral-300); }
+#tb-site .tb-ce-state-run::before { content: ""; width: 7px; height: 7px; border-radius: 50%; background: var(--tb-amber-100); animation: tb-pulse 1.6s var(--tb-ease) infinite; }
+#tb-site .tb-ce-state-ok { display: none; align-items: center; gap: 6px; color: var(--tb-green-200); }
+#tb-site .tb-ce.is-done .tb-ce-state-run { display: none; }
+#tb-site .tb-ce.is-done .tb-ce-state-ok { display: inline-flex; }
+
+#tb-site .tb-ce-code {
+  margin: 0; padding: 18px 18px 24px; overflow: hidden; counter-reset: tb-ln;
+  font-family: ui-monospace, 'SF Mono', 'Cascadia Code', Menlo, Consolas, monospace;
+  font-size: clamp(10.5px, 1.22vw, 13.5px); line-height: 1.85; color: #d6dcf7; tab-size: 2;
+}
+#tb-site .tb-ce-code code { display: block; font: inherit; white-space: pre; }
+/* Cada línea se revela carácter a carácter (clip-path con steps) */
+#tb-site .tb-ce-line {
+  position: relative; display: inline-block; vertical-align: top; padding-left: 3.4ch; counter-increment: tb-ln;
+  clip-path: inset(0 calc(100% - 3.4ch) 0 0);
+}
+#tb-site .tb-ce-line::before { content: counter(tb-ln); position: absolute; left: 0; width: 2.2ch; text-align: right; color: #464d6e; }
+#tb-site .tb-ce-line.is-typed { clip-path: inset(0 0 0 0); transition: clip-path calc(var(--n, 30) * 26ms) steps(var(--n, 30), end); }
+#tb-site .tb-ce-line.is-typing { background: linear-gradient(90deg, transparent 3ch, rgba(124,92,255,.08) 3ch); }
+#tb-site .tb-ce-code .c { color: #6a7297; font-style: italic; }
+#tb-site .tb-ce-code .k { color: #b6a5ff; }
+#tb-site .tb-ce-code .s { color: #4adc9c; }
+#tb-site .tb-ce-code .f { color: #4bd2ea; }
+
+#tb-site .tb-ce-flow { display: flex; align-items: center; margin-top: 18px; }
+#tb-site .tb-ce-node {
+  flex: none; display: inline-flex; align-items: center; gap: 6px; padding: 8px 12px; border-radius: var(--tb-r-pill);
+  border: 1px solid rgba(255,255,255,.12); background: rgba(255,255,255,.04); font-size: 13px; font-weight: 600; color: var(--tb-neutral-300);
+  transition: color var(--tb-d), border-color var(--tb-d), background-color var(--tb-d), box-shadow var(--tb-d);
+}
+#tb-site .tb-ce-node.is-on { color: #fff; border-color: var(--tb-cyan-200); background: rgba(75,210,234,.12); box-shadow: 0 0 24px -6px rgba(75,210,234,.6); }
+#tb-site .tb-ce-link { flex: 1; height: 2px; margin: 0 6px; border-radius: 2px; background: rgba(255,255,255,.12); position: relative; overflow: hidden; }
+#tb-site .tb-ce-link.is-on { background: linear-gradient(90deg, var(--tb-cyan-200), var(--tb-violet-300)); }
+#tb-site .tb-ce-link.is-on::after { content: ""; position: absolute; inset: 0; background: linear-gradient(90deg, transparent, rgba(255,255,255,.9), transparent); animation: tb-shine 1.4s linear infinite; }
+@keyframes tb-shine { from { transform: translateX(-100%); } to { transform: translateX(100%); } }
+@media (max-width: 560px) {
+  #tb-site .tb-ce-node { padding: 6px 9px; font-size: 11.5px; gap: 4px; }
+  #tb-site .tb-ce-node .tb-ic { width: 13px; height: 13px; }
+  #tb-site .tb-ce-code { padding: 14px 12px 18px; }
+}
+
+#tb-site .tb-ce-foot { display: flex; align-items: center; gap: 12px; margin-top: 18px; }
+#tb-site .tb-ce-foot .tb-ce-flow { flex: 1; min-width: 0; margin-top: 0; }

@@ -1,0 +1,714 @@
+<!-- TellBid · styletile · v1.0.0 · Pegar completo en un elemento «Código» de GHL (sección a ancho completo). -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@600;700;800&display=swap">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/OWNER/tellbid-web@v1.0.0/dist/tb.min.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/OWNER/tellbid-web@v1.0.0/dist/tb-home.min.css">
+<div id="tb-site" data-page="styletile">
+<a class="tb-skip" href="#tb-main">Saltar al contenido</a>
+<svg class="tb-sprite" width="0" height="0" aria-hidden="true" focusable="false">
+  <symbol id="tb-i-inbox" viewBox="0 0 24 24">
+    <polyline points="22 12 16 12 14 15 10 15 8 12 2 12" />
+    <path
+      d="M5.45 5.11 2 12v6a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2v-6l-3.45-6.89A2 2 0 0 0 16.76 4H7.24a2 2 0 0 0-1.79 1.11z" />
+  </symbol>
+  <symbol id="tb-i-bot" viewBox="0 0 24 24">
+    <rect x="3" y="11" width="18" height="10" rx="2" />
+    <circle cx="12" cy="5" r="2" />
+    <path d="M12 7v4" />
+    <circle cx="8.5" cy="16" r="1" />
+    <circle cx="15.5" cy="16" r="1" />
+  </symbol>
+  <symbol id="tb-i-cal" viewBox="0 0 24 24">
+    <rect x="3" y="4" width="18" height="18" rx="2" />
+    <path d="M16 2v4M8 2v4M3 10h18" />
+  </symbol>
+  <symbol id="tb-i-calx" viewBox="0 0 24 24">
+    <rect x="3" y="4" width="18" height="18" rx="2" />
+    <path d="M16 2v4M8 2v4M3 10h18M10 14l4 4M14 14l-4 4" />
+  </symbol>
+  <symbol id="tb-i-zap" viewBox="0 0 24 24">
+    <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2" />
+  </symbol>
+  <symbol id="tb-i-star" viewBox="0 0 24 24">
+    <polygon
+      points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
+  </symbol>
+  <symbol id="tb-i-send" viewBox="0 0 24 24">
+    <path d="M22 2 11 13" />
+    <path d="M22 2 15 22l-4-9-9-4 20-7z" />
+  </symbol>
+  <symbol id="tb-i-globe" viewBox="0 0 24 24">
+    <circle cx="12" cy="12" r="10" />
+    <path d="M2 12h20M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z" />
+  </symbol>
+  <symbol id="tb-i-mail" viewBox="0 0 24 24">
+    <rect x="2" y="4" width="20" height="16" rx="2" />
+    <path d="m22 7-10 6L2 7" />
+  </symbol>
+  <symbol id="tb-i-chart" viewBox="0 0 24 24">
+    <path d="M3 3v18h18" />
+    <path d="m7 15 4-4 3 3 5-6" />
+  </symbol>
+  <symbol id="tb-i-kanban" viewBox="0 0 24 24">
+    <rect x="3" y="3" width="18" height="18" rx="2" />
+    <path d="M8 7v7M12 7v4M16 7v9" />
+  </symbol>
+  <symbol id="tb-i-moon" viewBox="0 0 24 24">
+    <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z" />
+  </symbol>
+  <symbol id="tb-i-layers" viewBox="0 0 24 24">
+    <polygon points="12 2 2 7 12 12 22 7 12 2" />
+    <polyline points="2 17 12 22 22 17" />
+    <polyline points="2 12 12 17 22 12" />
+  </symbol>
+  <symbol id="tb-i-dollar" viewBox="0 0 24 24">
+    <path d="M12 1v22M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6" />
+  </symbol>
+  <symbol id="tb-i-check" viewBox="0 0 24 24">
+    <polyline points="20 6 9 17 4 12" />
+  </symbol>
+  <symbol id="tb-i-x" viewBox="0 0 24 24">
+    <path d="M18 6 6 18M6 6l12 12" />
+  </symbol>
+  <symbol id="tb-i-headset" viewBox="0 0 24 24">
+    <path d="M3 18v-6a9 9 0 0 1 18 0v6" />
+    <path
+      d="M21 19a2 2 0 0 1-2 2h-1a2 2 0 0 1-2-2v-3a2 2 0 0 1 2-2h3zM3 19a2 2 0 0 0 2 2h1a2 2 0 0 0 2-2v-3a2 2 0 0 0-2-2H3z" />
+  </symbol>
+  <symbol id="tb-i-target" viewBox="0 0 24 24">
+    <circle cx="12" cy="12" r="10" />
+    <circle cx="12" cy="12" r="6" />
+    <circle cx="12" cy="12" r="2" />
+  </symbol>
+  <symbol id="tb-i-arrow" viewBox="0 0 24 24">
+    <path d="M5 12h14M12 5l7 7-7 7" />
+  </symbol>
+  <symbol id="tb-i-phone" viewBox="0 0 24 24">
+    <path
+      d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6A19.79 19.79 0 0 1 2.12 4.18 2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z" />
+  </symbol>
+  <symbol id="tb-i-msg" viewBox="0 0 24 24">
+    <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z" />
+  </symbol>
+  <symbol id="tb-i-clock" viewBox="0 0 24 24">
+    <circle cx="12" cy="12" r="10" />
+    <path d="M12 6v6l4 2" />
+  </symbol>
+  <symbol id="tb-i-spark" viewBox="0 0 24 24">
+    <path d="M12 3l1.9 5.1L19 10l-5.1 1.9L12 17l-1.9-5.1L5 10l5.1-1.9z" />
+    <path d="M19 17l.8 2.2L22 20l-2.2.8L19 23l-.8-2.2L16 20l2.2-.8z" />
+  </symbol>
+  <symbol id="tb-i-users" viewBox="0 0 24 24">
+    <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2" />
+    <circle cx="9" cy="7" r="4" />
+    <path d="M23 21v-2a4 4 0 0 0-3-3.87M16 3.13a4 4 0 0 1 0 7.75" />
+  </symbol>
+  <symbol id="tb-i-plus" viewBox="0 0 24 24">
+    <path d="M12 5v14M5 12h14" />
+  </symbol>
+  <symbol id="tb-i-branch" viewBox="0 0 24 24">
+    <path d="M6 3v12" />
+    <circle cx="18" cy="6" r="3" />
+    <circle cx="6" cy="18" r="3" />
+    <path d="M18 9a9 9 0 0 1-9 9" />
+  </symbol>
+  <symbol id="tb-i-link" viewBox="0 0 24 24">
+    <path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71" />
+    <path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71" />
+  </symbol>
+  <!-- Iconos nuevos (rediseño) -->
+  <symbol id="tb-i-chev" viewBox="0 0 24 24"><path d="m6 9 6 6 6-6" /></symbol>
+  <symbol id="tb-i-pause" viewBox="0 0 24 24"><path d="M9 6v12M15 6v12" /></symbol>
+  <symbol id="tb-i-play" viewBox="0 0 24 24"><path d="M8 5.5v13l10.5-6.5z" fill="currentColor" stroke="none" /></symbol>
+  <symbol id="tb-i-code" viewBox="0 0 24 24"><path d="m16 18 6-6-6-6" /><path d="m8 6-6 6 6 6" /></symbol>
+  <symbol id="tb-i-megaphone" viewBox="0 0 24 24"><path d="m3 11 15-6v14L3 13z" /><path d="M11.6 16.8a3 3 0 1 1-5.8-1.6" /></symbol>
+  <symbol id="tb-i-shield" viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" /></symbol>
+  <symbol id="tb-i-search" viewBox="0 0 24 24"><circle cx="11" cy="11" r="7" /><path d="m21 21-4.3-4.3" /></symbol>
+  <symbol id="tb-i-rocket" viewBox="0 0 24 24"><path d="M4.5 16.5c-1.5 1.26-2 5-2 5s3.74-.5 5-2c.71-.84.7-2.13-.09-2.91a2.18 2.18 0 0 0-2.91-.09z" /><path d="m12 15-3-3a22 22 0 0 1 2-3.95A12.88 12.88 0 0 1 22 2c0 2.72-.78 7.5-6 11a22.35 22.35 0 0 1-4 2z" /><path d="M9 12H4s.55-3.03 2-4c1.62-1.08 5 0 5 0" /><path d="M12 15v5s3.03-.55 4-2c1.08-1.62 0-5 0-5" /></symbol>
+  <symbol id="tb-i-pin" viewBox="0 0 24 24"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0z" /><circle cx="12" cy="10" r="3" /></symbol>
+  <symbol id="tb-i-wa" viewBox="0 0 24 24"><path d="M3.5 20.5 4.8 16A8.5 8.5 0 1 1 8 19.2z" /><path d="M9 9.2c0 3 2.8 5.8 5.8 5.8l1.2-1.4-1.9-1-1 .8a4.4 4.4 0 0 1-2.5-2.5l.8-1-1-1.9z" fill="currentColor" stroke="none" /></symbol>
+  <symbol id="tb-i-ig" viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="5" /><circle cx="12" cy="12" r="4" /><circle cx="17.5" cy="6.5" r=".6" fill="currentColor" /></symbol>
+  <symbol id="tb-i-fb" viewBox="0 0 24 24"><path d="M15 3h-2.5A4.5 4.5 0 0 0 8 7.5V10H5.5v3.5H8V21h3.5v-7.5H14l.6-3.5h-3.1V8a1 1 0 0 1 1-1H15z" /></symbol>
+  <symbol id="tb-i-in" viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="3" /><path d="M8 10v7M8 7v.01M12 17v-4a2 2 0 0 1 4 0v4M12 10v7" /></symbol>
+  <symbol id="tb-i-yt" viewBox="0 0 24 24"><path d="M2.5 17a24 24 0 0 1 0-10 2 2 0 0 1 1.4-1.4 49.6 49.6 0 0 1 16.2 0A2 2 0 0 1 21.5 7a24 24 0 0 1 0 10 2 2 0 0 1-1.4 1.4 49.6 49.6 0 0 1-16.2 0A2 2 0 0 1 2.5 17" /><path d="m10 15 5-3-5-3z" /></symbol>
+  <symbol id="tb-i-tt" viewBox="0 0 24 24"><path d="M14 3v11.5a3.5 3.5 0 1 1-3.5-3.5" /><path d="M14 3a5 5 0 0 0 5 5" /></symbol>
+</svg>
+
+<header class="tb-header">
+  <div class="tb-wrap tb-nav-bar">
+    <a class="tb-logo" href="/" aria-label="TellBid, inicio">
+      <img src="https://cdn.jsdelivr.net/gh/OWNER/tellbid-web@v1.0.0/assets/img/tellbid-logo.png" alt="TellBid" width="117" height="30">
+    </a>
+
+    <nav class="tb-nav" aria-label="Principal">
+      <div class="tb-dd">
+        <button class="tb-nav-link" type="button" data-tb-dd aria-expanded="false" aria-controls="tb-dd-soluciones">
+          Soluciones <svg class="tb-ic" aria-hidden="true"><use href="#tb-i-chev" /></svg>
+        </button>
+        <div class="tb-dd-panel" id="tb-dd-soluciones" hidden>
+          <a class="tb-dd-item" href="/soluciones#atencion-24-7">
+            <span class="tb-ic-box"><svg class="tb-ic" aria-hidden="true"><use href="#tb-i-bot" /></svg></span>
+            <span><b>Atiende 24/7</b><span>Bandeja unificada y agentes de IA</span></span>
+          </a>
+          <a class="tb-dd-item" href="/soluciones#agenda">
+            <span class="tb-ic-box is-cyan"><svg class="tb-ic" aria-hidden="true"><use href="#tb-i-cal" /></svg></span>
+            <span><b>Llena tu agenda</b><span>Citas y recordatorios automáticos</span></span>
+          </a>
+          <a class="tb-dd-item" href="/soluciones#ventas">
+            <span class="tb-ic-box is-blue"><svg class="tb-ic" aria-hidden="true"><use href="#tb-i-kanban" /></svg></span>
+            <span><b>Controla tus ventas</b><span>Pipeline y seguimiento</span></span>
+          </a>
+          <a class="tb-dd-item" href="/soluciones#captacion">
+            <span class="tb-ic-box is-green"><svg class="tb-ic" aria-hidden="true"><use href="#tb-i-target" /></svg></span>
+            <span><b>Capta prospectos</b><span>Webs, landings y formularios</span></span>
+          </a>
+          <a class="tb-dd-item" href="/soluciones#resenas">
+            <span class="tb-ic-box"><svg class="tb-ic" aria-hidden="true"><use href="#tb-i-star" /></svg></span>
+            <span><b>Reputación y reseñas</b><span>Reseñas automáticas y respuestas con IA</span></span>
+          </a>
+          <a class="tb-dd-item" href="/soluciones#marketing">
+            <span class="tb-ic-box is-cyan"><svg class="tb-ic" aria-hidden="true"><use href="#tb-i-send" /></svg></span>
+            <span><b>Marketing y redes</b><span>Social planner, email y SMS</span></span>
+          </a>
+          <a class="tb-dd-all" href="/soluciones">Ver todas las soluciones <svg class="tb-ic tb-ic-sm" aria-hidden="true"><use href="#tb-i-arrow" /></svg></a>
+        </div>
+      </div>
+      <a class="tb-nav-link" href="/servicios">Servicios</a>
+      <a class="tb-nav-link" href="/software-a-la-medida">Software a la medida</a>
+      <a class="tb-nav-link" href="/#casos">Casos</a>
+      <a class="tb-nav-link" href="/nosotros">Nosotros</a>
+    </nav>
+
+    <div class="tb-nav-cta">
+      <a class="tb-btn tb-btn-primary tb-btn-sm" href="/diagnostico" data-tb-cta="header">Agenda tu diagnóstico</a>
+    </div>
+
+    <button class="tb-burger" type="button" aria-expanded="false" aria-controls="tb-drawer" aria-label="Abrir menú"><span></span></button>
+  </div>
+
+  <div class="tb-drawer" id="tb-drawer" hidden>
+    <div class="tb-drawer-group">
+      <p class="tb-drawer-label">Soluciones</p>
+      <a class="tb-drawer-sub" href="/soluciones#atencion-24-7">Atiende 24/7</a>
+      <a class="tb-drawer-sub" href="/soluciones#agenda">Llena tu agenda</a>
+      <a class="tb-drawer-sub" href="/soluciones#ventas">Controla tus ventas</a>
+      <a class="tb-drawer-sub" href="/soluciones#captacion">Capta prospectos</a>
+      <a class="tb-drawer-sub" href="/soluciones#resenas">Reputación y reseñas</a>
+      <a class="tb-drawer-sub" href="/soluciones#marketing">Marketing y redes</a>
+    </div>
+    <div class="tb-drawer-group">
+      <a class="tb-drawer-link" href="/servicios">Servicios</a>
+      <a class="tb-drawer-link" href="/software-a-la-medida">Software a la medida</a>
+      <a class="tb-drawer-link" href="/#casos">Casos</a>
+      <a class="tb-drawer-link" href="/nosotros">Nosotros</a>
+    </div>
+    <div class="tb-drawer-cta">
+      <a class="tb-btn tb-btn-primary tb-btn-block" href="/diagnostico" data-tb-cta="menu-movil">Agenda tu diagnóstico</a>
+      <a class="tb-btn tb-btn-wa tb-btn-block" href="https://wa.me/19047806780"><svg class="tb-ic" aria-hidden="true"><use href="#tb-i-wa" /></svg>Escríbenos por WhatsApp</a>
+    </div>
+  </div>
+</header>
+
+<main class="tb-main" id="tb-main">
+
+  <!-- ========== Hero oscuro (muestra de la dirección) ========== -->
+  <!-- Hero: en móvil el orden es titular → animación → texto → botones (ver sections/hero.css) -->
+  <section class="tb-sec tb-hero" data-tb-theme="dark" aria-labelledby="st-hero-h">
+    <!-- Fondo animado del hero: luces de marca que se desplazan + señales de datos que recorren la retícula -->
+<div class="tb-hero-bg" data-tb-pause aria-hidden="true">
+  <div class="tb-aurora"><i></i><i></i><i></i></div>
+  <div class="tb-signals">
+    <i style="--y:3;--d:7s;--w:0s"></i>
+    <i style="--y:7;--d:9s;--w:2.4s"></i>
+    <i style="--y:11;--d:6.5s;--w:4.1s"></i>
+    <i style="--y:15;--d:8.5s;--w:1.2s"></i>
+    <i style="--y:19;--d:7.5s;--w:5.3s"></i>
+    <i style="--y:24;--d:10s;--w:3.2s"></i>
+    <i class="is-v" style="--x:6;--d:8s;--w:1.6s"></i>
+    <i class="is-v" style="--x:18;--d:9.5s;--w:4.4s"></i>
+    <i class="is-v" style="--x:31;--d:7s;--w:.6s"></i>
+    <i class="is-v" style="--x:44;--d:11s;--w:3.8s"></i>
+  </div>
+</div>
+
+    <div class="tb-wrap tb-hero-grid">
+      <div class="tb-hero-copy">
+        <span class="tb-badge tb-hero-badge"><b>Growth Partner</b> Tecnología para negocios hispanos</span>
+        <h1 id="st-hero-h" class="tb-h1 tb-hero-h">Tu empresa en piloto automático. <span class="tb-h-second">Nosotros lo hacemos posible.</span></h1>
+        <p class="tb-lead tb-hero-lead">Implementamos tu CRM, automatizamos tus ventas, tu atención y tu marketing, y desarrollamos el software que tu empresa necesita. Todo conectado y con un equipo humano que te acompaña en español.</p>
+        <div class="tb-ctas tb-hero-ctas">
+          <a class="tb-btn tb-btn-primary tb-btn-lg" href="/diagnostico" data-tb-cta="hero">Agenda tu diagnóstico gratis <svg class="tb-ic tb-ic-go" aria-hidden="true"><use href="#tb-i-arrow" /></svg></a>
+          <a class="tb-btn tb-btn-secondary tb-btn-lg" href="/soluciones">Ver soluciones</a>
+        </div>
+        <ul class="tb-checks tb-checks-row tb-hero-trust">
+          <li>Diagnóstico sin costo</li>
+          <li>Implementación llave en mano</li>
+          <li>Soporte humano en español</li>
+        </ul>
+      </div>
+      <div class="tb-hero-visual">
+        <!-- Motor de crecimiento · animación del hero en 5 escenas
+     Flujo automatizado → Chat con agente de IA → Calendario → Recordatorios → Pipeline (cerrado ganado)
+     Lienzo fijo de 500×420 que se escala al ancho disponible. Datos ficticios (Estética Lumina, Sofía M.). -->
+<div class="tb-he" data-tb-engine>
+  <div class="tb-he-glow" aria-hidden="true"></div>
+  <div class="tb-he-window">
+    <div class="tb-he-bar" aria-hidden="true">
+      <span class="tb-he-dots"><i></i><i></i><i></i></span>
+      <span class="tb-he-title">Flujo · Nueva cita por WhatsApp</span>
+      <span class="tb-he-live">En vivo</span>
+    </div>
+
+    <div class="tb-he-stage" role="img" aria-label="Demostración: un flujo automatizado se activa, un agente de IA agenda una cita por WhatsApp, la cita aparece en el calendario, se envían recordatorios automáticos y la oportunidad pasa a cerrado ganado en el pipeline.">
+      <div class="tb-he-canvas" aria-hidden="true">
+
+        <!-- ===== 1 · Flujo automatizado (estilo editor de nodos) ===== -->
+        <section class="tb-he-scene tb-he-flow is-active" data-title="Flujo · Nueva cita por WhatsApp">
+          <div class="tb-he-flow-top">
+            <span class="tb-he-pill is-green">Activo</span>
+            <span class="tb-he-meta">Ejecuciones hoy <b class="tb-he-runs">1,284</b></span>
+          </div>
+          <svg class="tb-he-edges" viewBox="0 0 500 420" width="500" height="420">
+            <path class="tb-he-edge" id="tb-he-e1" d="M150 210 L177 210" pathLength="1" />
+            <path class="tb-he-edge" id="tb-he-e2" d="M319 210 C336 210 326 93 344 93" pathLength="1" />
+            <path class="tb-he-edge" id="tb-he-e3" d="M319 210 L344 210" pathLength="1" />
+            <path class="tb-he-edge" id="tb-he-e4" d="M319 210 C336 210 326 327 344 327" pathLength="1" />
+            <circle class="tb-he-pulse" r="5" cx="-20" cy="-20" />
+            <circle class="tb-he-pulse" r="5" cx="-20" cy="-20" />
+            <circle class="tb-he-pulse" r="5" cx="-20" cy="-20" />
+            <circle class="tb-he-pulse" r="5" cx="-20" cy="-20" />
+          </svg>
+          <div class="tb-he-node" style="--x:8px;--y:181px;--i:0;--c:#25d366">
+            <span class="tb-he-node-ic"><svg class="tb-ic"><use href="#tb-i-wa" /></svg></span>
+            <span><b>WhatsApp</b><small>Mensaje nuevo</small></span>
+            <span class="tb-he-ok"><svg class="tb-ic"><use href="#tb-i-check" /></svg></span>
+          </div>
+          <div class="tb-he-node is-ai" style="--x:177px;--y:181px;--i:1;--c:#7c5cff">
+            <span class="tb-he-node-ic"><svg class="tb-ic"><use href="#tb-i-bot" /></svg></span>
+            <span><b>Agente de IA</b><small>Responde y agenda</small></span>
+            <span class="tb-he-ok"><svg class="tb-ic"><use href="#tb-i-check" /></svg></span>
+          </div>
+          <div class="tb-he-node" style="--x:344px;--y:64px;--i:2;--c:#3b6bff">
+            <span class="tb-he-node-ic"><svg class="tb-ic"><use href="#tb-i-cal" /></svg></span>
+            <span><b>Calendario</b><small>Crear cita</small></span>
+            <span class="tb-he-ok"><svg class="tb-ic"><use href="#tb-i-check" /></svg></span>
+          </div>
+          <div class="tb-he-node" style="--x:344px;--y:181px;--i:3;--c:#0087a0">
+            <span class="tb-he-node-ic"><svg class="tb-ic"><use href="#tb-i-clock" /></svg></span>
+            <span><b>Recordatorios</b><small>WhatsApp, SMS y email</small></span>
+            <span class="tb-he-ok"><svg class="tb-ic"><use href="#tb-i-check" /></svg></span>
+          </div>
+          <div class="tb-he-node" style="--x:344px;--y:298px;--i:4;--c:#009151">
+            <span class="tb-he-node-ic"><svg class="tb-ic"><use href="#tb-i-kanban" /></svg></span>
+            <span><b>Pipeline</b><small>Mover etapa</small></span>
+            <span class="tb-he-ok"><svg class="tb-ic"><use href="#tb-i-check" /></svg></span>
+          </div>
+          <div class="tb-he-log"><svg class="tb-ic"><use href="#tb-i-zap" /></svg><span>Flujo ejecutado en 1.2 s · Sofía M.</span></div>
+        </section>
+
+        <!-- ===== 2 · Chat con agente de IA ===== -->
+        <section class="tb-he-scene tb-he-chat" data-title="WhatsApp · Estética Lumina">
+          <div class="tb-he-chat-head">
+            <span class="tb-he-av">S</span>
+            <span><b>Sofía M.</b><small>WhatsApp</small></span>
+            <span class="tb-he-pill is-violet"><svg class="tb-ic"><use href="#tb-i-spark" /></svg>IA activa 24/7</span>
+          </div>
+          <div class="tb-he-msgs">
+            <p class="tb-he-msg is-in m1">Hola, ¿tienen espacio para un facial esta semana?</p>
+            <p class="tb-he-typing t1"><i></i><i></i><i></i></p>
+            <p class="tb-he-msg is-out m2"><em>Agente de IA</em>¡Hola, Sofía! Tengo el jueves a las 4:30 p. m. o el viernes a las 10:00 a. m. ¿Cuál prefieres?</p>
+            <p class="tb-he-msg is-in m3">El jueves a las 4:30 👍</p>
+            <p class="tb-he-typing t2"><i></i><i></i><i></i></p>
+            <p class="tb-he-msg is-out m4"><em>Agente de IA</em>¡Listo! Tu cita quedó para el jueves a las 4:30 p. m. Te enviaré un recordatorio.</p>
+          </div>
+          <div class="tb-he-booked"><svg class="tb-ic"><use href="#tb-i-check" /></svg>Cita agendada · Jue 4:30 p. m.</div>
+        </section>
+
+        <!-- ===== 3 · Calendario ===== -->
+        <section class="tb-he-scene tb-he-cal" data-title="Calendario · Semana del 10 de noviembre">
+          <div class="tb-he-cal-days"><span></span><span>Lun 10</span><span>Mar 11</span><span>Mié 12</span><span class="is-today">Jue 13</span><span>Vie 14</span></div>
+          <div class="tb-he-cal-grid">
+            <span class="tb-he-cal-h" style="--r:0">10 a. m.</span><span class="tb-he-cal-h" style="--r:2">12 p. m.</span><span class="tb-he-cal-h" style="--r:4">2 p. m.</span><span class="tb-he-cal-h" style="--r:6">4 p. m.</span><span class="tb-he-cal-h" style="--r:8">6 p. m.</span>
+            <span class="tb-he-ev" style="--c:0;--t:1;--h:1;--i:0">Andrés P.</span>
+            <span class="tb-he-ev" style="--c:0;--t:6;--h:1;--i:1">José L.</span>
+            <span class="tb-he-ev" style="--c:1;--t:5;--h:1.5;--i:2">Laura G.</span>
+            <span class="tb-he-ev" style="--c:2;--t:2;--h:1;--i:3">Carlos G.</span>
+            <span class="tb-he-ev" style="--c:3;--t:2.5;--h:1;--i:4">María L.</span>
+            <span class="tb-he-ev" style="--c:4;--t:.5;--h:1;--i:5">Daniel V.</span>
+            <span class="tb-he-ev is-new" style="--c:3;--t:6.5;--h:1.4"><b>Sofía M. · Facial</b><small><svg class="tb-ic"><use href="#tb-i-spark" /></svg>Agendada por IA</small></span>
+          </div>
+          <div class="tb-he-toast"><svg class="tb-ic"><use href="#tb-i-clock" /></svg>Recordatorios activados</div>
+        </section>
+
+        <!-- ===== 4 · Recordatorios automáticos ===== -->
+        <section class="tb-he-scene tb-he-rem" data-title="Recordatorios automáticos">
+          <ol class="tb-he-strip">
+            <li class="r1"><svg class="tb-ic"><use href="#tb-i-cal" /></svg>Cita agendada</li>
+            <li class="r2"><svg class="tb-ic"><use href="#tb-i-mail" /></svg>Email</li>
+            <li class="r3"><svg class="tb-ic"><use href="#tb-i-clock" /></svg>24 h antes</li>
+            <li class="r4"><svg class="tb-ic"><use href="#tb-i-wa" /></svg>WhatsApp</li>
+          </ol>
+          <div class="tb-he-notes">
+            <div class="tb-he-note n1">
+              <span class="tb-he-note-ic" style="--c:#0087a0"><svg class="tb-ic"><use href="#tb-i-mail" /></svg></span>
+              <span><b>Confirmación de tu cita</b><small>Jue 13 nov · 4:30 p. m. · Estética Lumina</small></span>
+              <time>ahora</time>
+            </div>
+            <div class="tb-he-note tb-he-note-wa n2">
+              <span class="tb-he-note-ic" style="--c:#25d366"><svg class="tb-ic"><use href="#tb-i-wa" /></svg></span>
+              <span><b>Recordatorio: mañana a las 4:30 p. m.</b><small>Hola, Sofía. ¿Confirmas tu cita?</small></span>
+              <time>24 h antes</time>
+              <span class="tb-he-actions"><i class="tb-he-yes">✅ Confirmo</i><i>🔁 Reagendar</i></span>
+            </div>
+            <div class="tb-he-status"><span class="tb-he-st-old">Pendiente</span><span class="tb-he-st-new"><svg class="tb-ic"><use href="#tb-i-check" /></svg>Cita confirmada</span></div>
+          </div>
+          <svg class="tb-he-cursor" viewBox="0 0 24 24" width="26" height="26"><path d="M5 3l14 8-6.5 1.5L10 19z" /></svg>
+        </section>
+
+        <!-- ===== 5 · Pipeline: cerrado ganado ===== -->
+        <section class="tb-he-scene tb-he-pipe" data-title="Pipeline · Estética Lumina">
+          <div class="tb-he-col" style="--x:12px">
+            <header><b>Cita agendada</b><small><span class="tb-he-n" data-from="2" data-to="1">2</span> · <span class="tb-he-v" data-from="360" data-to="180">$360</span></small></header>
+          </div>
+          <div class="tb-he-col" style="--x:174px">
+            <header><b>Atendida</b><small>1 · $240</small></header>
+          </div>
+          <div class="tb-he-col is-won" style="--x:336px">
+            <header><b>Cerrado ganado</b><small><span class="tb-he-n" data-from="3" data-to="4">3</span> · <span class="tb-he-v" data-from="960" data-to="1140">$960</span></small></header>
+          </div>
+          <div class="tb-he-card is-hero" style="--x:20px;--y:64px"><b>Sofía M.</b><small>Facial · $180</small><span class="tb-he-won">Ganado</span></div>
+          <div class="tb-he-card is-next" style="--x:20px;--y:138px"><b>Carlos G.</b><small>Masaje · $180</small></div>
+          <div class="tb-he-card" style="--x:182px;--y:64px"><b>Laura G.</b><small>Paquete · $240</small></div>
+          <div class="tb-he-card is-done" style="--x:344px;--y:64px"><b>Ana P.</b><small>Facial · $180</small></div>
+          <div class="tb-he-card is-done" style="--x:344px;--y:138px"><b>José L.</b><small>Paquete · $480</small></div>
+          <div class="tb-he-card is-done" style="--x:344px;--y:212px"><b>Daniel V.</b><small>Masaje · $300</small></div>
+          <div class="tb-he-win">
+            <span class="tb-he-burst"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></span>
+            <svg class="tb-ic"><use href="#tb-i-star" /></svg><span><b>¡Oportunidad ganada!</b><small>Sofía M. · +$180</small></span>
+          </div>
+          <svg class="tb-he-cursor" viewBox="0 0 24 24" width="26" height="26"><path d="M5 3l14 8-6.5 1.5L10 19z" /></svg>
+        </section>
+
+      </div>
+    </div>
+  </div>
+
+  <div class="tb-he-rail" role="group" aria-label="Pasos de la demostración">
+    <button type="button" class="tb-he-step is-active"><span class="tb-he-fill"></span>Automatiza<span class="tb-sr">: ver paso 1, el flujo se activa</span></button>
+    <button type="button" class="tb-he-step"><span class="tb-he-fill"></span>Atiende<span class="tb-sr">: ver paso 2, la IA atiende y agenda</span></button>
+    <button type="button" class="tb-he-step"><span class="tb-he-fill"></span>Agenda<span class="tb-sr">: ver paso 3, la cita entra al calendario</span></button>
+    <button type="button" class="tb-he-step"><span class="tb-he-fill"></span>Recuerda<span class="tb-sr">: ver paso 4, se envían los recordatorios</span></button>
+    <button type="button" class="tb-he-step"><span class="tb-he-fill"></span>Cierra<span class="tb-sr">: ver paso 5, la venta se cierra</span></button>
+    <button type="button" class="tb-pause-btn tb-he-pause" data-tb-pause-btn aria-pressed="false" aria-label="Pausar animación"><svg class="tb-ic tb-ic-sm tb-pause-i" aria-hidden="true"><use href="#tb-i-pause" /></svg><svg class="tb-ic tb-ic-sm tb-play-i" aria-hidden="true"><use href="#tb-i-play" /></svg></button>
+  </div>
+</div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== Color ========== -->
+  <section class="tb-sec" aria-labelledby="st-color-h">
+    <div class="tb-wrap">
+      <div class="tb-head">
+        <p class="tb-eyebrow">Sistema de diseño</p>
+        <h2 id="st-color-h" class="tb-h2">Color y tipografía</h2>
+        <p class="tb-lead">Paleta OKLCH generada desde la marca. Base clara y luminosa; los bloques oscuros se reservan para los momentos de impacto.</p>
+      </div>
+      <div class="tb-st-swatches">
+        <div class="tb-st-ramp" data-name="violet"><span style="background:#e9dfff"></span><span style="background:#b6a5ff"></span><span style="background:#876cff"></span><span style="background:#5d34d2"></span><span style="background:#370093"></span><span style="background:#15004c"></span></div>
+        <div class="tb-st-ramp" data-name="blue"><span style="background:#bceeff"></span><span style="background:#80b6ff"></span><span style="background:#4c7fff"></span><span style="background:#2249d7"></span><span style="background:#081097"></span><span style="background:#06004e"></span></div>
+        <div class="tb-st-ramp" data-name="cyan"><span style="background:#9dffff"></span><span style="background:#4bd2ea"></span><span style="background:#00a0b9"></span><span style="background:#00576e"></span><span style="background:#004055"></span><span style="background:#001423"></span></div>
+        <div class="tb-st-ramp" data-name="neutral"><span style="background:#f6f4ff"></span><span style="background:#b3bce0"></span><span style="background:#818aaf"></span><span style="background:#535b7e"></span><span style="background:#181d36"></span><span style="background:#070b1a"></span></div>
+        <div class="tb-st-ramp" data-name="estados"><span style="background:#4adc9c"></span><span style="background:#005f26"></span><span style="background:#fb7184"></span><span style="background:#aa1a3f"></span><span style="background:#ebb431"></span><span style="background:#a16700"></span></div>
+      </div>
+      <div class="tb-st-type">
+        <p class="tb-small">H1 · Plus Jakarta Sans 800 · 40–68 px</p>
+        <p class="tb-h1">Más ventas, menos trabajo manual</p>
+        <p class="tb-small">H2 · 30–48 px</p>
+        <p class="tb-h2">Un solo equipo para crecer</p>
+        <p class="tb-small">H3 · 20–24 px</p>
+        <p class="tb-h3">Responde a cada cliente en segundos, a cualquier hora</p>
+        <p class="tb-small">Lead · Inter 17–20 px</p>
+        <p class="tb-lead">No te faltan clientes: te faltan tiempo y un sistema. Así se escapa el dinero todos los días.</p>
+        <p class="tb-small">Texto · Inter 16 px</p>
+        <p class="tb-body">Diagnóstico, migración de tus contactos, configuración de pipelines, agenda y bandeja, flujos de automatización, agentes de IA, integraciones y capacitación de tu equipo.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== Botones y piezas pequeñas ========== -->
+  <section class="tb-sec tb-sec-soft" aria-labelledby="st-btn-h">
+    <div class="tb-wrap">
+      <div class="tb-head">
+        <p class="tb-eyebrow">Acciones</p>
+        <h2 id="st-btn-h" class="tb-h2">Botones, enlaces y etiquetas</h2>
+      </div>
+      <div class="tb-grid tb-g2">
+        <div class="tb-panel">
+          <div class="tb-row">
+            <a class="tb-btn tb-btn-primary" href="#">Agenda tu diagnóstico <svg class="tb-ic tb-ic-go" aria-hidden="true"><use href="#tb-i-arrow" /></svg></a>
+            <a class="tb-btn tb-btn-secondary" href="#">Ver soluciones</a>
+            <a class="tb-btn tb-btn-wa" href="#"><svg class="tb-ic" aria-hidden="true"><use href="#tb-i-wa" /></svg>WhatsApp</a>
+          </div>
+          <div class="tb-row" style="margin-top:20px">
+            <a class="tb-btn tb-btn-primary tb-btn-sm" href="#">Pequeño</a>
+            <a class="tb-btn tb-btn-quiet" href="#">Botón discreto</a>
+            <a class="tb-link" href="#">Cómo lo implementamos <svg class="tb-ic tb-ic-sm" aria-hidden="true"><use href="#tb-i-arrow" /></svg></a>
+          </div>
+          <div class="tb-chips" style="margin-top:24px">
+            <span class="tb-chip"><span class="tb-chip-dot" style="--tb-ch:var(--tb-ch-whatsapp)"></span>WhatsApp</span>
+            <span class="tb-chip"><span class="tb-chip-dot" style="--tb-ch:var(--tb-ch-instagram)"></span>Instagram</span>
+            <span class="tb-chip"><span class="tb-chip-dot" style="--tb-ch:var(--tb-ch-messenger)"></span>Messenger</span>
+            <span class="tb-chip"><span class="tb-chip-dot" style="--tb-ch:var(--tb-ch-google)"></span>Google</span>
+            <span class="tb-chip">Clínicas y spas</span>
+          </div>
+          <p style="margin-top:20px"><span class="tb-live">IA activa 24/7</span></p>
+        </div>
+        <div class="tb-panel" data-tb-theme="dark">
+          <div class="tb-row">
+            <a class="tb-btn tb-btn-primary" href="#">Agenda tu diagnóstico <svg class="tb-ic tb-ic-go" aria-hidden="true"><use href="#tb-i-arrow" /></svg></a>
+            <a class="tb-btn tb-btn-secondary" href="#">Ver soluciones</a>
+            <a class="tb-btn tb-btn-wa" href="#"><svg class="tb-ic" aria-hidden="true"><use href="#tb-i-wa" /></svg>WhatsApp</a>
+          </div>
+          <div class="tb-row" style="margin-top:20px">
+            <a class="tb-btn tb-btn-quiet" href="#">Botón discreto</a>
+            <a class="tb-link" href="#">Cuéntanos tu proyecto <svg class="tb-ic tb-ic-sm" aria-hidden="true"><use href="#tb-i-arrow" /></svg></a>
+          </div>
+          <div class="tb-chips" style="margin-top:24px">
+            <span class="tb-chip">Integraciones con APIs</span><span class="tb-chip">Portales de clientes</span><span class="tb-chip">Apps web y móviles</span>
+          </div>
+          <p style="margin-top:20px"><span class="tb-live">Activo</span></p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== Tarjetas ========== -->
+  <section class="tb-sec" aria-labelledby="st-cards-h">
+    <div class="tb-wrap">
+      <div class="tb-head">
+        <p class="tb-eyebrow">El problema</p>
+        <h2 id="st-cards-h" class="tb-h2">¿Tu empresa depende de que alguien se acuerde?</h2>
+        <p class="tb-lead">No te faltan clientes: te faltan tiempo y un sistema. Así se escapa el dinero todos los días.</p>
+      </div>
+      <div class="tb-grid tb-g3">
+        <article class="tb-card tb-pain">
+          <div class="tb-ic-box is-red"><svg class="tb-ic" aria-hidden="true"><use href="#tb-i-moon" /></svg></div>
+          <h3>Mensajes que nadie contesta a tiempo</h3>
+          <p>Te escriben de noche o en hora pico, y quien responde primero se queda con la venta.</p>
+          <a class="tb-pain-cost" href="#"><svg class="tb-ic tb-ic-sm" aria-hidden="true"><use href="#tb-i-check" /></svg>Atención 24/7 con IA</a>
+        </article>
+        <article class="tb-card tb-pain">
+          <div class="tb-ic-box is-red"><svg class="tb-ic" aria-hidden="true"><use href="#tb-i-calx" /></svg></div>
+          <h3>Citas a las que nadie llega</h3>
+          <p>Cada inasistencia es tiempo, personal y espacio que ya pagaste.</p>
+          <a class="tb-pain-cost" href="#"><svg class="tb-ic tb-ic-sm" aria-hidden="true"><use href="#tb-i-check" /></svg>Recordatorios automáticos</a>
+        </article>
+        <article class="tb-card tb-pain">
+          <div class="tb-ic-box is-red"><svg class="tb-ic" aria-hidden="true"><use href="#tb-i-layers" /></svg></div>
+          <h3>Cinco herramientas que no se hablan</h3>
+          <p>Pagas web, formularios, email, agenda y CRM por separado, y los datos se pierden entre una y otra.</p>
+          <a class="tb-pain-cost" href="#"><svg class="tb-ic tb-ic-sm" aria-hidden="true"><use href="#tb-i-check" /></svg>Todo en un solo sistema</a>
+        </article>
+      </div>
+
+      <div class="tb-grid tb-g2" style="margin-top:48px">
+        <article class="tb-service">
+          <div class="tb-ic-box"><svg class="tb-ic" aria-hidden="true"><use href="#tb-i-inbox" /></svg></div>
+          <h3>CRM todo en uno, gestionado</h3>
+          <p>La plataforma que centraliza clientes, conversaciones, agenda, ventas y marketing, configurada y mantenida por nosotros.</p>
+          <ul class="tb-checks">
+            <li>Bandeja unificada con WhatsApp API</li>
+            <li>Agenda, pipeline y automatizaciones</li>
+            <li>Soporte humano en español</li>
+          </ul>
+          <div class="tb-service-foot">
+            <p class="tb-price">Desde <span>$99</span> <small>USD/mes</small></p>
+            <a class="tb-link" href="/servicios#crm">Ver servicio <svg class="tb-ic tb-ic-sm" aria-hidden="true"><use href="#tb-i-arrow" /></svg></a>
+          </div>
+        </article>
+        <article class="tb-case">
+          <p class="tb-case-sector">Salud y estética · [PENDIENTE]</p>
+          <h3>Nombre del cliente: reto en una línea</h3>
+          <div class="tb-chips"><span class="tb-chip">Agenda con IA</span><span class="tb-chip">Recordatorios</span><span class="tb-chip">Reseñas</span></div>
+          <div class="tb-case-stats">
+            <div><span class="tb-stat-n" data-tb-count="38" data-tb-suffix="%">38%</span><span class="tb-stat-l">Ejemplo de métrica (no publicar)</span></div>
+            <div><span class="tb-stat-n" data-tb-count="2.4" data-tb-suffix="×">2.4×</span><span class="tb-stat-l">Ejemplo de métrica (no publicar)</span></div>
+          </div>
+          <blockquote>«Cita corta del cliente sobre el resultado.»</blockquote>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== Tabs ========== -->
+  <section class="tb-sec tb-sec-soft" aria-labelledby="st-tabs-h">
+    <div class="tb-wrap">
+      <div class="tb-head">
+        <p class="tb-eyebrow">Soluciones</p>
+        <h2 id="st-tabs-h" class="tb-h2">Lo que tu empresa consigue con un sistema bien implementado</h2>
+      </div>
+      <div data-tb-tabs>
+        <div class="tb-tablist" role="tablist" aria-label="Soluciones">
+          <button class="tb-tab" role="tab" id="st-t1" aria-controls="st-p1" aria-selected="true">Atiende 24/7</button>
+          <button class="tb-tab" role="tab" id="st-t2" aria-controls="st-p2" aria-selected="false" tabindex="-1">Llena tu agenda</button>
+          <button class="tb-tab" role="tab" id="st-t3" aria-controls="st-p3" aria-selected="false" tabindex="-1">Controla tus ventas</button>
+        </div>
+        <div class="tb-tabpanel tb-split" role="tabpanel" id="st-p1" aria-labelledby="st-t1">
+          <div>
+            <h3 class="tb-h3">Responde a cada cliente en segundos, a cualquier hora</h3>
+            <ul class="tb-checks" style="margin-top:20px">
+              <li>WhatsApp, Instagram, Messenger, Google, SMS, email y chat web en una sola bandeja.</li>
+              <li>Agentes de IA que responden, califican y agendan por ti.</li>
+              <li>Tu equipo toma la conversación cuando hace falta, con todo el historial.</li>
+            </ul>
+          </div>
+          <div class="tb-video" data-tb-video="" style="background-image:linear-gradient(135deg,#15004c,#0a1024)">
+            <button class="tb-video-btn" type="button" aria-label="Ver video: atención 24/7"><span class="tb-video-play"><svg class="tb-ic" aria-hidden="true"><use href="#tb-i-play" /></svg></span>Ver video · 30 s</button>
+          </div>
+        </div>
+        <div class="tb-tabpanel" role="tabpanel" id="st-p2" aria-labelledby="st-t2" hidden>
+          <h3 class="tb-h3">Cada cita perdida es dinero perdido. Recupéralo.</h3>
+        </div>
+        <div class="tb-tabpanel" role="tabpanel" id="st-p3" aria-labelledby="st-t3" hidden>
+          <h3 class="tb-h3">Sabes en qué etapa está cada venta, y ningún cliente se te escapa</h3>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== Método ========== -->
+  <section class="tb-sec" aria-labelledby="st-steps-h">
+    <div class="tb-wrap">
+      <div class="tb-head">
+        <p class="tb-eyebrow">Cómo trabajamos</p>
+        <h2 id="st-steps-h" class="tb-h2">De la idea al sistema funcionando, contigo en cada paso</h2>
+      </div>
+      <ol class="tb-steps">
+        <li class="tb-step"><span class="tb-step-n">1</span><h3>Diagnóstico</h3><p>Analizamos cómo vendes y atiendes hoy, y dónde se te escapa el dinero.</p></li>
+        <li class="tb-step"><span class="tb-step-n">2</span><h3>Diseño de la solución</h3><p>Te proponemos el sistema, las automatizaciones y las integraciones, con un plan y un precio claros.</p></li>
+        <li class="tb-step"><span class="tb-step-n">3</span><h3>Implementación</h3><p>Lo configuramos, migramos tus datos, capacitamos a tu equipo y lo dejamos funcionando.</p></li>
+        <li class="tb-step"><span class="tb-step-n">4</span><h3>Acompañamiento y crecimiento</h3><p>Soporte humano, sesiones de estrategia y mejoras continuas a medida que creces.</p></li>
+      </ol>
+    </div>
+  </section>
+
+  <!-- ========== Comparativa + FAQ ========== -->
+  <section class="tb-sec tb-sec-soft" aria-labelledby="st-comp-h">
+    <div class="tb-wrap">
+      <div class="tb-head">
+        <p class="tb-eyebrow">Antes y después</p>
+        <h2 id="st-comp-h" class="tb-h2">Herramientas sueltas vs. un Growth Partner</h2>
+      </div>
+      <table class="tb-compare">
+        <thead><tr><th scope="col">Necesidad</th><th scope="col">Por tu cuenta</th><th scope="col" class="is-us">Con TellBid</th></tr></thead>
+        <tbody>
+          <tr><td>Implementación</td><td class="is-them" data-label="Por tu cuenta"><span class="tb-mark"><svg class="tb-ic tb-ic-sm" aria-hidden="true"><use href="#tb-i-x" /></svg>Lo configuras tú, entre tutoriales</span></td><td class="is-us" data-label="Con TellBid"><span class="tb-mark"><svg class="tb-ic tb-ic-sm" aria-hidden="true"><use href="#tb-i-check" /></svg>Lo implementamos por ti, llave en mano</span></td></tr>
+          <tr><td>Herramientas</td><td class="is-them" data-label="Por tu cuenta"><span class="tb-mark"><svg class="tb-ic tb-ic-sm" aria-hidden="true"><use href="#tb-i-x" /></svg>5 suscripciones que no se hablan</span></td><td class="is-us" data-label="Con TellBid"><span class="tb-mark"><svg class="tb-ic tb-ic-sm" aria-hidden="true"><use href="#tb-i-check" /></svg>Un solo sistema conectado</span></td></tr>
+          <tr><td>Soporte</td><td class="is-them" data-label="Por tu cuenta"><span class="tb-mark"><svg class="tb-ic tb-ic-sm" aria-hidden="true"><use href="#tb-i-x" /></svg>Tickets en inglés</span></td><td class="is-us" data-label="Con TellBid"><span class="tb-mark"><svg class="tb-ic tb-ic-sm" aria-hidden="true"><use href="#tb-i-check" /></svg>Personas reales, en español</span></td></tr>
+        </tbody>
+      </table>
+
+      <div class="tb-faq" style="margin-top:64px">
+        <details open>
+          <summary><h3>¿Ustedes venden un software o un servicio?</h3><span class="tb-faq-ic" aria-hidden="true"></span></summary>
+          <p class="tb-faq-a">Un servicio completo. Te damos la plataforma, pero lo importante es que la configuramos, la conectamos con tus herramientas y la mantenemos funcionando contigo.</p>
+        </details>
+        <details>
+          <summary><h3>¿Necesito conocimientos técnicos?</h3><span class="tb-faq-ic" aria-hidden="true"></span></summary>
+          <p class="tb-faq-a">No. Nosotros nos encargamos de la parte técnica y te enseñamos a usar lo que necesitas en el día a día.</p>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== CTA final oscuro ========== -->
+  <section class="tb-sec" data-tb-theme="dark" aria-labelledby="st-cta-h">
+    <div class="tb-wrap tb-wrap-narrow tb-head-center">
+      <h2 id="st-cta-h" class="tb-h2">Esta noche alguien le va a escribir a tu negocio. <span class="tb-h-second">¿Quién le va a responder?</span></h2>
+      <p class="tb-lead" style="margin:20px auto 0">Agenda tu diagnóstico y te mostramos, con tu caso real, cómo dejar tu empresa en piloto automático.</p>
+      <div class="tb-ctas" style="justify-content:center">
+        <a class="tb-btn tb-btn-primary tb-btn-lg" href="/diagnostico">Agenda tu diagnóstico gratis <svg class="tb-ic tb-ic-go" aria-hidden="true"><use href="#tb-i-arrow" /></svg></a>
+        <a class="tb-btn tb-btn-wa tb-btn-lg" href="https://wa.me/19047806780"><svg class="tb-ic" aria-hidden="true"><use href="#tb-i-wa" /></svg>Escríbenos por WhatsApp</a>
+      </div>
+    </div>
+  </section>
+</main>
+<footer class="tb-footer" data-tb-theme="dark">
+  <div class="tb-wrap">
+    <div class="tb-footer-top">
+      <div class="tb-footer-brand">
+        <a class="tb-logo" href="/" aria-label="TellBid, inicio"><img src="https://cdn.jsdelivr.net/gh/OWNER/tellbid-web@v1.0.0/assets/img/tellbid-logo.png" alt="TellBid" width="117" height="30" loading="lazy"></a>
+        <p>Tu Growth Partner tecnológico: implementamos tu CRM, automatizamos tu negocio y desarrollamos software a la medida para empresas hispanas en EE. UU. y Latinoamérica.</p>
+        <!-- [PENDIENTE] URLs reales de redes sociales: reemplazar los href="#" y quitar el atributo hidden -->
+        <div class="tb-social" hidden>
+          <a href="#" aria-label="TellBid en Instagram"><svg class="tb-ic tb-ic-sm" aria-hidden="true"><use href="#tb-i-ig" /></svg></a>
+          <a href="#" aria-label="TellBid en Facebook"><svg class="tb-ic tb-ic-sm" aria-hidden="true"><use href="#tb-i-fb" /></svg></a>
+          <a href="#" aria-label="TellBid en LinkedIn"><svg class="tb-ic tb-ic-sm" aria-hidden="true"><use href="#tb-i-in" /></svg></a>
+          <a href="#" aria-label="TellBid en YouTube"><svg class="tb-ic tb-ic-sm" aria-hidden="true"><use href="#tb-i-yt" /></svg></a>
+          <a href="#" aria-label="TellBid en TikTok"><svg class="tb-ic tb-ic-sm" aria-hidden="true"><use href="#tb-i-tt" /></svg></a>
+        </div>
+      </div>
+      <nav aria-label="Soluciones">
+        <h2 class="tb-foot-h">Soluciones</h2>
+        <ul>
+          <li><a href="/soluciones#atencion-24-7">Atiende 24/7</a></li>
+          <li><a href="/soluciones#agenda">Llena tu agenda</a></li>
+          <li><a href="/soluciones#ventas">Controla tus ventas</a></li>
+          <li><a href="/soluciones#captacion">Capta prospectos</a></li>
+          <li><a href="/soluciones#resenas">Reputación y reseñas</a></li>
+          <li><a href="/soluciones#marketing">Marketing y redes</a></li>
+        </ul>
+      </nav>
+      <nav aria-label="Servicios">
+        <h2 class="tb-foot-h">Servicios</h2>
+        <ul>
+          <li><a href="/servicios#crm">CRM todo en uno</a></li>
+          <li><a href="/servicios#implementacion">Implementación y automatización</a></li>
+          <li><a href="/software-a-la-medida">Software a la medida</a></li>
+          <li><a href="/servicios#marketing">Marketing y publicidad</a></li>
+        </ul>
+      </nav>
+      <nav aria-label="Empresa">
+        <h2 class="tb-foot-h">Empresa</h2>
+        <ul>
+          <li><a href="/nosotros">Nosotros</a></li>
+          <li><a href="/#casos">Casos de éxito</a></li>
+          <li><a href="/soporte">Soporte para clientes</a></li>
+          <li><a href="/contact">Contacto</a></li>
+        </ul>
+      </nav>
+      <div>
+        <h2 class="tb-foot-h">Contacto</h2>
+        <ul>
+          <li><a href="tel:+19047806780">+1 904-780-6780</a></li>
+          <li><a href="https://wa.me/19047806780">WhatsApp</a></li>
+          <li><a href="mailto:info@tellbid.io">info@tellbid.io</a></li>
+          <li><span>8325 NE 2nd Ave, Ste 349<br>Miami, FL 33138</span></li>
+        </ul>
+      </div>
+    </div>
+    <div class="tb-footer-bottom">
+      <p>© <span data-tb-year>2026</span> TellBid LLC. Empresa registrada en Florida, EE. UU.</p>
+      <nav aria-label="Legal">
+        <a href="/privacy-policy">Privacy Policy</a>
+        <a href="/terms-of-service">Terms of Service</a>
+      </nav>
+    </div>
+  </div>
+</footer>
+
+
+<style>
+  /* Solo para esta página de muestra */
+  #tb-site .tb-st-swatches { display: grid; gap: 10px; }
+  #tb-site .tb-st-ramp { display: grid; grid-template-columns: 90px repeat(6, 1fr); gap: 6px; align-items: center; }
+  #tb-site .tb-st-ramp::before { content: attr(data-name); font-size: 14px; font-weight: 600; color: var(--tb-text-dim); order: -1; }
+  #tb-site .tb-st-ramp span { height: 44px; border-radius: 10px; border: 1px solid rgba(11,16,36,.06); }
+  #tb-site .tb-st-type { margin-top: 56px; display: grid; gap: 6px; }
+  #tb-site .tb-st-type .tb-small { margin-top: 18px; }
+</style>
+</div>
+<script src="https://cdn.jsdelivr.net/gh/OWNER/tellbid-web@v1.0.0/dist/tb.min.js" defer></script>

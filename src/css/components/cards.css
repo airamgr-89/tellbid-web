@@ -1,0 +1,93 @@
+/* ============================================================
+   Tarjetas · la jerarquía decide el radio:
+   panel 32 · servicio/caso 24 · tarjeta 16 · elementos 12
+   ============================================================ */
+#tb-site .tb-card {
+  position: relative;
+  background: var(--tb-surface);
+  border: 1px solid var(--tb-border);
+  border-radius: var(--tb-r);
+  padding: 24px;
+}
+#tb-site .tb-card h3 { font-size: 18px; font-weight: 700; letter-spacing: -0.012em; line-height: 1.3; }
+#tb-site .tb-card p { color: var(--tb-text-muted); font-size: 15.5px; margin-top: 8px; }
+#tb-site .tb-card .tb-link { margin-top: 16px; }
+#tb-site a.tb-card, #tb-site .tb-card-link { transition: border-color var(--tb-d) var(--tb-ease), box-shadow var(--tb-d) var(--tb-ease), transform var(--tb-d) var(--tb-ease); }
+#tb-site a.tb-card:hover, #tb-site .tb-card-link:hover { border-color: color-mix(in srgb, var(--tb-primary) 40%, var(--tb-border)); box-shadow: var(--tb-shadow-2); transform: translateY(-2px); }
+
+/* Caja de icono */
+#tb-site .tb-ic-box {
+  --_c: var(--tb-primary);
+  width: 44px; height: 44px; border-radius: var(--tb-r-sm);
+  display: grid; place-items: center; margin-bottom: 18px;
+  color: var(--_c);
+  background: color-mix(in srgb, var(--_c) 11%, transparent);
+  border: 1px solid color-mix(in srgb, var(--_c) 18%, transparent);
+}
+#tb-site .tb-ic-box.is-cyan { --_c: var(--tb-accent); }
+#tb-site .tb-ic-box.is-green { --_c: var(--tb-success); }
+#tb-site .tb-ic-box.is-red { --_c: var(--tb-danger); }
+#tb-site .tb-ic-box.is-blue { --_c: var(--tb-blue-600); }
+#tb-site [data-tb-theme="dark"] .tb-ic-box.is-blue { --_c: var(--tb-blue-300); }
+
+/* Tarjeta de dolor: el costo en una línea propia */
+#tb-site .tb-pain .tb-pain-cost {
+  display: flex; gap: 8px; align-items: flex-start;
+  margin-top: 16px; padding-top: 14px; border-top: 1px dashed var(--tb-border-strong);
+  font-size: 14.5px; font-weight: 600; color: var(--tb-text);
+}
+#tb-site .tb-pain .tb-pain-cost .tb-ic { color: var(--tb-success); margin-top: 2px; }
+
+/* Servicio: tarjeta grande con lista */
+#tb-site .tb-service {
+  display: flex; flex-direction: column;
+  border-radius: var(--tb-r-lg); padding: 32px;
+  background: var(--tb-surface); border: 1px solid var(--tb-border);
+  box-shadow: var(--tb-shadow-1);
+}
+#tb-site .tb-service h3 { font-size: 22px; font-weight: 800; letter-spacing: -0.02em; }
+#tb-site .tb-service > p { color: var(--tb-text-muted); margin-top: 10px; }
+#tb-site .tb-service .tb-checks { margin-top: 20px; }
+#tb-site .tb-service-foot { margin-top: auto; padding-top: 24px; display: flex; align-items: center; justify-content: space-between; gap: 16px; flex-wrap: wrap; }
+#tb-site .tb-price { font-family: var(--tb-fh); font-weight: 800; font-size: 15px; color: var(--tb-text); }
+#tb-site .tb-price span { font-size: 26px; letter-spacing: -0.02em; }
+#tb-site .tb-price small { font-family: var(--tb-fb); font-weight: 500; font-size: 14px; color: var(--tb-text-dim); }
+
+/* Panel destacado (bloques grandes, CTA) */
+#tb-site .tb-panel {
+  border-radius: var(--tb-r-xl); padding: clamp(28px, 5vw, 56px);
+  background: var(--tb-surface); border: 1px solid var(--tb-border); box-shadow: var(--tb-shadow-3);
+}
+
+/* Caso de éxito */
+#tb-site .tb-case { border-radius: var(--tb-r-lg); padding: 28px; background: var(--tb-surface); border: 1px solid var(--tb-border); display: flex; flex-direction: column; gap: 16px; }
+#tb-site .tb-case-sector { font-size: 13.5px; font-weight: 600; color: var(--tb-accent); }
+#tb-site .tb-case h3 { font-size: 19px; }
+#tb-site .tb-case-stats { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; padding: 16px 0; border-block: 1px solid var(--tb-border); }
+#tb-site .tb-case blockquote { color: var(--tb-text-muted); font-size: 15px; }
+
+/* Cifra */
+#tb-site .tb-stat-n { display: block; font-family: var(--tb-fh); font-weight: 800; font-size: clamp(32px, 4vw, 44px); letter-spacing: -0.035em; line-height: 1; color: var(--tb-text); font-variant-numeric: tabular-nums; }
+#tb-site .tb-stat-l { display: block; margin-top: 6px; font-size: 14px; color: var(--tb-text-dim); line-height: 1.35; }
+
+/* Lista con checks */
+#tb-site .tb-checks { display: grid; gap: 12px; }
+#tb-site .tb-checks li { position: relative; padding-left: 32px; color: var(--tb-text-muted); font-size: 15.5px; line-height: 1.5; }
+#tb-site .tb-checks li strong { color: var(--tb-text); font-weight: 600; }
+#tb-site .tb-checks li::before {
+  content: ""; position: absolute; left: 0; top: 2px; width: 20px; height: 20px; border-radius: 50%;
+  background: var(--tb-success-soft) url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20'%3E%3Cpath d='M6 10.2l2.6 2.6L14 7.4' fill='none' stroke='%23005f26' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E") center / 20px no-repeat;
+}
+#tb-site [data-tb-theme="dark"] .tb-checks li::before {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20'%3E%3Cpath d='M6 10.2l2.6 2.6L14 7.4' fill='none' stroke='%234adc9c' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");
+}
+#tb-site .tb-checks-row { display: flex; flex-wrap: wrap; gap: 10px 24px; }
+#tb-site .tb-checks-row li { font-size: 14.5px; padding-left: 28px; }
+
+/* Testimonio */
+#tb-site .tb-quote { display: flex; flex-direction: column; gap: 20px; }
+#tb-site .tb-quote p { font-size: 17px; line-height: 1.55; color: var(--tb-text); }
+#tb-site .tb-person { display: flex; align-items: center; gap: 12px; }
+#tb-site .tb-av { width: 42px; height: 42px; border-radius: 50%; display: grid; place-items: center; font-family: var(--tb-fh); font-weight: 700; font-size: 15px; color: var(--tb-on-primary); background: var(--tb-grad-btn); flex: none; }
+#tb-site .tb-person b { display: block; font-size: 15px; }
+#tb-site .tb-person span { font-size: 13.5px; color: var(--tb-text-dim); }

@@ -1,0 +1,11 @@
+/* TellBid · hoja compartida por todas las páginas (entrada de esbuild). Orden = cascada. */
+@import "./tokens.css";
+@import "./base.css";
+@import "./layout.css";
+@import "./components/buttons.css";
+@import "./components/cards.css";
+@import "./components/interactive.css";
+@import "./components/form.css";
+@import "./components/page.css";
+@import "./components/chrome.css";
+@import "./motion.css";

@@ -1,0 +1,128 @@
+<svg class="tb-sprite" width="0" height="0" aria-hidden="true" focusable="false">
+  <symbol id="tb-i-inbox" viewBox="0 0 24 24">
+    <polyline points="22 12 16 12 14 15 10 15 8 12 2 12" />
+    <path
+      d="M5.45 5.11 2 12v6a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2v-6l-3.45-6.89A2 2 0 0 0 16.76 4H7.24a2 2 0 0 0-1.79 1.11z" />
+  </symbol>
+  <symbol id="tb-i-bot" viewBox="0 0 24 24">
+    <rect x="3" y="11" width="18" height="10" rx="2" />
+    <circle cx="12" cy="5" r="2" />
+    <path d="M12 7v4" />
+    <circle cx="8.5" cy="16" r="1" />
+    <circle cx="15.5" cy="16" r="1" />
+  </symbol>
+  <symbol id="tb-i-cal" viewBox="0 0 24 24">
+    <rect x="3" y="4" width="18" height="18" rx="2" />
+    <path d="M16 2v4M8 2v4M3 10h18" />
+  </symbol>
+  <symbol id="tb-i-calx" viewBox="0 0 24 24">
+    <rect x="3" y="4" width="18" height="18" rx="2" />
+    <path d="M16 2v4M8 2v4M3 10h18M10 14l4 4M14 14l-4 4" />
+  </symbol>
+  <symbol id="tb-i-zap" viewBox="0 0 24 24">
+    <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2" />
+  </symbol>
+  <symbol id="tb-i-star" viewBox="0 0 24 24">
+    <polygon
+      points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
+  </symbol>
+  <symbol id="tb-i-send" viewBox="0 0 24 24">
+    <path d="M22 2 11 13" />
+    <path d="M22 2 15 22l-4-9-9-4 20-7z" />
+  </symbol>
+  <symbol id="tb-i-globe" viewBox="0 0 24 24">
+    <circle cx="12" cy="12" r="10" />
+    <path d="M2 12h20M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z" />
+  </symbol>
+  <symbol id="tb-i-mail" viewBox="0 0 24 24">
+    <rect x="2" y="4" width="20" height="16" rx="2" />
+    <path d="m22 7-10 6L2 7" />
+  </symbol>
+  <symbol id="tb-i-chart" viewBox="0 0 24 24">
+    <path d="M3 3v18h18" />
+    <path d="m7 15 4-4 3 3 5-6" />
+  </symbol>
+  <symbol id="tb-i-kanban" viewBox="0 0 24 24">
+    <rect x="3" y="3" width="18" height="18" rx="2" />
+    <path d="M8 7v7M12 7v4M16 7v9" />
+  </symbol>
+  <symbol id="tb-i-moon" viewBox="0 0 24 24">
+    <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z" />
+  </symbol>
+  <symbol id="tb-i-layers" viewBox="0 0 24 24">
+    <polygon points="12 2 2 7 12 12 22 7 12 2" />
+    <polyline points="2 17 12 22 22 17" />
+    <polyline points="2 12 12 17 22 12" />
+  </symbol>
+  <symbol id="tb-i-dollar" viewBox="0 0 24 24">
+    <path d="M12 1v22M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6" />
+  </symbol>
+  <symbol id="tb-i-check" viewBox="0 0 24 24">
+    <polyline points="20 6 9 17 4 12" />
+  </symbol>
+  <symbol id="tb-i-x" viewBox="0 0 24 24">
+    <path d="M18 6 6 18M6 6l12 12" />
+  </symbol>
+  <symbol id="tb-i-headset" viewBox="0 0 24 24">
+    <path d="M3 18v-6a9 9 0 0 1 18 0v6" />
+    <path
+      d="M21 19a2 2 0 0 1-2 2h-1a2 2 0 0 1-2-2v-3a2 2 0 0 1 2-2h3zM3 19a2 2 0 0 0 2 2h1a2 2 0 0 0 2-2v-3a2 2 0 0 0-2-2H3z" />
+  </symbol>
+  <symbol id="tb-i-target" viewBox="0 0 24 24">
+    <circle cx="12" cy="12" r="10" />
+    <circle cx="12" cy="12" r="6" />
+    <circle cx="12" cy="12" r="2" />
+  </symbol>
+  <symbol id="tb-i-arrow" viewBox="0 0 24 24">
+    <path d="M5 12h14M12 5l7 7-7 7" />
+  </symbol>
+  <symbol id="tb-i-phone" viewBox="0 0 24 24">
+    <path
+      d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6A19.79 19.79 0 0 1 2.12 4.18 2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z" />
+  </symbol>
+  <symbol id="tb-i-msg" viewBox="0 0 24 24">
+    <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z" />
+  </symbol>
+  <symbol id="tb-i-clock" viewBox="0 0 24 24">
+    <circle cx="12" cy="12" r="10" />
+    <path d="M12 6v6l4 2" />
+  </symbol>
+  <symbol id="tb-i-spark" viewBox="0 0 24 24">
+    <path d="M12 3l1.9 5.1L19 10l-5.1 1.9L12 17l-1.9-5.1L5 10l5.1-1.9z" />
+    <path d="M19 17l.8 2.2L22 20l-2.2.8L19 23l-.8-2.2L16 20l2.2-.8z" />
+  </symbol>
+  <symbol id="tb-i-users" viewBox="0 0 24 24">
+    <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2" />
+    <circle cx="9" cy="7" r="4" />
+    <path d="M23 21v-2a4 4 0 0 0-3-3.87M16 3.13a4 4 0 0 1 0 7.75" />
+  </symbol>
+  <symbol id="tb-i-plus" viewBox="0 0 24 24">
+    <path d="M12 5v14M5 12h14" />
+  </symbol>
+  <symbol id="tb-i-branch" viewBox="0 0 24 24">
+    <path d="M6 3v12" />
+    <circle cx="18" cy="6" r="3" />
+    <circle cx="6" cy="18" r="3" />
+    <path d="M18 9a9 9 0 0 1-9 9" />
+  </symbol>
+  <symbol id="tb-i-link" viewBox="0 0 24 24">
+    <path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71" />
+    <path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71" />
+  </symbol>
+  <!-- Iconos nuevos (rediseño) -->
+  <symbol id="tb-i-chev" viewBox="0 0 24 24"><path d="m6 9 6 6 6-6" /></symbol>
+  <symbol id="tb-i-pause" viewBox="0 0 24 24"><path d="M9 6v12M15 6v12" /></symbol>
+  <symbol id="tb-i-play" viewBox="0 0 24 24"><path d="M8 5.5v13l10.5-6.5z" fill="currentColor" stroke="none" /></symbol>
+  <symbol id="tb-i-code" viewBox="0 0 24 24"><path d="m16 18 6-6-6-6" /><path d="m8 6-6 6 6 6" /></symbol>
+  <symbol id="tb-i-megaphone" viewBox="0 0 24 24"><path d="m3 11 15-6v14L3 13z" /><path d="M11.6 16.8a3 3 0 1 1-5.8-1.6" /></symbol>
+  <symbol id="tb-i-shield" viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" /></symbol>
+  <symbol id="tb-i-search" viewBox="0 0 24 24"><circle cx="11" cy="11" r="7" /><path d="m21 21-4.3-4.3" /></symbol>
+  <symbol id="tb-i-rocket" viewBox="0 0 24 24"><path d="M4.5 16.5c-1.5 1.26-2 5-2 5s3.74-.5 5-2c.71-.84.7-2.13-.09-2.91a2.18 2.18 0 0 0-2.91-.09z" /><path d="m12 15-3-3a22 22 0 0 1 2-3.95A12.88 12.88 0 0 1 22 2c0 2.72-.78 7.5-6 11a22.35 22.35 0 0 1-4 2z" /><path d="M9 12H4s.55-3.03 2-4c1.62-1.08 5 0 5 0" /><path d="M12 15v5s3.03-.55 4-2c1.08-1.62 0-5 0-5" /></symbol>
+  <symbol id="tb-i-pin" viewBox="0 0 24 24"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0z" /><circle cx="12" cy="10" r="3" /></symbol>
+  <symbol id="tb-i-wa" viewBox="0 0 24 24"><path d="M3.5 20.5 4.8 16A8.5 8.5 0 1 1 8 19.2z" /><path d="M9 9.2c0 3 2.8 5.8 5.8 5.8l1.2-1.4-1.9-1-1 .8a4.4 4.4 0 0 1-2.5-2.5l.8-1-1-1.9z" fill="currentColor" stroke="none" /></symbol>
+  <symbol id="tb-i-ig" viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="5" /><circle cx="12" cy="12" r="4" /><circle cx="17.5" cy="6.5" r=".6" fill="currentColor" /></symbol>
+  <symbol id="tb-i-fb" viewBox="0 0 24 24"><path d="M15 3h-2.5A4.5 4.5 0 0 0 8 7.5V10H5.5v3.5H8V21h3.5v-7.5H14l.6-3.5h-3.1V8a1 1 0 0 1 1-1H15z" /></symbol>
+  <symbol id="tb-i-in" viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="3" /><path d="M8 10v7M8 7v.01M12 17v-4a2 2 0 0 1 4 0v4M12 10v7" /></symbol>
+  <symbol id="tb-i-yt" viewBox="0 0 24 24"><path d="M2.5 17a24 24 0 0 1 0-10 2 2 0 0 1 1.4-1.4 49.6 49.6 0 0 1 16.2 0A2 2 0 0 1 21.5 7a24 24 0 0 1 0 10 2 2 0 0 1-1.4 1.4 49.6 49.6 0 0 1-16.2 0A2 2 0 0 1 2.5 17" /><path d="m10 15 5-3-5-3z" /></symbol>
+  <symbol id="tb-i-tt" viewBox="0 0 24 24"><path d="M14 3v11.5a3.5 3.5 0 1 1-3.5-3.5" /><path d="M14 3a5 5 0 0 0 5 5" /></symbol>
+</svg>

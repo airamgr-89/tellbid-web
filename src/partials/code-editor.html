@@ -1,0 +1,29 @@
+<!-- Editor de código animado: una integración a la medida que se escribe sola y conecta sistemas -->
+<div class="tb-ce" data-tb-code>
+  <div class="tb-ce-win" role="img" aria-label="Ejemplo de integración a la medida: cuando se paga una factura en el ERP, se busca el cliente en el CRM, se mueve a ganado, se le envía un WhatsApp y se registra la venta en un panel.">
+    <div class="tb-ce-bar">
+      <span class="tb-he-dots"><i></i><i></i><i></i></span>
+      <span class="tb-ce-tab"><svg class="tb-ic tb-ic-sm"><use href="#tb-i-code" /></svg>integracion.js</span>
+      <span class="tb-ce-state"><span class="tb-ce-state-run">Escribiendo…</span><span class="tb-ce-state-ok"><svg class="tb-ic tb-ic-sm"><use href="#tb-i-check" /></svg>Desplegado</span></span>
+    </div>
+    <pre class="tb-ce-code"><code><span class="tb-ce-line"><span class="c">// Al pagarse una factura en tu ERP…</span></span>
+<span class="tb-ce-line">erp.<span class="f">on</span>(<span class="s">'factura.pagada'</span>, <span class="k">async</span> (f) =&gt; {</span>
+<span class="tb-ce-line" data-node="1">  <span class="k">const</span> c = <span class="k">await</span> crm.contactos.<span class="f">buscar</span>(f.email)</span>
+<span class="tb-ce-line" data-node="1">  <span class="k">await</span> crm.pipeline.<span class="f">mover</span>(c, <span class="s">'Ganado'</span>)</span>
+<span class="tb-ce-line" data-node="2">  <span class="k">await</span> whatsapp.<span class="f">enviar</span>(c, <span class="s">'gracias'</span>)</span>
+<span class="tb-ce-line" data-node="3">  <span class="k">await</span> panel.<span class="f">registrar</span>(<span class="s">'venta'</span>, f.total)</span>
+<span class="tb-ce-line">})</span></code></pre>
+  </div>
+  <div class="tb-ce-foot">
+  <div class="tb-ce-flow" aria-hidden="true">
+    <span class="tb-ce-node" data-n="0"><svg class="tb-ic tb-ic-sm"><use href="#tb-i-layers" /></svg>ERP</span>
+    <span class="tb-ce-link"></span>
+    <span class="tb-ce-node" data-n="1"><svg class="tb-ic tb-ic-sm"><use href="#tb-i-users" /></svg>CRM</span>
+    <span class="tb-ce-link"></span>
+    <span class="tb-ce-node" data-n="2"><svg class="tb-ic tb-ic-sm"><use href="#tb-i-wa" /></svg>WhatsApp</span>
+    <span class="tb-ce-link"></span>
+    <span class="tb-ce-node" data-n="3"><svg class="tb-ic tb-ic-sm"><use href="#tb-i-chart" /></svg>Panel</span>
+  </div>
+  <button type="button" class="tb-pause-btn" data-tb-pause-btn aria-pressed="false" aria-label="Pausar animación"><svg class="tb-ic tb-ic-sm tb-pause-i" aria-hidden="true"><use href="#tb-i-pause" /></svg><svg class="tb-ic tb-ic-sm tb-play-i" aria-hidden="true"><use href="#tb-i-play" /></svg></button>
+  </div>
+</div>

@@ -1,0 +1,155 @@
+<!-- Motor de crecimiento · animación del hero en 5 escenas
+     Flujo automatizado → Chat con agente de IA → Calendario → Recordatorios → Pipeline (cerrado ganado)
+     Lienzo fijo de 500×420 que se escala al ancho disponible. Datos ficticios (Estética Lumina, Sofía M.). -->
+<div class="tb-he" data-tb-engine>
+  <div class="tb-he-glow" aria-hidden="true"></div>
+  <div class="tb-he-window">
+    <div class="tb-he-bar" aria-hidden="true">
+      <span class="tb-he-dots"><i></i><i></i><i></i></span>
+      <span class="tb-he-title">Flujo · Nueva cita por WhatsApp</span>
+      <span class="tb-he-live">En vivo</span>
+    </div>
+
+    <div class="tb-he-stage" role="img" aria-label="Demostración: un flujo automatizado se activa, un agente de IA agenda una cita por WhatsApp, la cita aparece en el calendario, se envían recordatorios automáticos y la oportunidad pasa a cerrado ganado en el pipeline.">
+      <div class="tb-he-canvas" aria-hidden="true">
+
+        <!-- ===== 1 · Flujo automatizado (estilo editor de nodos) ===== -->
+        <section class="tb-he-scene tb-he-flow is-active" data-title="Flujo · Nueva cita por WhatsApp">
+          <div class="tb-he-flow-top">
+            <span class="tb-he-pill is-green">Activo</span>
+            <span class="tb-he-meta">Ejecuciones hoy <b class="tb-he-runs">1,284</b></span>
+          </div>
+          <svg class="tb-he-edges" viewBox="0 0 500 420" width="500" height="420">
+            <path class="tb-he-edge" id="tb-he-e1" d="M150 210 L177 210" pathLength="1" />
+            <path class="tb-he-edge" id="tb-he-e2" d="M319 210 C336 210 326 93 344 93" pathLength="1" />
+            <path class="tb-he-edge" id="tb-he-e3" d="M319 210 L344 210" pathLength="1" />
+            <path class="tb-he-edge" id="tb-he-e4" d="M319 210 C336 210 326 327 344 327" pathLength="1" />
+            <circle class="tb-he-pulse" r="5" cx="-20" cy="-20" />
+            <circle class="tb-he-pulse" r="5" cx="-20" cy="-20" />
+            <circle class="tb-he-pulse" r="5" cx="-20" cy="-20" />
+            <circle class="tb-he-pulse" r="5" cx="-20" cy="-20" />
+          </svg>
+          <div class="tb-he-node" style="--x:8px;--y:181px;--i:0;--c:#25d366">
+            <span class="tb-he-node-ic"><svg class="tb-ic"><use href="#tb-i-wa" /></svg></span>
+            <span><b>WhatsApp</b><small>Mensaje nuevo</small></span>
+            <span class="tb-he-ok"><svg class="tb-ic"><use href="#tb-i-check" /></svg></span>
+          </div>
+          <div class="tb-he-node is-ai" style="--x:177px;--y:181px;--i:1;--c:#7c5cff">
+            <span class="tb-he-node-ic"><svg class="tb-ic"><use href="#tb-i-bot" /></svg></span>
+            <span><b>Agente de IA</b><small>Responde y agenda</small></span>
+            <span class="tb-he-ok"><svg class="tb-ic"><use href="#tb-i-check" /></svg></span>
+          </div>
+          <div class="tb-he-node" style="--x:344px;--y:64px;--i:2;--c:#3b6bff">
+            <span class="tb-he-node-ic"><svg class="tb-ic"><use href="#tb-i-cal" /></svg></span>
+            <span><b>Calendario</b><small>Crear cita</small></span>
+            <span class="tb-he-ok"><svg class="tb-ic"><use href="#tb-i-check" /></svg></span>
+          </div>
+          <div class="tb-he-node" style="--x:344px;--y:181px;--i:3;--c:#0087a0">
+            <span class="tb-he-node-ic"><svg class="tb-ic"><use href="#tb-i-clock" /></svg></span>
+            <span><b>Recordatorios</b><small>WhatsApp, SMS y email</small></span>
+            <span class="tb-he-ok"><svg class="tb-ic"><use href="#tb-i-check" /></svg></span>
+          </div>
+          <div class="tb-he-node" style="--x:344px;--y:298px;--i:4;--c:#009151">
+            <span class="tb-he-node-ic"><svg class="tb-ic"><use href="#tb-i-kanban" /></svg></span>
+            <span><b>Pipeline</b><small>Mover etapa</small></span>
+            <span class="tb-he-ok"><svg class="tb-ic"><use href="#tb-i-check" /></svg></span>
+          </div>
+          <div class="tb-he-log"><svg class="tb-ic"><use href="#tb-i-zap" /></svg><span>Flujo ejecutado en 1.2 s · Sofía M.</span></div>
+        </section>
+
+        <!-- ===== 2 · Chat con agente de IA ===== -->
+        <section class="tb-he-scene tb-he-chat" data-title="WhatsApp · Estética Lumina">
+          <div class="tb-he-chat-head">
+            <span class="tb-he-av">S</span>
+            <span><b>Sofía M.</b><small>WhatsApp</small></span>
+            <span class="tb-he-pill is-violet"><svg class="tb-ic"><use href="#tb-i-spark" /></svg>IA activa 24/7</span>
+          </div>
+          <div class="tb-he-msgs">
+            <p class="tb-he-msg is-in m1">Hola, ¿tienen espacio para un facial esta semana?</p>
+            <p class="tb-he-typing t1"><i></i><i></i><i></i></p>
+            <p class="tb-he-msg is-out m2"><em>Agente de IA</em>¡Hola, Sofía! Tengo el jueves a las 4:30 p. m. o el viernes a las 10:00 a. m. ¿Cuál prefieres?</p>
+            <p class="tb-he-msg is-in m3">El jueves a las 4:30 👍</p>
+            <p class="tb-he-typing t2"><i></i><i></i><i></i></p>
+            <p class="tb-he-msg is-out m4"><em>Agente de IA</em>¡Listo! Tu cita quedó para el jueves a las 4:30 p. m. Te enviaré un recordatorio.</p>
+          </div>
+          <div class="tb-he-booked"><svg class="tb-ic"><use href="#tb-i-check" /></svg>Cita agendada · Jue 4:30 p. m.</div>
+        </section>
+
+        <!-- ===== 3 · Calendario ===== -->
+        <section class="tb-he-scene tb-he-cal" data-title="Calendario · Semana del 10 de noviembre">
+          <div class="tb-he-cal-days"><span></span><span>Lun 10</span><span>Mar 11</span><span>Mié 12</span><span class="is-today">Jue 13</span><span>Vie 14</span></div>
+          <div class="tb-he-cal-grid">
+            <span class="tb-he-cal-h" style="--r:0">10 a. m.</span><span class="tb-he-cal-h" style="--r:2">12 p. m.</span><span class="tb-he-cal-h" style="--r:4">2 p. m.</span><span class="tb-he-cal-h" style="--r:6">4 p. m.</span><span class="tb-he-cal-h" style="--r:8">6 p. m.</span>
+            <span class="tb-he-ev" style="--c:0;--t:1;--h:1;--i:0">Andrés P.</span>
+            <span class="tb-he-ev" style="--c:0;--t:6;--h:1;--i:1">José L.</span>
+            <span class="tb-he-ev" style="--c:1;--t:5;--h:1.5;--i:2">Laura G.</span>
+            <span class="tb-he-ev" style="--c:2;--t:2;--h:1;--i:3">Carlos G.</span>
+            <span class="tb-he-ev" style="--c:3;--t:2.5;--h:1;--i:4">María L.</span>
+            <span class="tb-he-ev" style="--c:4;--t:.5;--h:1;--i:5">Daniel V.</span>
+            <span class="tb-he-ev is-new" style="--c:3;--t:6.5;--h:1.4"><b>Sofía M. · Facial</b><small><svg class="tb-ic"><use href="#tb-i-spark" /></svg>Agendada por IA</small></span>
+          </div>
+          <div class="tb-he-toast"><svg class="tb-ic"><use href="#tb-i-clock" /></svg>Recordatorios activados</div>
+        </section>
+
+        <!-- ===== 4 · Recordatorios automáticos ===== -->
+        <section class="tb-he-scene tb-he-rem" data-title="Recordatorios automáticos">
+          <ol class="tb-he-strip">
+            <li class="r1"><svg class="tb-ic"><use href="#tb-i-cal" /></svg>Cita agendada</li>
+            <li class="r2"><svg class="tb-ic"><use href="#tb-i-mail" /></svg>Email</li>
+            <li class="r3"><svg class="tb-ic"><use href="#tb-i-clock" /></svg>24 h antes</li>
+            <li class="r4"><svg class="tb-ic"><use href="#tb-i-wa" /></svg>WhatsApp</li>
+          </ol>
+          <div class="tb-he-notes">
+            <div class="tb-he-note n1">
+              <span class="tb-he-note-ic" style="--c:#0087a0"><svg class="tb-ic"><use href="#tb-i-mail" /></svg></span>
+              <span><b>Confirmación de tu cita</b><small>Jue 13 nov · 4:30 p. m. · Estética Lumina</small></span>
+              <time>ahora</time>
+            </div>
+            <div class="tb-he-note tb-he-note-wa n2">
+              <span class="tb-he-note-ic" style="--c:#25d366"><svg class="tb-ic"><use href="#tb-i-wa" /></svg></span>
+              <span><b>Recordatorio: mañana a las 4:30 p. m.</b><small>Hola, Sofía. ¿Confirmas tu cita?</small></span>
+              <time>24 h antes</time>
+              <span class="tb-he-actions"><i class="tb-he-yes">✅ Confirmo</i><i>🔁 Reagendar</i></span>
+            </div>
+            <div class="tb-he-status"><span class="tb-he-st-old">Pendiente</span><span class="tb-he-st-new"><svg class="tb-ic"><use href="#tb-i-check" /></svg>Cita confirmada</span></div>
+          </div>
+          <svg class="tb-he-cursor" viewBox="0 0 24 24" width="26" height="26"><path d="M5 3l14 8-6.5 1.5L10 19z" /></svg>
+        </section>
+
+        <!-- ===== 5 · Pipeline: cerrado ganado ===== -->
+        <section class="tb-he-scene tb-he-pipe" data-title="Pipeline · Estética Lumina">
+          <div class="tb-he-col" style="--x:12px">
+            <header><b>Cita agendada</b><small><span class="tb-he-n" data-from="2" data-to="1">2</span> · <span class="tb-he-v" data-from="360" data-to="180">$360</span></small></header>
+          </div>
+          <div class="tb-he-col" style="--x:174px">
+            <header><b>Atendida</b><small>1 · $240</small></header>
+          </div>
+          <div class="tb-he-col is-won" style="--x:336px">
+            <header><b>Cerrado ganado</b><small><span class="tb-he-n" data-from="3" data-to="4">3</span> · <span class="tb-he-v" data-from="960" data-to="1140">$960</span></small></header>
+          </div>
+          <div class="tb-he-card is-hero" style="--x:20px;--y:64px"><b>Sofía M.</b><small>Facial · $180</small><span class="tb-he-won">Ganado</span></div>
+          <div class="tb-he-card is-next" style="--x:20px;--y:138px"><b>Carlos G.</b><small>Masaje · $180</small></div>
+          <div class="tb-he-card" style="--x:182px;--y:64px"><b>Laura G.</b><small>Paquete · $240</small></div>
+          <div class="tb-he-card is-done" style="--x:344px;--y:64px"><b>Ana P.</b><small>Facial · $180</small></div>
+          <div class="tb-he-card is-done" style="--x:344px;--y:138px"><b>José L.</b><small>Paquete · $480</small></div>
+          <div class="tb-he-card is-done" style="--x:344px;--y:212px"><b>Daniel V.</b><small>Masaje · $300</small></div>
+          <div class="tb-he-win">
+            <span class="tb-he-burst"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></span>
+            <svg class="tb-ic"><use href="#tb-i-star" /></svg><span><b>¡Oportunidad ganada!</b><small>Sofía M. · +$180</small></span>
+          </div>
+          <svg class="tb-he-cursor" viewBox="0 0 24 24" width="26" height="26"><path d="M5 3l14 8-6.5 1.5L10 19z" /></svg>
+        </section>
+
+      </div>
+    </div>
+  </div>
+
+  <div class="tb-he-rail" role="group" aria-label="Pasos de la demostración">
+    <button type="button" class="tb-he-step is-active"><span class="tb-he-fill"></span>Automatiza<span class="tb-sr">: ver paso 1, el flujo se activa</span></button>
+    <button type="button" class="tb-he-step"><span class="tb-he-fill"></span>Atiende<span class="tb-sr">: ver paso 2, la IA atiende y agenda</span></button>
+    <button type="button" class="tb-he-step"><span class="tb-he-fill"></span>Agenda<span class="tb-sr">: ver paso 3, la cita entra al calendario</span></button>
+    <button type="button" class="tb-he-step"><span class="tb-he-fill"></span>Recuerda<span class="tb-sr">: ver paso 4, se envían los recordatorios</span></button>
+    <button type="button" class="tb-he-step"><span class="tb-he-fill"></span>Cierra<span class="tb-sr">: ver paso 5, la venta se cierra</span></button>
+    <button type="button" class="tb-pause-btn tb-he-pause" data-tb-pause-btn aria-pressed="false" aria-label="Pausar animación"><svg class="tb-ic tb-ic-sm tb-pause-i" aria-hidden="true"><use href="#tb-i-pause" /></svg><svg class="tb-ic tb-ic-sm tb-play-i" aria-hidden="true"><use href="#tb-i-play" /></svg></button>
+  </div>
+</div>

@@ -1,0 +1,61 @@
+<!-- Datos estructurados de la home. [PENDIENTE] agregar URLs de redes en "sameAs". -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Organization",
+      "@id": "https://tellbid.io/#organization",
+      "name": "TellBid",
+      "legalName": "TellBid LLC",
+      "url": "https://tellbid.io/",
+      "logo": "https://tellbid.io/logo.png",
+      "email": "info@tellbid.io",
+      "telephone": "+1-904-780-6780",
+      "address": { "@type": "PostalAddress", "streetAddress": "8325 NE 2nd Ave, Ste 349", "addressLocality": "Miami", "addressRegion": "FL", "postalCode": "33138", "addressCountry": "US" },
+      "areaServed": ["US", "Latinoamérica"],
+      "knowsLanguage": ["es", "en"],
+      "contactPoint": [{ "@type": "ContactPoint", "telephone": "+1-904-780-6780", "contactType": "sales", "availableLanguage": ["Spanish", "English"] }],
+      "sameAs": []
+    },
+    {
+      "@type": "ProfessionalService",
+      "@id": "https://tellbid.io/#service",
+      "name": "TellBid · Growth Partner tecnológico",
+      "description": "Agencia de automatización y desarrollo de software: implementamos y gestionamos tu CRM todo en uno, automatizamos ventas, atención y marketing, y desarrollamos software a la medida para empresas hispanas en EE. UU. y Latinoamérica.",
+      "url": "https://tellbid.io/",
+      "provider": { "@id": "https://tellbid.io/#organization" },
+      "areaServed": ["US", "Latinoamérica"],
+      "priceRange": "Desde $99 USD/mes",
+      "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "Servicios de TellBid",
+        "itemListElement": [
+          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "CRM todo en uno, gestionado", "url": "https://tellbid.io/servicios#crm" }, "priceSpecification": { "@type": "UnitPriceSpecification", "price": 99, "priceCurrency": "USD", "unitText": "MONTH" } },
+          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Implementación y automatización", "url": "https://tellbid.io/servicios#implementacion" } },
+          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Software a la medida", "url": "https://tellbid.io/software-a-la-medida" } },
+          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Marketing y publicidad", "url": "https://tellbid.io/servicios#marketing" } }
+        ]
+      }
+    },
+    { "@type": "WebSite", "@id": "https://tellbid.io/#website", "url": "https://tellbid.io/", "name": "TellBid", "inLanguage": "es", "publisher": { "@id": "https://tellbid.io/#organization" } },
+    { "@type": "WebPage", "@id": "https://tellbid.io/#webpage", "url": "https://tellbid.io/", "name": "TellBid | Automatización, CRM y software para tu empresa", "isPartOf": { "@id": "https://tellbid.io/#website" }, "about": { "@id": "https://tellbid.io/#service" }, "inLanguage": "es" },
+    {
+      "@type": "FAQPage",
+      "@id": "https://tellbid.io/#faq",
+      "mainEntity": [
+        { "@type": "Question", "name": "¿Qué hace TellBid?", "acceptedAnswer": { "@type": "Answer", "text": "Somos tu Growth Partner tecnológico: implementamos tu CRM todo en uno, automatizamos tus ventas, tu atención y tu marketing, desarrollamos software a la medida y te acompañamos con soporte humano en español." } },
+        { "@type": "Question", "name": "¿Ustedes venden un software o un servicio?", "acceptedAnswer": { "@type": "Answer", "text": "Un servicio completo. Te damos la plataforma, pero lo importante es que la configuramos, la conectamos con tus herramientas y la mantenemos funcionando contigo." } },
+        { "@type": "Question", "name": "¿Qué incluye la implementación?", "acceptedAnswer": { "@type": "Answer", "text": "Diagnóstico, migración de tus contactos, configuración de pipelines, agenda y bandeja, flujos de automatización, agentes de IA, integraciones y capacitación de tu equipo." } },
+        { "@type": "Question", "name": "¿Cuánto tarda en estar funcionando?", "acceptedAnswer": { "@type": "Answer", "text": "Depende del alcance. En el diagnóstico te damos un calendario claro con cada etapa." } },
+        { "@type": "Question", "name": "¿Cuánto cuesta?", "acceptedAnswer": { "@type": "Answer", "text": "El CRM gestionado empieza en $99 USD/mes. La implementación, el software a la medida y el marketing se cotizan según tu caso, con una propuesta de precio cerrado después del diagnóstico." } },
+        { "@type": "Question", "name": "¿Necesito conocimientos técnicos?", "acceptedAnswer": { "@type": "Answer", "text": "No. Nosotros nos encargamos de la parte técnica y te enseñamos a usar lo que necesitas en el día a día." } },
+        { "@type": "Question", "name": "¿Puedo conectar las herramientas que ya uso?", "acceptedAnswer": { "@type": "Answer", "text": "Sí. Nos integramos con Shopify, Stripe, Zapier, webhooks y cualquier sistema con API. Si no existe la integración, la desarrollamos." } },
+        { "@type": "Question", "name": "¿Qué pasa con mis datos?", "acceptedAnswer": { "@type": "Answer", "text": "Tus datos son tuyos. Los migramos desde tus hojas de cálculo o tu CRM actual y puedes exportarlos cuando quieras." } },
+        { "@type": "Question", "name": "¿Trabajan con empresas fuera de Estados Unidos?", "acceptedAnswer": { "@type": "Answer", "text": "Sí. Trabajamos con negocios hispanos en Estados Unidos y en toda Latinoamérica, en español y en tu horario." } },
+        { "@type": "Question", "name": "¿Para qué tipo de negocios es?", "acceptedAnswer": { "@type": "Answer", "text": "Para cualquier empresa que atienda clientes y quiera vender más con menos trabajo manual: clínicas, spas, servicios del hogar, bienes raíces, seguros, restaurantes, academias, retail y servicios profesionales." } }
+      ]
+    }
+  ]
+}
+</script>

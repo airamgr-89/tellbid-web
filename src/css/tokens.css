@@ -1,0 +1,131 @@
+/* ============================================================
+   TellBid · Tokens de diseño
+   Primitivos: ui-color-palette · OKLCH · preset Tailwind (50–950), algoritmo v3
+   Fuentes: violet #7C5CFF · blue #3B6BFF · cyan #22D3EE · green #2EE59D
+            red #FF6B81 · amber #FBBC05 · neutral #4A5275
+   Semánticos: tema claro por defecto; las secciones oscuras usan
+   [data-tb-theme="dark"]. Contraste WCAG verificado (ver content/05-sistema-diseno.md).
+   ============================================================ */
+
+#tb-site {
+  /* ---------- Primitivos ---------- */
+  --tb-violet-50:#e9dfff; --tb-violet-100:#cfc2ff; --tb-violet-200:#b6a5ff; --tb-violet-300:#9e88ff;
+  --tb-violet-400:#876cff; --tb-violet-500:#7150ef; --tb-violet-600:#5d34d2; --tb-violet-700:#4913b4;
+  --tb-violet-800:#370093; --tb-violet-900:#250071; --tb-violet-950:#15004c;
+
+  --tb-blue-50:#bceeff; --tb-blue-100:#9dd2ff; --tb-blue-200:#80b6ff; --tb-blue-300:#659aff;
+  --tb-blue-400:#4c7fff; --tb-blue-500:#3664f4; --tb-blue-600:#2249d7; --tb-blue-700:#122eb8;
+  --tb-blue-800:#081097; --tb-blue-900:#060074; --tb-blue-950:#06004e;
+
+  --tb-cyan-50:#9dffff; --tb-cyan-100:#75ebff; --tb-cyan-200:#4bd2ea; --tb-cyan-300:#00b9d1;
+  --tb-cyan-400:#00a0b9; --tb-cyan-500:#0087a0; --tb-cyan-600:#006f87; --tb-cyan-700:#00576e;
+  --tb-cyan-800:#004055; --tb-cyan-900:#00293c; --tb-cyan-950:#001423;
+
+  --tb-green-50:#9dffd5; --tb-green-100:#75f4b8; --tb-green-200:#4adc9c; --tb-green-300:#00c382;
+  --tb-green-400:#00aa68; --tb-green-500:#009151; --tb-green-600:#00783b; --tb-green-700:#005f26;
+  --tb-green-800:#004713; --tb-green-900:#003003; --tb-green-950:#001900;
+
+  --tb-red-50:#ffcbd6; --tb-red-100:#ffacba; --tb-red-200:#ff8f9f; --tb-red-300:#fb7184;
+  --tb-red-400:#e1556c; --tb-red-500:#c63954; --tb-red-600:#aa1a3f; --tb-red-700:#8c002a;
+  --tb-red-800:#6e0018; --tb-red-900:#500008; --tb-red-950:#310000;
+
+  --tb-amber-50:#ffeb89; --tb-amber-100:#ffcf60; --tb-amber-200:#ebb431; --tb-amber-300:#d39a00;
+  --tb-amber-400:#ba8000; --tb-amber-500:#a16700; --tb-amber-600:#885000; --tb-amber-700:#6f3900;
+  --tb-amber-800:#552400; --tb-amber-900:#3c1000; --tb-amber-950:#230100;
+
+  --tb-neutral-50:#e8f0ff; --tb-neutral-100:#cdd6f8; --tb-neutral-200:#b3bce0; --tb-neutral-300:#99a3c8;
+  --tb-neutral-400:#818aaf; --tb-neutral-500:#6a7297; --tb-neutral-600:#535b7e; --tb-neutral-700:#3e4566;
+  --tb-neutral-800:#2a314e; --tb-neutral-900:#181d36; --tb-neutral-950:#080b1e;
+
+  /* Superficies de marca (fuera de escala: fondos claros y oscuros de la web y los videos) */
+  --tb-white:#ffffff; --tb-lavender:#f6f4ff; --tb-lavender-2:#eeebfb; --tb-ink:#0b1024;
+  --tb-navy:#070b1a; --tb-navy-2:#0a1024; --tb-navy-3:#0f1631; --tb-navy-4:#151d3f;
+
+  /* Canales (colores de marca de terceros, solo como acento no textual) */
+  --tb-ch-whatsapp:#25d366; --tb-ch-instagram:#e1306c; --tb-ch-messenger:#0084ff; --tb-ch-google:#fbbc05;
+  --tb-ch-sms:#a78bfa; --tb-ch-email:#22d3ee; --tb-ch-web:#7c5cff;
+
+  /* ---------- Semánticos · tema claro (por defecto) ---------- */
+  --tb-bg:var(--tb-white);
+  --tb-bg-soft:var(--tb-lavender);            /* secciones alternas */
+  --tb-surface:var(--tb-white);
+  --tb-surface-2:var(--tb-lavender-2);
+  --tb-border:#e3e2f0;
+  --tb-border-strong:var(--tb-neutral-200);
+  --tb-text:var(--tb-ink);                    /* 18.9:1 sobre blanco */
+  --tb-text-muted:var(--tb-neutral-700);      /* 9.3:1 */
+  --tb-text-dim:var(--tb-neutral-600);        /* 6.6:1 */
+  --tb-primary:var(--tb-violet-600);          /* texto blanco 7.3:1 */
+  --tb-primary-hover:var(--tb-violet-700);
+  --tb-primary-soft:var(--tb-violet-50);
+  --tb-on-primary:var(--tb-white);
+  --tb-link:var(--tb-violet-600);
+  --tb-accent:var(--tb-cyan-700);             /* eyebrows · 8.1:1 */
+  --tb-success:var(--tb-green-700);
+  --tb-success-soft:#e3fbef;
+  --tb-danger:var(--tb-red-600);
+  --tb-danger-soft:#ffeef1;
+  --tb-star:var(--tb-amber-200);              /* solo iconos */
+  --tb-focus:var(--tb-blue-500);
+  --tb-grad:linear-gradient(135deg,#7c5cff 0%,#3b6bff 55%,#22d3ee 100%);
+  --tb-grad-btn:linear-gradient(135deg,var(--tb-violet-600) 0%,var(--tb-blue-600) 100%);
+  --tb-grad-text:linear-gradient(120deg,var(--tb-violet-600) 0%,var(--tb-blue-600) 60%,var(--tb-cyan-600) 100%);
+  --tb-glow:radial-gradient(600px 300px at 10% 0%,rgba(124,92,255,.14),transparent 70%),
+            radial-gradient(520px 280px at 100% 100%,rgba(34,211,238,.14),transparent 70%);
+
+  /* ---------- Tipografía ---------- */
+  --tb-fh:'Plus Jakarta Sans',system-ui,-apple-system,'Segoe UI',Roboto,sans-serif;
+  --tb-fb:'Inter',system-ui,-apple-system,'Segoe UI',Roboto,sans-serif;
+  --tb-fs-h1:clamp(40px,5.6vw,68px);
+  --tb-fs-h2:clamp(30px,4vw,48px);
+  --tb-fs-h3:clamp(20px,2vw,24px);
+  --tb-fs-lead:clamp(17px,1.4vw,20px);
+  --tb-fs-body:16px;
+  --tb-fs-sm:14px;
+  --tb-fs-xs:12.5px;
+
+  /* ---------- Espaciado (4/8 pt), radios, sombras ---------- */
+  --tb-s1:4px; --tb-s2:8px; --tb-s3:12px; --tb-s4:16px; --tb-s5:24px; --tb-s6:32px; --tb-s7:48px; --tb-s8:64px; --tb-s9:96px;
+  --tb-section-y:clamp(72px,9vw,112px);
+  --tb-wrap:1200px; --tb-gutter:clamp(16px,3vw,24px); --tb-hh:72px;
+  --tb-r-sm:12px; --tb-r:16px; --tb-r-lg:24px; --tb-r-xl:32px; --tb-r-pill:999px;
+  --tb-shadow-1:0 1px 2px rgba(11,16,36,.06),0 2px 8px -2px rgba(11,16,36,.06);
+  --tb-shadow-2:0 12px 32px -12px rgba(36,24,110,.18),0 2px 6px -2px rgba(11,16,36,.06);
+  --tb-shadow-3:0 30px 70px -28px rgba(36,24,110,.35),0 0 0 1px rgba(93,52,210,.06);
+  --tb-shadow-btn:0 10px 26px -10px rgba(93,52,210,.6);
+
+  /* ---------- Movimiento ---------- */
+  --tb-ease:cubic-bezier(.2,.8,.2,1);
+  --tb-ease-spring:cubic-bezier(.3,1.6,.5,1);
+  --tb-d-fast:150ms; --tb-d:250ms; --tb-d-slow:600ms;
+}
+
+/* ---------- Semánticos · tema oscuro (por sección) ---------- */
+#tb-site [data-tb-theme="dark"] {
+  --tb-bg:var(--tb-navy);
+  --tb-bg-soft:var(--tb-navy-2);
+  --tb-surface:var(--tb-navy-3);
+  --tb-surface-2:var(--tb-navy-4);
+  --tb-border:rgba(255,255,255,.09);
+  --tb-border-strong:rgba(255,255,255,.18);
+  --tb-text:#eef1ff;                          /* 17.4:1 */
+  --tb-text-muted:var(--tb-neutral-200);      /* 10.4:1 */
+  --tb-text-dim:var(--tb-neutral-300);        /* 7.9:1 */
+  --tb-primary:var(--tb-violet-600);
+  --tb-primary-hover:var(--tb-violet-500);
+  --tb-primary-soft:rgba(124,92,255,.16);
+  --tb-link:var(--tb-violet-300);             /* 6.9:1 */
+  --tb-accent:var(--tb-cyan-200);             /* 10.9:1 */
+  --tb-success:var(--tb-green-200);
+  --tb-success-soft:rgba(46,229,157,.12);
+  --tb-danger:var(--tb-red-300);
+  --tb-danger-soft:rgba(255,107,129,.12);
+  --tb-focus:var(--tb-cyan-200);
+  --tb-grad-text:linear-gradient(120deg,#9e88ff 0%,#659aff 55%,#4bd2ea 100%);
+  --tb-glow:radial-gradient(700px 360px at 15% 0%,rgba(124,92,255,.32),transparent 70%),
+            radial-gradient(560px 320px at 95% 90%,rgba(34,211,238,.22),transparent 70%);
+  --tb-shadow-2:0 24px 50px -24px rgba(0,0,0,.8);
+  --tb-shadow-3:0 0 0 1px rgba(255,255,255,.06),0 40px 90px -30px rgba(0,0,0,.9),0 0 100px -30px rgba(124,92,255,.45);
+  color:var(--tb-text);
+  background:var(--tb-bg);
+}

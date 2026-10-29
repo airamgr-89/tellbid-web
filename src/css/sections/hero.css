@@ -1,0 +1,89 @@
+/* ============================================================
+   Hero · rejilla de dos columnas, orden móvil y fondo animado
+   ============================================================ */
+
+/* ---------- Rejilla ---------- */
+#tb-site .tb-hero { --tb-first-pt: calc(var(--tb-section-y) * .85); }
+#tb-site .tb-hero-grid { display: grid; grid-template-columns: minmax(0, 1.12fr) minmax(0, .88fr); gap: clamp(32px, 5vw, 72px); align-items: center; }
+#tb-site .tb-hero-h { max-width: 14ch; margin-top: 24px; }
+#tb-site .tb-hero-lead { margin-top: 24px; }
+#tb-site .tb-hero-trust { margin-top: 28px; }
+
+/* ---------- Tablet y móvil: titular → animación → texto → botones ----------
+   La columna de texto se «disuelve» (display: contents) para poder intercalar la animación. */
+@media (max-width: 1080px) {
+  #tb-site .tb-hero-grid { grid-template-columns: minmax(0, 1fr); gap: 0; }
+  #tb-site .tb-hero-copy { display: contents; }
+  #tb-site .tb-hero-badge { order: 1; justify-self: start; }
+  #tb-site .tb-hero-h { order: 2; max-width: 18ch; }
+  #tb-site .tb-hero-visual { order: 3; margin-top: 28px; width: 100%; max-width: 620px; justify-self: center; }
+  #tb-site .tb-hero-lead { order: 4; margin-top: 32px; }
+  #tb-site .tb-hero-ctas { order: 5; }
+  #tb-site .tb-hero-trust { order: 6; }
+}
+@media (max-width: 640px) {
+  /* Prioridad: que la animación entre en la primera pantalla del teléfono */
+  #tb-site .tb-hero { --tb-first-pt: 18px; padding-bottom: 56px; }
+  #tb-site .tb-hero-badge { display: none; }
+  #tb-site .tb-hero-h { margin-top: 0; font-size: clamp(31px, 8.6vw, 38px); line-height: 1.06; letter-spacing: -.03em; }
+  #tb-site .tb-hero-visual { margin-top: 20px; }
+  #tb-site .tb-hero-lead { margin-top: 28px; font-size: 16.5px; }
+  #tb-site .tb-hero-trust { margin-top: 22px; }
+}
+
+/* ---------- Fondo animado ---------- */
+#tb-site .tb-hero::before { display: none; } /* el resplandor estático lo reemplazan las auroras */
+#tb-site .tb-hero-bg { position: absolute; inset: 0; z-index: -1; overflow: hidden; pointer-events: none; }
+
+/* Auroras: tres luces de marca que derivan muy despacio */
+#tb-site .tb-aurora i {
+  position: absolute; border-radius: 50%; filter: blur(70px); will-change: transform;
+  animation: tb-drift-a 24s ease-in-out infinite alternate;
+}
+#tb-site .tb-aurora i:nth-child(1) { width: 62vmax; height: 46vmax; left: -18vmax; top: -22vmax; background: radial-gradient(closest-side, rgba(124,92,255,.62), transparent); }
+#tb-site .tb-aurora i:nth-child(2) { width: 52vmax; height: 40vmax; right: -16vmax; bottom: -20vmax; background: radial-gradient(closest-side, rgba(34,211,238,.42), transparent); animation-name: tb-drift-b; animation-duration: 28s; }
+#tb-site .tb-aurora i:nth-child(3) { width: 40vmax; height: 30vmax; left: 34%; top: 18%; background: radial-gradient(closest-side, rgba(59,107,255,.34), transparent); animation-name: tb-drift-c; animation-duration: 32s; }
+@keyframes tb-drift-a { 0% { transform: translate(0, 0) scale(1); } 100% { transform: translate(14vmax, 10vmax) scale(1.15); } }
+@keyframes tb-drift-b { 0% { transform: translate(0, 0) scale(1.05); } 100% { transform: translate(-16vmax, -8vmax) scale(.9); } }
+@keyframes tb-drift-c { 0% { transform: translate(0, 0) scale(.9); } 50% { transform: translate(-10vmax, 6vmax) scale(1.1); } 100% { transform: translate(8vmax, -4vmax) scale(1); } }
+
+/* Señales: destellos que viajan sobre las filas y columnas de la retícula de puntos (28 px) */
+#tb-site .tb-signals {
+  position: absolute; inset: 0;
+  -webkit-mask-image: radial-gradient(ellipse 75% 65% at 50% 45%, #000 25%, transparent 80%);
+          mask-image: radial-gradient(ellipse 75% 65% at 50% 45%, #000 25%, transparent 80%);
+}
+#tb-site .tb-signals i {
+  position: absolute; left: 0; top: calc(14px + var(--y) * 28px - 1px);
+  width: 140px; height: 2px; border-radius: 2px; opacity: 0;
+  background: linear-gradient(90deg, transparent, rgba(75,210,234,.25) 40%, rgba(158,136,255,.95));
+  box-shadow: 0 0 10px rgba(124,92,255,.55);
+  animation: tb-signal-x var(--d) linear var(--w) infinite;
+}
+#tb-site .tb-signals i.is-v {
+  left: calc(14px + var(--x) * 28px - 1px); top: 0; width: 2px; height: 140px;
+  background: linear-gradient(180deg, transparent, rgba(75,210,234,.25) 40%, rgba(75,210,234,.95));
+  box-shadow: 0 0 10px rgba(34,211,238,.5);
+  animation-name: tb-signal-y;
+}
+@keyframes tb-signal-x {
+  0% { transform: translateX(-160px); opacity: 0; }
+  8%, 85% { opacity: 1; }
+  100% { transform: translateX(calc(100vw + 40px)); opacity: 0; }
+}
+@keyframes tb-signal-y {
+  0% { transform: translateY(-160px); opacity: 0; }
+  8%, 85% { opacity: 1; }
+  100% { transform: translateY(1100px); opacity: 0; }
+}
+
+/* Se pausa fuera de pantalla (core.js añade .is-paused) */
+#tb-site [data-tb-pause].is-paused, #tb-site [data-tb-pause].is-paused * { animation-play-state: paused !important; }
+
+@media (max-width: 640px) {
+  #tb-site .tb-aurora i { filter: blur(50px); }
+  #tb-site .tb-signals i:nth-child(n+5):not(.is-v), #tb-site .tb-signals i.is-v:nth-child(n+9) { display: none; }
+}
+@media (prefers-reduced-motion: reduce) {
+  #tb-site .tb-signals { display: none; }
+}

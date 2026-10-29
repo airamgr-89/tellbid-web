@@ -1,0 +1,17 @@
+# Dependencias y vista previa local
+node_modules/
+preview/*.html
+!preview/index.html
+
+# Material interno (solo en el equipo, no se publica)
+legacy/
+guiones de videos de marketing/
+content/
+.claude/
+
+# Copias sueltas de imágenes en la raíz (las válidas están en assets/img)
+/tellbid-logo-web.png
+/tellbid-og-1200x630*.jpg
+
+.DS_Store
+Thumbs.db

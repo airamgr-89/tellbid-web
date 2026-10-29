@@ -1,0 +1,90 @@
+/* ============================================================
+   Base · reset acotado a #tb-site (GHL inyecta estilos globales)
+   ============================================================ */
+#tb-site, #tb-site *, #tb-site *::before, #tb-site *::after { box-sizing: border-box; }
+
+#tb-site {
+  font-family: var(--tb-fb);
+  font-size: var(--tb-fs-body);
+  line-height: 1.6;
+  color: var(--tb-text);
+  background: var(--tb-bg);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+  overflow-x: clip;
+  width: 100%;
+}
+
+#tb-site :where(h1, h2, h3, h4, p, ul, ol, figure, blockquote, dl, dd) { margin: 0; padding: 0; }
+#tb-site :where(ul, ol) { list-style: none; }
+#tb-site :where(img, svg, video, iframe) { display: block; max-width: 100%; }
+#tb-site :where(a) { color: inherit; text-decoration: none; }
+#tb-site :where(button, input, select, textarea) { font: inherit; color: inherit; }
+#tb-site :where(button) { background: none; border: 0; padding: 0; cursor: pointer; }
+#tb-site :where(h1, h2, h3, h4) {
+  font-family: var(--tb-fh);
+  font-weight: 800;
+  line-height: 1.12;
+  letter-spacing: -0.022em;
+  color: var(--tb-text);
+  text-wrap: balance;
+}
+#tb-site :where(p) { text-wrap: pretty; }
+#tb-site :where(strong, b) { font-weight: 700; }
+#tb-site [hidden] { display: none !important; }
+
+#tb-site :focus-visible {
+  outline: 2px solid var(--tb-focus);
+  outline-offset: 3px;
+  border-radius: 6px;
+}
+
+#tb-site .tb-sr {
+  position: absolute !important; width: 1px; height: 1px; padding: 0; margin: -1px;
+  overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; border: 0;
+}
+
+#tb-site .tb-skip {
+  position: absolute; left: 16px; top: -60px; z-index: 1000;
+  background: var(--tb-primary); color: var(--tb-on-primary);
+  padding: 10px 16px; border-radius: var(--tb-r-sm); font-weight: 600;
+  transition: top var(--tb-d) var(--tb-ease);
+}
+#tb-site .tb-skip:focus { top: 12px; }
+
+/* ---------- Tipografía ---------- */
+#tb-site :is(.tb-h1, .tb-h2, .tb-h3, .tb-h4) { font-family: var(--tb-fh); font-weight: 800; color: var(--tb-text); text-wrap: balance; }
+#tb-site .tb-h1 { font-size: var(--tb-fs-h1); letter-spacing: -0.035em; line-height: 1.04; }
+#tb-site .tb-h2 { font-size: var(--tb-fs-h2); letter-spacing: -0.028em; line-height: 1.08; }
+#tb-site .tb-h3 { font-size: var(--tb-fs-h3); letter-spacing: -0.015em; line-height: 1.25; font-weight: 700; }
+#tb-site .tb-h4 { font-size: 17px; letter-spacing: -0.01em; line-height: 1.35; font-weight: 700; }
+#tb-site .tb-lead { font-size: var(--tb-fs-lead); line-height: 1.55; color: var(--tb-text-muted); max-width: 62ch; }
+#tb-site .tb-body { color: var(--tb-text-muted); }
+#tb-site .tb-small { font-size: var(--tb-fs-sm); color: var(--tb-text-dim); }
+
+/* Segunda línea del titular: el «quién lo hace posible». Línea propia, tono de marca, sin degradado. */
+#tb-site .tb-h-second { display: block; color: var(--tb-primary); }
+#tb-site [data-tb-theme="dark"] .tb-h-second { color: var(--tb-link); }
+
+/* Eyebrow: en minúsculas, con el «nodo conectado» que es el motivo de la marca */
+#tb-site .tb-eyebrow {
+  display: inline-flex; align-items: center; gap: 10px;
+  font-family: var(--tb-fb); font-size: 14.5px; font-weight: 600; letter-spacing: 0;
+  color: var(--tb-accent);
+  margin-bottom: 16px;
+}
+#tb-site .tb-eyebrow::before {
+  /* nodo hueco + conector: el «nodo» del sistema, no una flecha */
+  content: ""; width: 10px; height: 10px; flex: none; border-radius: 50%;
+  border: 2px solid currentColor;
+  box-shadow: 0 0 0 3px color-mix(in srgb, currentColor 16%, transparent);
+}
+
+#tb-site .tb-num { font-variant-numeric: tabular-nums; }
+
+/* ---------- Iconos (sprite) ---------- */
+#tb-site .tb-ic { width: 20px; height: 20px; flex: none; fill: none; stroke: currentColor; stroke-width: 1.8; stroke-linecap: round; stroke-linejoin: round; }
+#tb-site .tb-ic-sm { width: 16px; height: 16px; }
+#tb-site .tb-ic-lg { width: 24px; height: 24px; }
+#tb-site .tb-sprite { position: absolute; width: 0; height: 0; overflow: hidden; }

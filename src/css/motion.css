@@ -1,0 +1,20 @@
+/* ============================================================
+   Movimiento · una sola entrada orquestada por sección (no en cada tarjeta)
+   El contenido es visible sin JS: solo se oculta cuando core.js añade .tb-js
+   ============================================================ */
+#tb-site.tb-js .tb-rv { opacity: 0; transform: translateY(18px); transition: opacity .7s var(--tb-ease), transform .7s var(--tb-ease); }
+#tb-site.tb-js .tb-rv.tb-in { opacity: 1; transform: none; }
+#tb-site.tb-js .tb-rv-d1 { transition-delay: .08s; }
+#tb-site.tb-js .tb-rv-d2 { transition-delay: .16s; }
+#tb-site.tb-js .tb-rv-d3 { transition-delay: .24s; }
+
+@media (prefers-reduced-motion: reduce) {
+  #tb-site *, #tb-site *::before, #tb-site *::after {
+    animation-duration: .01ms !important; animation-iteration-count: 1 !important;
+    transition-duration: .01ms !important; scroll-behavior: auto !important;
+  }
+  #tb-site.tb-js .tb-rv { opacity: 1; transform: none; }
+  #tb-site .tb-marquee-track { animation: none; flex-wrap: wrap; width: auto; justify-content: center; }
+  #tb-site .tb-marquee { -webkit-mask-image: none; mask-image: none; }
+  #tb-site .tb-marquee-track [aria-hidden="true"] { display: none; }
+}

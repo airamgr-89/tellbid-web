@@ -1,0 +1,519 @@
+<!---
+page: home
+css: home
+title: TellBid | Automatización, CRM y software para tu empresa
+description: Implementamos tu CRM, automatizamos ventas, atención y marketing, y desarrollamos software a la medida. Tu Growth Partner en español.
+--->
+<!-- @include header -->
+<main class="tb-main" id="tb-main">
+
+  <!-- =====================================================================
+       1 · HERO (en móvil: titular → animación → texto → botones)
+       ===================================================================== -->
+  <section class="tb-sec tb-hero" id="inicio" data-tb-theme="dark" aria-labelledby="tb-hero-h">
+    <!-- @include hero-bg -->
+    <div class="tb-wrap tb-hero-grid">
+      <div class="tb-hero-copy">
+        <span class="tb-badge tb-hero-badge"><b>Growth Partner</b> Tecnología para negocios hispanos</span>
+        <h1 id="tb-hero-h" class="tb-h1 tb-hero-h">Tu empresa en piloto automático. <span class="tb-h-second">Nosotros lo hacemos posible.</span></h1>
+        <p class="tb-lead tb-hero-lead">Implementamos tu CRM, automatizamos tus ventas, tu atención y tu marketing, y desarrollamos el software que tu empresa necesita. Todo conectado y con un equipo humano que te acompaña en español.</p>
+        <div class="tb-ctas tb-hero-ctas" data-tb-hero-ctas>
+          <a class="tb-btn tb-btn-primary tb-btn-lg" href="#diagnostico" data-tb-cta="hero">Agenda tu diagnóstico gratis <svg class="tb-ic tb-ic-go" aria-hidden="true"><use href="#tb-i-arrow" /></svg></a>
+          <a class="tb-btn tb-btn-secondary tb-btn-lg" href="#soluciones">Ver soluciones</a>
+        </div>
+        <ul class="tb-checks tb-checks-row tb-hero-trust">
+          <li>Diagnóstico sin costo</li>
+          <li>Implementación llave en mano</li>
+          <li>Soporte humano en español</li>
+        </ul>
+      </div>
+      <div class="tb-hero-visual">
+        <!-- @include hero-engine -->
+      </div>
+    </div>
+  </section>
+
+  <!-- =====================================================================
+       2 · LOGOS DE CLIENTES  [PENDIENTE: reemplazar los marcadores por logos reales con permiso]
+       ===================================================================== -->
+  <section class="tb-logos" aria-labelledby="tb-logos-h">
+    <div class="tb-wrap"><h2 id="tb-logos-h" class="tb-logos-title">Empresas que ya trabajan con un sistema TellBid</h2></div>
+    <div class="tb-marquee">
+      <div class="tb-marquee-track">
+        <div class="tb-marquee-set">
+          <span class="tb-marquee-item tb-logo-ph">Logo cliente</span><span class="tb-marquee-item tb-logo-ph">Logo cliente</span><span class="tb-marquee-item tb-logo-ph">Logo cliente</span><span class="tb-marquee-item tb-logo-ph">Logo cliente</span><span class="tb-marquee-item tb-logo-ph">Logo cliente</span><span class="tb-marquee-item tb-logo-ph">Logo cliente</span><span class="tb-marquee-item tb-logo-ph">Logo cliente</span><span class="tb-marquee-item tb-logo-ph">Logo cliente</span>
+        </div>
+        <div class="tb-marquee-set" aria-hidden="true">
+          <span class="tb-marquee-item tb-logo-ph">Logo cliente</span><span class="tb-marquee-item tb-logo-ph">Logo cliente</span><span class="tb-marquee-item tb-logo-ph">Logo cliente</span><span class="tb-marquee-item tb-logo-ph">Logo cliente</span><span class="tb-marquee-item tb-logo-ph">Logo cliente</span><span class="tb-marquee-item tb-logo-ph">Logo cliente</span><span class="tb-marquee-item tb-logo-ph">Logo cliente</span><span class="tb-marquee-item tb-logo-ph">Logo cliente</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- =====================================================================
+       3 · EL PROBLEMA
+       ===================================================================== -->
+  <section class="tb-sec" id="problemas" aria-labelledby="tb-prob-h">
+    <div class="tb-wrap">
+      <div class="tb-head tb-rv">
+        <p class="tb-eyebrow">El problema</p>
+        <h2 id="tb-prob-h" class="tb-h2">¿Tu empresa depende de que alguien se acuerde?</h2>
+        <p class="tb-lead">No te faltan clientes: te faltan tiempo y un sistema. Así se escapa el dinero todos los días.</p>
+      </div>
+      <div class="tb-grid tb-g3 tb-rv tb-rv-d1">
+        <article class="tb-card tb-pain">
+          <div class="tb-ic-box is-red"><svg class="tb-ic" aria-hidden="true"><use href="#tb-i-moon" /></svg></div>
+          <h3>Mensajes que nadie contesta a tiempo</h3>
+          <p>Te escriben de noche o en hora pico, y quien responde primero se queda con la venta.</p>
+          <a class="tb-pain-cost" href="#soluciones" data-tb-open-tab="sol-t1"><svg class="tb-ic tb-ic-sm" aria-hidden="true"><use href="#tb-i-check" /></svg>Solución: atención 24/7 con IA</a>
+        </article>
+        <article class="tb-card tb-pain">
+          <div class="tb-ic-box is-red"><svg class="tb-ic" aria-hidden="true"><use href="#tb-i-calx" /></svg></div>
+          <h3>Citas a las que nadie llega</h3>
+          <p>Cada inasistencia es tiempo, personal y espacio que ya pagaste.</p>
+          <a class="tb-pain-cost" href="#soluciones" data-tb-open-tab="sol-t2"><svg class="tb-ic tb-ic-sm" aria-hidden="true"><use href="#tb-i-check" /></svg>Solución: recordatorios automáticos</a>
+        </article>
+        <article class="tb-card tb-pain">
+          <div class="tb-ic-box is-red"><svg class="tb-ic" aria-hidden="true"><use href="#tb-i-clock" /></svg></div>
+          <h3>Prospectos que se enfrían</h3>
+          <p>La mayoría no compra en el primer contacto, y el seguimiento depende de la memoria de alguien.</p>
+          <a class="tb-pain-cost" href="#automatizacion"><svg class="tb-ic tb-ic-sm" aria-hidden="true"><use href="#tb-i-check" /></svg>Solución: seguimiento automático</a>
+        </article>
+        <article class="tb-card tb-pain">
+          <div class="tb-ic-box is-red"><svg class="tb-ic" aria-hidden="true"><use href="#tb-i-kanban" /></svg></div>
+          <h3>Ventas que no sabes dónde están</h3>
+          <p>Todo vive entre chats, notas y Excel, y no sabes en qué etapa va cada cliente.</p>
+          <a class="tb-pain-cost" href="#soluciones" data-tb-open-tab="sol-t3"><svg class="tb-ic tb-ic-sm" aria-hidden="true"><use href="#tb-i-check" /></svg>Solución: pipeline de ventas</a>
+        </article>
+        <article class="tb-card tb-pain">
+          <div class="tb-ic-box is-red"><svg class="tb-ic" aria-hidden="true"><use href="#tb-i-layers" /></svg></div>
+          <h3>Cinco herramientas que no se hablan</h3>
+          <p>Pagas web, formularios, email, agenda y CRM por separado, y los datos se pierden entre una y otra.</p>
+          <a class="tb-pain-cost" href="#comparativa"><svg class="tb-ic tb-ic-sm" aria-hidden="true"><use href="#tb-i-check" /></svg>Solución: todo en un solo sistema</a>
+        </article>
+        <article class="tb-card tb-pain">
+          <div class="tb-ic-box is-red"><svg class="tb-ic" aria-hidden="true"><use href="#tb-i-star" /></svg></div>
+          <h3>Una reputación que nadie cuida</h3>
+          <p>Antes de visitarte, te buscan en Google, y sin reseñas no hay confianza.</p>
+          <a class="tb-pain-cost" href="#soluciones" data-tb-open-tab="sol-t5"><svg class="tb-ic tb-ic-sm" aria-hidden="true"><use href="#tb-i-check" /></svg>Solución: gestión de reseñas</a>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- =====================================================================
+       4 · SOLUCIONES (tabs)  [PENDIENTE: IDs de YouTube de los 5 videos en data-tb-video]
+       ===================================================================== -->
+  <section class="tb-sec tb-sec-soft" id="soluciones" aria-labelledby="tb-sol-h">
+    <!-- Anclas de la web anterior (enlaces en anuncios y emails) -->
+    <span class="tb-alias" id="bandeja-unificada" aria-hidden="true"></span><span class="tb-alias" id="agentes-ia" aria-hidden="true"></span>
+    <div class="tb-wrap">
+      <div class="tb-head tb-rv">
+        <p class="tb-eyebrow">Soluciones</p>
+        <h2 id="tb-sol-h" class="tb-h2">Lo que tu empresa consigue con un sistema bien implementado</h2>
+        <p class="tb-lead">Elige un resultado y te mostramos cómo funciona. Lo configuramos por ti y lo adaptamos a tu negocio.</p>
+      </div>
+
+      <div class="tb-sol tb-rv tb-rv-d1" data-tb-tabs>
+        <div class="tb-tablist" role="tablist" aria-label="Soluciones">
+          <button class="tb-tab" role="tab" id="sol-t1" aria-controls="sol-p1" aria-selected="true"><svg class="tb-ic tb-ic-sm" aria-hidden="true"><use href="#tb-i-bot" /></svg>Atiende 24/7</button>
+          <button class="tb-tab" role="tab" id="sol-t2" aria-controls="sol-p2" aria-selected="false" tabindex="-1"><svg class="tb-ic tb-ic-sm" aria-hidden="true"><use href="#tb-i-cal" /></svg>Llena tu agenda</button>
+          <button class="tb-tab" role="tab" id="sol-t3" aria-controls="sol-p3" aria-selected="false" tabindex="-1"><svg class="tb-ic tb-ic-sm" aria-hidden="true"><use href="#tb-i-kanban" /></svg>Controla tus ventas</button>
+          <button class="tb-tab" role="tab" id="sol-t4" aria-controls="sol-p4" aria-selected="false" tabindex="-1"><svg class="tb-ic tb-ic-sm" aria-hidden="true"><use href="#tb-i-target" /></svg>Capta prospectos</button>
+          <button class="tb-tab" role="tab" id="sol-t5" aria-controls="sol-p5" aria-selected="false" tabindex="-1"><svg class="tb-ic tb-ic-sm" aria-hidden="true"><use href="#tb-i-star" /></svg>Reputación</button>
+          <button class="tb-tab" role="tab" id="sol-t6" aria-controls="sol-p6" aria-selected="false" tabindex="-1"><svg class="tb-ic tb-ic-sm" aria-hidden="true"><use href="#tb-i-send" /></svg>Marketing y redes</button>
+        </div>
+
+        <!-- Tab 1 · Atiende 24/7 -->
+        <div class="tb-tabpanel tb-sol-panel" role="tabpanel" id="sol-p1" aria-labelledby="sol-t1">
+          <div class="tb-sol-copy">
+            <h3 class="tb-h3">Responde a cada cliente en segundos, a cualquier hora</h3>
+            <ul class="tb-checks">
+              <li>WhatsApp, Instagram, Messenger, Google, SMS, email y chat web en una sola bandeja.</li>
+              <li>Agentes de IA que responden, califican y agendan por ti.</li>
+              <li>Tu equipo toma la conversación cuando hace falta, con todo el historial.</li>
+            </ul>
+            <a class="tb-link" href="/soluciones#atencion-24-7">Cómo lo implementamos <svg class="tb-ic tb-ic-sm" aria-hidden="true"><use href="#tb-i-arrow" /></svg></a>
+          </div>
+          <!-- @include inbox -->
+        </div>
+
+        <!-- Tab 2 · Agenda -->
+        <div class="tb-tabpanel tb-sol-panel" role="tabpanel" id="sol-p2" aria-labelledby="sol-t2" hidden>
+          <div class="tb-sol-copy">
+            <h3 class="tb-h3">Cada cita perdida es dinero perdido. Recupéralo.</h3>
+            <ul class="tb-checks">
+              <li>Tus clientes agendan por WhatsApp y la IA confirma al instante.</li>
+              <li>Recordatorios automáticos por WhatsApp, SMS y email.</li>
+              <li>Confirman o reagendan con un solo mensaje.</li>
+            </ul>
+            <a class="tb-link" href="/soluciones#agenda">Cómo lo implementamos <svg class="tb-ic tb-ic-sm" aria-hidden="true"><use href="#tb-i-arrow" /></svg></a>
+          </div>
+          <div class="tb-video" data-tb-video="" style="--tb-poster-a:#2a1475">
+            <div class="tb-video-poster" aria-hidden="true"><span class="tb-video-tag">Video · 26 s</span><b>Cada cita perdida es dinero perdido</b></div>
+            <button class="tb-video-btn" type="button" aria-label="Ver video: cada cita perdida es dinero perdido"><span class="tb-video-play"><svg class="tb-ic" aria-hidden="true"><use href="#tb-i-play" /></svg></span><span class="tb-video-label">Ver video</span></button>
+          </div>
+        </div>
+
+        <!-- Tab 3 · Ventas -->
+        <div class="tb-tabpanel tb-sol-panel" role="tabpanel" id="sol-p3" aria-labelledby="sol-t3" hidden>
+          <div class="tb-sol-copy">
+            <h3 class="tb-h3">Sabes en qué etapa está cada venta, y ningún cliente se te escapa</h3>
+            <ul class="tb-checks">
+              <li>Todas tus oportunidades en un solo tablero, por etapa y por estado.</li>
+              <li>Mueves cada oportunidad con solo arrastrarla.</li>
+              <li>Cada cambio activa un seguimiento: un WhatsApp, una reseña o una campaña.</li>
+            </ul>
+            <a class="tb-link" href="/soluciones#ventas">Cómo lo implementamos <svg class="tb-ic tb-ic-sm" aria-hidden="true"><use href="#tb-i-arrow" /></svg></a>
+          </div>
+          <div class="tb-video" data-tb-video="" style="--tb-poster-a:#0b2a6b">
+            <div class="tb-video-poster" aria-hidden="true"><span class="tb-video-tag">Video · 28 s</span><b>¿En qué etapa está cada cliente?</b></div>
+            <button class="tb-video-btn" type="button" aria-label="Ver video: en qué etapa está cada cliente"><span class="tb-video-play"><svg class="tb-ic" aria-hidden="true"><use href="#tb-i-play" /></svg></span><span class="tb-video-label">Ver video</span></button>
+          </div>
+        </div>
+
+        <!-- Tab 4 · Captación -->
+        <div class="tb-tabpanel tb-sol-panel" role="tabpanel" id="sol-p4" aria-labelledby="sol-t4" hidden>
+          <div class="tb-sol-copy">
+            <h3 class="tb-h3">Todo tu embudo, listo y en un solo lugar</h3>
+            <ul class="tb-checks">
+              <li>Webs, landings y formularios que diseñamos contigo, también con IA.</li>
+              <li>Cada formulario asigna al vendedor, envía un WhatsApp y programa la llamada.</li>
+              <li>El prospecto entra solo a tu pipeline.</li>
+            </ul>
+            <a class="tb-link" href="/soluciones#captacion">Cómo lo implementamos <svg class="tb-ic tb-ic-sm" aria-hidden="true"><use href="#tb-i-arrow" /></svg></a>
+          </div>
+          <div class="tb-video" data-tb-video="" style="--tb-poster-a:#004055">
+            <div class="tb-video-poster" aria-hidden="true"><span class="tb-video-tag">Video · 29 s</span><b>Todo tu embudo, listo</b></div>
+            <button class="tb-video-btn" type="button" aria-label="Ver video: todo tu embudo, listo"><span class="tb-video-play"><svg class="tb-ic" aria-hidden="true"><use href="#tb-i-play" /></svg></span><span class="tb-video-label">Ver video</span></button>
+          </div>
+        </div>
+
+        <!-- Tab 5 · Reputación -->
+        <div class="tb-tabpanel tb-sol-panel" role="tabpanel" id="sol-p5" aria-labelledby="sol-t5" hidden>
+          <div class="tb-sol-copy">
+            <h3 class="tb-h3">Antes de visitarte, te buscan. Que encuentren lo mejor de ti.</h3>
+            <ul class="tb-checks">
+              <li>Invitación automática a dejar una reseña después de cada servicio.</li>
+              <li>Respuestas con IA a cada reseña, incluso a las negativas.</li>
+              <li>Más reseñas, mejor posición y más clientes que confían en ti.</li>
+            </ul>
+            <a class="tb-link" href="/soluciones#resenas">Cómo lo implementamos <svg class="tb-ic tb-ic-sm" aria-hidden="true"><use href="#tb-i-arrow" /></svg></a>
+          </div>
+          <div class="tb-video" data-tb-video="" style="--tb-poster-a:#552400">
+            <div class="tb-video-poster" aria-hidden="true"><span class="tb-video-tag">Video · 27 s</span><b>Antes de ir, te buscan</b></div>
+            <button class="tb-video-btn" type="button" aria-label="Ver video: antes de ir, te buscan"><span class="tb-video-play"><svg class="tb-ic" aria-hidden="true"><use href="#tb-i-play" /></svg></span><span class="tb-video-label">Ver video</span></button>
+          </div>
+        </div>
+
+        <!-- Tab 6 · Marketing -->
+        <div class="tb-tabpanel tb-sol-panel" role="tabpanel" id="sol-p6" aria-labelledby="sol-t6" hidden>
+          <div class="tb-sol-copy">
+            <h3 class="tb-h3">Publica una vez en todas tus redes y deja de perder los domingos</h3>
+            <ul class="tb-checks">
+              <li>Programa en Facebook, Instagram, Google Business y más, desde un solo calendario.</li>
+              <li>Campañas de email y SMS segmentadas por lo que hace cada cliente.</li>
+              <li>Comentarios en tu bandeja, con respuesta automática, y reportes descargables.</li>
+            </ul>
+            <a class="tb-link" href="/soluciones#marketing">Cómo lo implementamos <svg class="tb-ic tb-ic-sm" aria-hidden="true"><use href="#tb-i-arrow" /></svg></a>
+          </div>
+          <div class="tb-video" data-tb-video="" style="--tb-poster-a:#4913b4">
+            <div class="tb-video-poster" aria-hidden="true"><span class="tb-video-tag">Video · 30 s</span><b>¿Horas programando el mes?</b></div>
+            <button class="tb-video-btn" type="button" aria-label="Ver video: horas programando el mes"><span class="tb-video-play"><svg class="tb-ic" aria-hidden="true"><use href="#tb-i-play" /></svg></span><span class="tb-video-label">Ver video</span></button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- =====================================================================
+       5 · PILOTO AUTOMÁTICO (oscuro) · workflow animado
+       ===================================================================== -->
+  <section class="tb-sec" id="automatizacion" data-tb-theme="dark" aria-labelledby="tb-auto-h">
+    <span class="tb-alias" id="automatizaciones" aria-hidden="true"></span>
+    <div class="tb-wrap">
+      <div class="tb-head tb-head-split tb-rv">
+        <div>
+          <p class="tb-eyebrow">Automatización</p>
+          <h2 id="tb-auto-h" class="tb-h2">Tu negocio sigue trabajando <span class="tb-h-second">mientras duermes</span></h2>
+        </div>
+        <p class="tb-lead">Diseñamos los flujos que hoy dependen de alguien: responder, dar seguimiento, recordar, cobrar y pedir reseñas. Sin que tengas que programar nada.</p>
+      </div>
+      <!-- @include workflow -->
+      <div class="tb-grid tb-g4 tb-recipes tb-rv">
+        <div class="tb-recipe"><span class="tb-recipe-when">Cuando se completa una cita</span><span class="tb-recipe-do"><svg class="tb-ic tb-ic-sm" aria-hidden="true"><use href="#tb-i-star" /></svg>Pide una reseña en Google</span></div>
+        <div class="tb-recipe"><span class="tb-recipe-when">Cuando un cliente no llega</span><span class="tb-recipe-do"><svg class="tb-ic tb-ic-sm" aria-hidden="true"><use href="#tb-i-wa" /></svg>Le ofrece reagendar por WhatsApp</span></div>
+        <div class="tb-recipe"><span class="tb-recipe-when">Cuando llega un formulario</span><span class="tb-recipe-do"><svg class="tb-ic tb-ic-sm" aria-hidden="true"><use href="#tb-i-phone" /></svg>Asigna al vendedor y programa la llamada</span></div>
+        <div class="tb-recipe"><span class="tb-recipe-when">Cuando se gana una venta</span><span class="tb-recipe-do"><svg class="tb-ic tb-ic-sm" aria-hidden="true"><use href="#tb-i-dollar" /></svg>Envía la factura y la bienvenida</span></div>
+      </div>
+      <div class="tb-ctas">
+        <a class="tb-btn tb-btn-primary" href="#diagnostico" data-tb-cta="automatizacion">Quiero automatizar mi negocio <svg class="tb-ic tb-ic-go" aria-hidden="true"><use href="#tb-i-arrow" /></svg></a>
+      </div>
+    </div>
+  </section>
+
+  <!-- =====================================================================
+       6 · SERVICIOS
+       ===================================================================== -->
+  <section class="tb-sec" id="servicios" aria-labelledby="tb-serv-h">
+    <span class="tb-alias" id="todo-en-uno" aria-hidden="true"></span>
+    <div class="tb-wrap">
+      <div class="tb-head tb-rv">
+        <p class="tb-eyebrow">Servicios</p>
+        <h2 id="tb-serv-h" class="tb-h2">Un solo equipo para todo lo que tu empresa necesita para crecer</h2>
+      </div>
+      <div class="tb-grid tb-g2 tb-services tb-rv tb-rv-d1">
+        <article class="tb-service">
+          <div class="tb-ic-box"><svg class="tb-ic" aria-hidden="true"><use href="#tb-i-inbox" /></svg></div>
+          <h3>CRM todo en uno, gestionado</h3>
+          <p>La plataforma que centraliza clientes, conversaciones, agenda, ventas y marketing, configurada y mantenida por nosotros.</p>
+          <ul class="tb-checks">
+            <li>Bandeja unificada con WhatsApp API oficial</li>
+            <li>Agenda, pipeline, reseñas y automatizaciones</li>
+            <li>Soporte humano en español</li>
+          </ul>
+          <div class="tb-service-foot">
+            <p class="tb-price">Desde <span>$99</span> <small>USD/mes</small></p>
+            <a class="tb-link" href="/servicios#crm">Ver servicio <svg class="tb-ic tb-ic-sm" aria-hidden="true"><use href="#tb-i-arrow" /></svg></a>
+          </div>
+        </article>
+        <article class="tb-service">
+          <div class="tb-ic-box is-cyan"><svg class="tb-ic" aria-hidden="true"><use href="#tb-i-zap" /></svg></div>
+          <h3>Implementación y automatización</h3>
+          <p>Migramos tus datos, diseñamos tus pipelines, flujos y agentes de IA, e integramos tus herramientas. Llave en mano.</p>
+          <ul class="tb-checks">
+            <li>Diagnóstico de procesos y plan de trabajo</li>
+            <li>Flujos, agentes de IA e integraciones</li>
+            <li>Capacitación de tu equipo y entrega documentada</li>
+          </ul>
+          <div class="tb-service-foot">
+            <p class="tb-price"><span>A la medida</span></p>
+            <a class="tb-link" href="/servicios#implementacion">Ver servicio <svg class="tb-ic tb-ic-sm" aria-hidden="true"><use href="#tb-i-arrow" /></svg></a>
+          </div>
+        </article>
+        <article class="tb-service">
+          <div class="tb-ic-box is-blue"><svg class="tb-ic" aria-hidden="true"><use href="#tb-i-code" /></svg></div>
+          <h3>Software a la medida</h3>
+          <p>Apps, portales, integraciones con APIs y herramientas internas cuando lo que necesitas no existe.</p>
+          <ul class="tb-checks">
+            <li>Integraciones con tu ERP, facturación o e-commerce</li>
+            <li>Portales de clientes y apps web</li>
+            <li>Paneles y reportes a tu medida</li>
+          </ul>
+          <div class="tb-service-foot">
+            <p class="tb-price"><span>Por proyecto</span></p>
+            <a class="tb-link" href="/software-a-la-medida">Ver servicio <svg class="tb-ic tb-ic-sm" aria-hidden="true"><use href="#tb-i-arrow" /></svg></a>
+          </div>
+        </article>
+        <article class="tb-service">
+          <div class="tb-ic-box is-green"><svg class="tb-ic" aria-hidden="true"><use href="#tb-i-megaphone" /></svg></div>
+          <h3>Marketing y publicidad</h3>
+          <p>Campañas en Meta, Google y TikTok conectadas a tu CRM, para que cada prospecto tenga seguimiento y sepas qué te trae ventas.</p>
+          <ul class="tb-checks">
+            <li>Estrategia y gestión de campañas</li>
+            <li>Landings y embudos conectados al CRM</li>
+            <li>Reportes de retorno de inversión</li>
+          </ul>
+          <div class="tb-service-foot">
+            <p class="tb-price"><span>A la medida</span></p>
+            <a class="tb-link" href="/servicios#marketing">Ver servicio <svg class="tb-ic tb-ic-sm" aria-hidden="true"><use href="#tb-i-arrow" /></svg></a>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- =====================================================================
+       7 · CÓMO TRABAJAMOS
+       ===================================================================== -->
+  <section class="tb-sec" id="metodo" aria-labelledby="tb-met-h">
+    <div class="tb-wrap">
+      <div class="tb-head tb-rv">
+        <p class="tb-eyebrow">Cómo trabajamos</p>
+        <h2 id="tb-met-h" class="tb-h2">De la idea al sistema funcionando, contigo en cada paso</h2>
+      </div>
+      <ol class="tb-steps">
+        <li class="tb-step"><span class="tb-step-n">1</span><h3>Diagnóstico</h3><p>Analizamos cómo vendes y atiendes hoy, y dónde se te escapa el dinero.</p></li>
+        <li class="tb-step"><span class="tb-step-n">2</span><h3>Diseño de la solución</h3><p>Te proponemos el sistema, las automatizaciones y las integraciones, con un plan y un precio claros.</p></li>
+        <li class="tb-step"><span class="tb-step-n">3</span><h3>Implementación</h3><p>Lo configuramos, migramos tus datos, capacitamos a tu equipo y lo dejamos funcionando.</p></li>
+        <li class="tb-step"><span class="tb-step-n">4</span><h3>Acompañamiento y crecimiento</h3><p>Soporte humano, sesiones de estrategia y mejoras continuas a medida que creces.</p></li>
+      </ol>
+    </div>
+  </section>
+
+  <!-- =====================================================================
+       8 · CASOS DE ÉXITO  [PENDIENTE: 2–3 casos con cifras reales]
+       ===================================================================== -->
+  <section class="tb-sec tb-sec-soft" id="casos" aria-labelledby="tb-casos-h">
+    <span class="tb-alias" id="testimonios" aria-hidden="true"></span>
+    <div class="tb-wrap">
+      <div class="tb-head tb-rv">
+        <p class="tb-eyebrow">Casos de éxito</p>
+        <h2 id="tb-casos-h" class="tb-h2">Resultados reales de negocios como el tuyo</h2>
+      </div>
+      <div class="tb-grid tb-g3 tb-rv tb-rv-d1">
+        <article class="tb-case tb-case-ph">
+          <p class="tb-case-sector">Sector · [PENDIENTE]</p>
+          <h3>Nombre del cliente: el reto en una línea</h3>
+          <div class="tb-chips"><span class="tb-chip">Solución 1</span><span class="tb-chip">Solución 2</span></div>
+          <div class="tb-case-stats">
+            <div><span class="tb-stat-n">—</span><span class="tb-stat-l">Métrica real 1</span></div>
+            <div><span class="tb-stat-n">—</span><span class="tb-stat-l">Métrica real 2</span></div>
+          </div>
+          <p class="tb-small">Este espacio se llena con un caso real y sus cifras.</p>
+        </article>
+        <figure class="tb-card tb-quote">
+          <blockquote><p>«Desde que conocí TellBid pude automatizar toda la gestión de mis clientes en una sola plataforma, es una maravilla a un precio muy competitivo, lo recomiendo.»</p></blockquote>
+          <figcaption class="tb-person"><span class="tb-av" aria-hidden="true">GF</span><span><b>Geraldyn Francioni</b><span>Cliente de TellBid</span></span></figcaption>
+        </figure>
+        <figure class="tb-card tb-quote">
+          <blockquote><p>«Antes pagaba varias plataformas por separado, lo que hacía insostenible el crecimiento en el corto plazo. Con TellBid pude ahorrar mucho dinero y darle un impulso significativo a mi negocio.»</p></blockquote>
+          <figcaption class="tb-person"><span class="tb-av" aria-hidden="true">NM</span><span><b>Nairobi Martínez</b><span>Cliente de TellBid</span></span></figcaption>
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <!-- =====================================================================
+       9 · SOFTWARE A LA MEDIDA (oscuro) · editor animado
+       ===================================================================== -->
+  <section class="tb-sec" id="software" data-tb-theme="dark" aria-labelledby="tb-soft-h">
+    <div class="tb-wrap tb-split">
+      <div class="tb-rv">
+        <p class="tb-eyebrow">Software a la medida</p>
+        <h2 id="tb-soft-h" class="tb-h2">¿Lo que necesitas no existe? <span class="tb-h-second">Lo construimos.</span></h2>
+        <p class="tb-lead" style="margin-top:20px">Cuando tu operación necesita algo que ninguna herramienta resuelve, lo desarrollamos y lo conectamos con tu CRM.</p>
+        <div class="tb-chips" style="margin-top:28px">
+          <span class="tb-chip">Integraciones con APIs</span><span class="tb-chip">Portales de clientes</span><span class="tb-chip">Apps web y móviles</span><span class="tb-chip">Paneles y reportes</span><span class="tb-chip">Automatizaciones avanzadas</span>
+        </div>
+        <div class="tb-ctas">
+          <a class="tb-btn tb-btn-primary" href="#diagnostico" data-tb-cta="software" data-tb-need="interes-software">Cuéntanos tu proyecto <svg class="tb-ic tb-ic-go" aria-hidden="true"><use href="#tb-i-arrow" /></svg></a>
+          <a class="tb-btn tb-btn-secondary" href="/software-a-la-medida">Ver qué desarrollamos</a>
+        </div>
+      </div>
+      <div class="tb-rv tb-rv-d2">
+        <!-- @include code-editor -->
+      </div>
+    </div>
+  </section>
+
+  <!-- =====================================================================
+       10 · PLANES RESUMIDOS
+       ===================================================================== -->
+  <section class="tb-sec" id="planes" aria-labelledby="tb-planes-h">
+    <span class="tb-alias" id="precios" aria-hidden="true"></span>
+    <div class="tb-wrap">
+      <div class="tb-head tb-rv">
+        <p class="tb-eyebrow">Inversión</p>
+        <h2 id="tb-planes-h" class="tb-h2">Empieza con lo que necesitas hoy</h2>
+      </div>
+      <div class="tb-grid tb-g2 tb-plans tb-rv tb-rv-d1">
+        <article class="tb-plan">
+          <h3>CRM todo en uno, gestionado</h3>
+          <p class="tb-plan-price">Desde <b>$99</b> <span>USD/mes</span></p>
+          <p class="tb-body">Plataforma, bandeja, agenda, pipeline y automatizaciones, con soporte en español. Prueba de 14 días disponible.</p>
+          <ul class="tb-checks"><li>Configuración inicial incluida</li><li>WhatsApp Business API oficial</li><li>Actualizaciones y soporte</li></ul>
+          <div class="tb-ctas"><a class="tb-btn tb-btn-secondary" href="/servicios#crm">Ver planes</a></div>
+        </article>
+        <article class="tb-plan is-dark" data-tb-theme="dark">
+          <h3>Implementación, software y marketing</h3>
+          <p class="tb-plan-price"><b>A la medida</b></p>
+          <p class="tb-body">Después del diagnóstico te enviamos una propuesta con alcance y precio cerrados. Sin sorpresas.</p>
+          <ul class="tb-checks"><li>Alcance, tiempos y entregables por escrito</li><li>Un solo equipo para todo</li><li>Acompañamiento después de la entrega</li></ul>
+          <div class="tb-ctas"><a class="tb-btn tb-btn-primary" href="#diagnostico" data-tb-cta="planes">Agenda tu diagnóstico <svg class="tb-ic tb-ic-go" aria-hidden="true"><use href="#tb-i-arrow" /></svg></a></div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- =====================================================================
+       11 · ACOMPAÑAMIENTO HUMANO
+       ===================================================================== -->
+  <section class="tb-sec tb-sec-soft" id="acompanamiento" aria-labelledby="tb-acomp-h">
+    <div class="tb-wrap tb-split">
+      <div class="tb-rv">
+        <p class="tb-eyebrow">Acompañamiento</p>
+        <h2 id="tb-acomp-h" class="tb-h2">No te dejamos solo con un software</h2>
+        <p class="tb-acomp-quote">Tú te enfocas en tu negocio. <strong>Nosotros, en que tu sistema funcione.</strong></p>
+      </div>
+      <div class="tb-acomp-list tb-rv tb-rv-d1">
+        <div class="tb-card tb-acomp-item"><div class="tb-ic-box is-green"><svg class="tb-ic" aria-hidden="true"><use href="#tb-i-headset" /></svg></div><div><h3>Soporte humano por WhatsApp y llamada</h3><p>Personas reales que conocen tu sistema y te responden rápido.</p></div></div>
+        <div class="tb-card tb-acomp-item"><div class="tb-ic-box"><svg class="tb-ic" aria-hidden="true"><use href="#tb-i-chart" /></svg></div><div><h3>Sesiones de estrategia periódicas</h3><p>Revisamos tus números y te proponemos qué mejorar o automatizar después.</p></div></div>
+        <div class="tb-card tb-acomp-item"><div class="tb-ic-box is-cyan"><svg class="tb-ic" aria-hidden="true"><use href="#tb-i-globe" /></svg></div><div><h3>En tu idioma y en tu horario</h3><p>Trabajamos en español con empresas de EE. UU. y Latinoamérica.</p></div></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- =====================================================================
+       12 · COMPARATIVA
+       ===================================================================== -->
+  <section class="tb-sec" id="comparativa" aria-labelledby="tb-comp-h">
+    <div class="tb-wrap">
+      <div class="tb-head tb-rv">
+        <p class="tb-eyebrow">Antes y después</p>
+        <h2 id="tb-comp-h" class="tb-h2">Herramientas sueltas vs. un Growth Partner</h2>
+      </div>
+      <div class="tb-rv tb-rv-d1">
+        <table class="tb-compare">
+          <thead><tr><th scope="col">Necesidad</th><th scope="col">Por tu cuenta</th><th scope="col" class="is-us">Con TellBid</th></tr></thead>
+          <tbody>
+            <tr><td>Implementación</td><td class="is-them" data-label="Por tu cuenta"><span class="tb-mark"><svg class="tb-ic tb-ic-sm" aria-hidden="true"><use href="#tb-i-x" /></svg>Lo configuras tú, entre tutoriales</span></td><td class="is-us" data-label="Con TellBid"><span class="tb-mark"><svg class="tb-ic tb-ic-sm" aria-hidden="true"><use href="#tb-i-check" /></svg>Lo implementamos por ti, llave en mano</span></td></tr>
+            <tr><td>Herramientas</td><td class="is-them" data-label="Por tu cuenta"><span class="tb-mark"><svg class="tb-ic tb-ic-sm" aria-hidden="true"><use href="#tb-i-x" /></svg>5 suscripciones que no se hablan</span></td><td class="is-us" data-label="Con TellBid"><span class="tb-mark"><svg class="tb-ic tb-ic-sm" aria-hidden="true"><use href="#tb-i-check" /></svg>Un solo sistema conectado</span></td></tr>
+            <tr><td>Atención</td><td class="is-them" data-label="Por tu cuenta"><span class="tb-mark"><svg class="tb-ic tb-ic-sm" aria-hidden="true"><use href="#tb-i-x" /></svg>Respondes cuando puedes</span></td><td class="is-us" data-label="Con TellBid"><span class="tb-mark"><svg class="tb-ic tb-ic-sm" aria-hidden="true"><use href="#tb-i-check" /></svg>IA 24/7 y tu equipo en una bandeja</span></td></tr>
+            <tr><td>Seguimiento</td><td class="is-them" data-label="Por tu cuenta"><span class="tb-mark"><svg class="tb-ic tb-ic-sm" aria-hidden="true"><use href="#tb-i-x" /></svg>Depende de que alguien se acuerde</span></td><td class="is-us" data-label="Con TellBid"><span class="tb-mark"><svg class="tb-ic tb-ic-sm" aria-hidden="true"><use href="#tb-i-check" /></svg>Automático en cada etapa</span></td></tr>
+            <tr><td>Algo a la medida</td><td class="is-them" data-label="Por tu cuenta"><span class="tb-mark"><svg class="tb-ic tb-ic-sm" aria-hidden="true"><use href="#tb-i-x" /></svg>Buscas otro proveedor</span></td><td class="is-us" data-label="Con TellBid"><span class="tb-mark"><svg class="tb-ic tb-ic-sm" aria-hidden="true"><use href="#tb-i-check" /></svg>Lo desarrollamos nosotros</span></td></tr>
+            <tr><td>Soporte</td><td class="is-them" data-label="Por tu cuenta"><span class="tb-mark"><svg class="tb-ic tb-ic-sm" aria-hidden="true"><use href="#tb-i-x" /></svg>Tickets en inglés</span></td><td class="is-us" data-label="Con TellBid"><span class="tb-mark"><svg class="tb-ic tb-ic-sm" aria-hidden="true"><use href="#tb-i-check" /></svg>Personas reales, en español</span></td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <!-- =====================================================================
+       13 · DIAGNÓSTICO (formulario)
+       ===================================================================== -->
+  <!-- @include diagnostico-section -->
+
+  <!-- =====================================================================
+       14 · PREGUNTAS FRECUENTES
+       ===================================================================== -->
+  <section class="tb-sec" id="preguntas-frecuentes" aria-labelledby="tb-faq-h">
+    <div class="tb-wrap tb-faq-wrap">
+      <div class="tb-head tb-rv">
+        <p class="tb-eyebrow">Preguntas frecuentes</p>
+        <h2 id="tb-faq-h" class="tb-h2">Resolvemos tus dudas</h2>
+        <p class="tb-lead">¿No encuentras la tuya? <a class="tb-link" href="https://wa.me/19047806780">Pregúntanos por WhatsApp</a></p>
+      </div>
+      <div class="tb-faq tb-rv tb-rv-d1">
+        <details open><summary><h3>¿Qué hace TellBid?</h3><span class="tb-faq-ic" aria-hidden="true"></span></summary><p class="tb-faq-a">Somos tu Growth Partner tecnológico: implementamos tu CRM todo en uno, automatizamos tus ventas, tu atención y tu marketing, desarrollamos software a la medida y te acompañamos con soporte humano en español.</p></details>
+        <details><summary><h3>¿Ustedes venden un software o un servicio?</h3><span class="tb-faq-ic" aria-hidden="true"></span></summary><p class="tb-faq-a">Un servicio completo. Te damos la plataforma, pero lo importante es que la configuramos, la conectamos con tus herramientas y la mantenemos funcionando contigo.</p></details>
+        <details><summary><h3>¿Qué incluye la implementación?</h3><span class="tb-faq-ic" aria-hidden="true"></span></summary><p class="tb-faq-a">Diagnóstico, migración de tus contactos, configuración de pipelines, agenda y bandeja, flujos de automatización, agentes de IA, integraciones y capacitación de tu equipo.</p></details>
+        <details><summary><h3>¿Cuánto tarda en estar funcionando?</h3><span class="tb-faq-ic" aria-hidden="true"></span></summary><p class="tb-faq-a">Depende del alcance. En el diagnóstico te damos un calendario claro con cada etapa.</p></details>
+        <details><summary><h3>¿Cuánto cuesta?</h3><span class="tb-faq-ic" aria-hidden="true"></span></summary><p class="tb-faq-a">El CRM gestionado empieza en $99 USD/mes. La implementación, el software a la medida y el marketing se cotizan según tu caso, con una propuesta de precio cerrado después del diagnóstico.</p></details>
+        <details><summary><h3>¿Necesito conocimientos técnicos?</h3><span class="tb-faq-ic" aria-hidden="true"></span></summary><p class="tb-faq-a">No. Nosotros nos encargamos de la parte técnica y te enseñamos a usar lo que necesitas en el día a día.</p></details>
+        <details><summary><h3>¿Puedo conectar las herramientas que ya uso?</h3><span class="tb-faq-ic" aria-hidden="true"></span></summary><p class="tb-faq-a">Sí. Nos integramos con Shopify, Stripe, Zapier, webhooks y cualquier sistema con API. Si no existe la integración, la desarrollamos.</p></details>
+        <details><summary><h3>¿Qué pasa con mis datos?</h3><span class="tb-faq-ic" aria-hidden="true"></span></summary><p class="tb-faq-a">Tus datos son tuyos. Los migramos desde tus hojas de cálculo o tu CRM actual y puedes exportarlos cuando quieras.</p></details>
+        <details><summary><h3>¿Trabajan con empresas fuera de Estados Unidos?</h3><span class="tb-faq-ic" aria-hidden="true"></span></summary><p class="tb-faq-a">Sí. Trabajamos con negocios hispanos en Estados Unidos y en toda Latinoamérica, en español y en tu horario.</p></details>
+        <details><summary><h3>¿Para qué tipo de negocios es?</h3><span class="tb-faq-ic" aria-hidden="true"></span></summary><p class="tb-faq-a">Para cualquier empresa que atienda clientes y quiera vender más con menos trabajo manual: clínicas, spas, servicios del hogar, bienes raíces, seguros, restaurantes, academias, retail y servicios profesionales.</p></details>
+      </div>
+    </div>
+  </section>
+
+  <!-- =====================================================================
+       15 · CTA FINAL (oscuro)
+       ===================================================================== -->
+  <section class="tb-sec tb-cta-final" data-tb-theme="dark" aria-labelledby="tb-cta-h">
+    <!-- @include hero-bg -->
+    <div class="tb-wrap tb-wrap-narrow tb-head-center tb-rv">
+      <h2 id="tb-cta-h" class="tb-h2">Esta noche alguien le va a escribir a tu negocio. <span class="tb-h-second">¿Quién le va a responder?</span></h2>
+      <p class="tb-lead" style="margin:20px auto 0">Agenda tu diagnóstico y te mostramos, con tu caso real, cómo dejar tu empresa en piloto automático.</p>
+      <div class="tb-ctas" style="justify-content:center">
+        <a class="tb-btn tb-btn-primary tb-btn-lg" href="#diagnostico" data-tb-cta="cta-final">Agenda tu diagnóstico gratis <svg class="tb-ic tb-ic-go" aria-hidden="true"><use href="#tb-i-arrow" /></svg></a>
+        <a class="tb-btn tb-btn-wa tb-btn-lg" href="https://wa.me/19047806780"><svg class="tb-ic" aria-hidden="true"><use href="#tb-i-wa" /></svg>Escríbenos por WhatsApp</a>
+      </div>
+    </div>
+  </section>
+</main>
+<!-- @include footer -->
+<!-- @include sticky-cta -->
+<!-- @include jsonld-home -->

@@ -1,0 +1,19 @@
+{
+  "name": "tellbid-web",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Web principal de TellBid: fragmentos para el elemento Código de GHL + CSS/JS compartido servido por jsDelivr.",
+  "type": "module",
+  "scripts": {
+    "build": "node build.mjs",
+    "build:prod": "node build.mjs --prod",
+    "watch": "node build.mjs --watch",
+    "serve": "node serve.mjs"
+  },
+  "devDependencies": {
+    "esbuild": "0.25.10"
+  },
+  "tellbid": {
+    "ghRepo": "OWNER/tellbid-web"
+  }
+}

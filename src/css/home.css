@@ -1,0 +1,7 @@
+/* TellBid · hoja de la home y páginas con hero animado (se carga después de tb.css).
+   Uso en una página: frontmatter «css: home». */
+@import "./sections/hero.css";
+@import "./sections/hero-engine.css";
+@import "./sections/workflow.css";
+@import "./sections/code-editor.css";
+@import "./sections/home.css";

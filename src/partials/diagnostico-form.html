@@ -1,0 +1,94 @@
+<!-- Formulario de diagnóstico (4 pasos). Envía al webhook de GHL y, si califica, muestra el calendario.
+     Configuración en src/js/modules/form.js (CONFIG). En localhost NO envía: solo muestra el payload en consola. -->
+<div class="tb-form-card" data-tb-form-card>
+  <div class="tb-form-top">
+    <div class="tb-form-progress" role="progressbar" aria-label="Progreso del formulario" aria-valuemin="1" aria-valuemax="4" aria-valuenow="1"><span class="tb-form-bar"></span></div>
+    <ol class="tb-form-names" aria-hidden="true"><li class="is-on">Lo que necesitas</li><li>Tu empresa</li><li>Inversión</li><li>Tus datos</li></ol>
+    <p class="tb-sr" aria-live="polite" data-tb-step-live>Paso 1 de 4</p>
+  </div>
+
+  <form class="tb-form" novalidate data-tb-form>
+    <!-- Paso 1 -->
+    <fieldset class="tb-fstep is-on" data-step="1" aria-describedby="tb-f-err-need">
+      <legend tabindex="-1">¿Qué quieres resolver primero?</legend>
+      <p class="tb-fhelp">Puedes elegir varias.</p>
+      <div class="tb-opts">
+        <label class="tb-opt"><input type="checkbox" name="need" value="Atender y vender más con IA y CRM" data-tag="interes-crm"><span class="tb-opt-box"></span><span>Atender y vender más con IA y CRM</span></label>
+        <label class="tb-opt"><input type="checkbox" name="need" value="Automatizar procesos y seguimientos" data-tag="interes-automatizacion"><span class="tb-opt-box"></span><span>Automatizar procesos y seguimientos</span></label>
+        <label class="tb-opt"><input type="checkbox" name="need" value="Software a la medida o integraciones" data-tag="interes-software"><span class="tb-opt-box"></span><span>Software a la medida o integraciones</span></label>
+        <label class="tb-opt"><input type="checkbox" name="need" value="Marketing y publicidad" data-tag="interes-marketing"><span class="tb-opt-box"></span><span>Marketing y publicidad</span></label>
+        <label class="tb-opt"><input type="checkbox" name="need" value="No estoy seguro, quiero asesoría" data-tag="interes-asesoria"><span class="tb-opt-box"></span><span>No estoy seguro, quiero asesoría</span></label>
+      </div>
+      <p class="tb-ferr" id="tb-f-err-need" role="alert"></p>
+      <div class="tb-fnav"><button type="button" class="tb-btn tb-btn-primary" data-next>Continuar</button></div>
+    </fieldset>
+
+    <!-- Paso 2 -->
+    <fieldset class="tb-fstep" data-step="2">
+      <legend tabindex="-1">Cuéntanos de tu empresa</legend>
+      <div class="tb-field">
+        <label for="tb-f-sector">Sector</label>
+        <select id="tb-f-sector" name="sector" aria-describedby="tb-f-err-sector">
+          <option value="">Elige tu sector</option>
+          <option>Salud y estética</option><option>Servicios del hogar</option><option>Bienes raíces</option><option>Seguros y finanzas</option>
+          <option>Restaurantes y comida</option><option>Educación y academias</option><option>Retail y e-commerce</option><option>Servicios profesionales</option><option>Otro</option>
+        </select>
+        <p class="tb-ferr" id="tb-f-err-sector" role="alert"></p>
+      </div>
+      <div class="tb-field" role="radiogroup" aria-labelledby="tb-f-team-l" aria-describedby="tb-f-err-team">
+        <p class="tb-flabel" id="tb-f-team-l">¿Cuántas personas trabajan contigo?</p>
+        <div class="tb-opts tb-opts-row">
+          <label class="tb-opt tb-opt-pill"><input type="radio" name="team" value="1-2" data-score="0"><span>1–2</span></label>
+          <label class="tb-opt tb-opt-pill"><input type="radio" name="team" value="3-10" data-score="10"><span>3–10</span></label>
+          <label class="tb-opt tb-opt-pill"><input type="radio" name="team" value="11-50" data-score="20"><span>11–50</span></label>
+          <label class="tb-opt tb-opt-pill"><input type="radio" name="team" value="50+" data-score="25"><span>Más de 50</span></label>
+        </div>
+        <p class="tb-ferr" id="tb-f-err-team" role="alert"></p>
+      </div>
+      <div class="tb-fnav"><button type="button" class="tb-btn tb-btn-quiet" data-prev>Atrás</button><button type="button" class="tb-btn tb-btn-primary" data-next>Continuar</button></div>
+    </fieldset>
+
+    <!-- Paso 3 -->
+    <fieldset class="tb-fstep" data-step="3">
+      <legend tabindex="-1">Inversión y tiempos</legend>
+      <div class="tb-field" role="radiogroup" aria-labelledby="tb-f-inv-l" aria-describedby="tb-f-err-inv">
+        <p class="tb-flabel" id="tb-f-inv-l">¿Cuánto inviertes al mes en crecer tu negocio? <span>(herramientas, marketing y personal de ventas)</span></p>
+        <div class="tb-opts tb-opts-2">
+          <label class="tb-opt tb-opt-pill"><input type="radio" name="invest" value="Menos de $300" data-score="0"><span>Menos de $300</span></label>
+          <label class="tb-opt tb-opt-pill"><input type="radio" name="invest" value="$300 - $1,000" data-score="10"><span>$300 – $1,000</span></label>
+          <label class="tb-opt tb-opt-pill"><input type="radio" name="invest" value="$1,000 - $3,000" data-score="25"><span>$1,000 – $3,000</span></label>
+          <label class="tb-opt tb-opt-pill"><input type="radio" name="invest" value="Más de $3,000" data-score="35"><span>Más de $3,000</span></label>
+          <label class="tb-opt tb-opt-pill tb-opt-wide"><input type="radio" name="invest" value="Prefiero no decirlo" data-score="10"><span>Prefiero no decirlo</span></label>
+        </div>
+        <p class="tb-ferr" id="tb-f-err-inv" role="alert"></p>
+      </div>
+      <div class="tb-field" role="radiogroup" aria-labelledby="tb-f-urg-l" aria-describedby="tb-f-err-urg">
+        <p class="tb-flabel" id="tb-f-urg-l">¿Cuándo quieres empezar?</p>
+        <div class="tb-opts tb-opts-row">
+          <label class="tb-opt tb-opt-pill"><input type="radio" name="urgency" value="Este mes" data-score="20"><span>Este mes</span></label>
+          <label class="tb-opt tb-opt-pill"><input type="radio" name="urgency" value="En 1 a 3 meses" data-score="10"><span>En 1 a 3 meses</span></label>
+          <label class="tb-opt tb-opt-pill"><input type="radio" name="urgency" value="Solo estoy explorando" data-score="0"><span>Solo estoy explorando</span></label>
+        </div>
+        <p class="tb-ferr" id="tb-f-err-urg" role="alert"></p>
+      </div>
+      <div class="tb-fnav"><button type="button" class="tb-btn tb-btn-quiet" data-prev>Atrás</button><button type="button" class="tb-btn tb-btn-primary" data-next>Continuar</button></div>
+    </fieldset>
+
+    <!-- Paso 4 -->
+    <fieldset class="tb-fstep" data-step="4">
+      <legend tabindex="-1">¿A dónde te enviamos la propuesta?</legend>
+      <div class="tb-field"><label for="tb-f-name">Nombre y apellido</label><input id="tb-f-name" name="full_name" type="text" autocomplete="name" aria-describedby="tb-f-err-name"><p class="tb-ferr" id="tb-f-err-name" role="alert"></p></div>
+      <div class="tb-fgrid">
+        <div class="tb-field"><label for="tb-f-email">Email</label><input id="tb-f-email" name="email" type="email" autocomplete="email" inputmode="email" aria-describedby="tb-f-err-email"><p class="tb-ferr" id="tb-f-err-email" role="alert"></p></div>
+        <div class="tb-field"><label for="tb-f-phone">WhatsApp <span>(con código de país)</span></label><input id="tb-f-phone" name="phone" type="tel" autocomplete="tel" inputmode="tel" placeholder="+1 305 555 0123" aria-describedby="tb-f-err-phone"><p class="tb-ferr" id="tb-f-err-phone" role="alert"></p></div>
+      </div>
+      <div class="tb-field"><label for="tb-f-web">Web o Instagram <span>(opcional)</span></label><input id="tb-f-web" name="website" type="text" placeholder="www.tunegocio.com o @tunegocio" aria-describedby="tb-f-err-web"><p class="tb-ferr" id="tb-f-err-web" role="alert"></p></div>
+      <div class="tb-field" data-tb-project hidden><label for="tb-f-project">Cuéntanos tu proyecto en 2 líneas <span>(opcional)</span></label><textarea id="tb-f-project" name="proyecto" rows="3"></textarea></div>
+      <p class="tb-fconsent">Al enviar aceptas nuestra <a href="/privacy-policy">Política de privacidad</a> y los <a href="/terms-of-service">Términos de servicio</a>, y aceptas que te contactemos por email, teléfono, SMS o WhatsApp.</p>
+      <p class="tb-ferr" data-tb-submit-err role="alert"></p>
+      <div class="tb-fnav"><button type="button" class="tb-btn tb-btn-quiet" data-prev>Atrás</button><button type="submit" class="tb-btn tb-btn-primary" data-submit><span class="tb-spin" aria-hidden="true"></span><span class="tb-submit-tx">Ver horarios disponibles</span></button></div>
+    </fieldset>
+  </form>
+
+  <div class="tb-form-result" data-tb-result hidden tabindex="-1"></div>
+</div>

@@ -1,0 +1,22 @@
+<!-- Workflow «piloto automático» (versión reestilizada del flujo de la web anterior).
+     Las conexiones SVG se dibujan con JS según la posición real de los nodos (horizontal en escritorio, árbol vertical en móvil). -->
+<div class="tb-wf tb-rv" data-tb-wf>
+  <div class="tb-wf-bar">
+    <span class="tb-wf-name" aria-hidden="true"><svg class="tb-ic tb-ic-sm"><use href="#tb-i-zap" /></svg>Flujo: seguimiento de nuevos prospectos</span>
+    <span class="tb-wf-meta" aria-hidden="true"><span>Ejecuciones hoy <b class="tb-wf-runs">1,284</b></span><span class="tb-live">Activo</span></span>
+    <button type="button" class="tb-pause-btn" data-tb-pause-btn aria-pressed="false" aria-label="Pausar animación"><svg class="tb-ic tb-ic-sm tb-pause-i" aria-hidden="true"><use href="#tb-i-pause" /></svg><svg class="tb-ic tb-ic-sm tb-play-i" aria-hidden="true"><use href="#tb-i-play" /></svg></button>
+  </div>
+  <div class="tb-wf-canvas" role="img" aria-label="Ejemplo de flujo: cuando llega un nuevo prospecto, la IA le responde y lo califica. Si agenda, se confirma la cita y se envía un recordatorio 24 horas antes. Si no agenda, se espera un día y se envía un SMS de seguimiento.">
+    <div class="tb-wf-grid">
+      <svg class="tb-wf-lines"></svg>
+      <div class="tb-wf-node is-trigger" data-wf="1"><span class="tb-wf-ic"><svg class="tb-ic"><use href="#tb-i-zap" /></svg></span><span class="tb-wf-tx"><small>Evento</small><b>Nuevo prospecto</b><em>Llega un mensaje</em></span><i class="tb-wf-ok"><svg class="tb-ic"><use href="#tb-i-check" /></svg></i></div>
+      <div class="tb-wf-node is-ai" data-wf="2"><span class="tb-wf-ic"><svg class="tb-ic"><use href="#tb-i-bot" /></svg></span><span class="tb-wf-tx"><small>Acción</small><b>La IA responde y califica</b><em>En segundos</em></span><i class="tb-wf-ok"><svg class="tb-ic"><use href="#tb-i-check" /></svg></i></div>
+      <div class="tb-wf-node is-if" data-wf="3"><span class="tb-wf-ic"><svg class="tb-ic"><use href="#tb-i-branch" /></svg></span><span class="tb-wf-tx"><small>Condición</small><b>¿Agendó una cita?</b><em>Sí / No</em></span><i class="tb-wf-ok"><svg class="tb-ic"><use href="#tb-i-check" /></svg></i></div>
+      <div class="tb-wf-node" data-wf="4"><span class="tb-wf-ic"><svg class="tb-ic"><use href="#tb-i-cal" /></svg></span><span class="tb-wf-tx"><small>Acción</small><b>Confirmar cita</b><em>Calendario y CRM</em></span><i class="tb-wf-ok"><svg class="tb-ic"><use href="#tb-i-check" /></svg></i></div>
+      <div class="tb-wf-node" data-wf="5"><span class="tb-wf-ic"><svg class="tb-ic"><use href="#tb-i-msg" /></svg></span><span class="tb-wf-tx"><small>Acción</small><b>Recordatorio 24 h antes</b><em>WhatsApp y SMS</em></span><i class="tb-wf-ok"><svg class="tb-ic"><use href="#tb-i-check" /></svg></i></div>
+      <div class="tb-wf-node is-wait" data-wf="6"><span class="tb-wf-ic"><svg class="tb-ic"><use href="#tb-i-clock" /></svg></span><span class="tb-wf-tx"><small>Espera</small><b>Esperar 1 día</b><em>Sin respuesta</em></span><i class="tb-wf-ok"><svg class="tb-ic"><use href="#tb-i-check" /></svg></i></div>
+      <div class="tb-wf-node" data-wf="7"><span class="tb-wf-ic"><svg class="tb-ic"><use href="#tb-i-send" /></svg></span><span class="tb-wf-tx"><small>Acción</small><b>SMS de seguimiento</b><em>Con enlace para agendar</em></span><i class="tb-wf-ok"><svg class="tb-ic"><use href="#tb-i-check" /></svg></i></div>
+    </div>
+  </div>
+  <div class="tb-wf-log" aria-hidden="true"><svg class="tb-ic tb-ic-sm"><use href="#tb-i-check" /></svg><span class="tb-wf-msg">Esperando el próximo disparador…</span></div>
+</div>
