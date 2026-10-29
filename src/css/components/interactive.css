@@ -70,9 +70,10 @@
 #tb-site .tb-marquee { position: relative; overflow: hidden; -webkit-mask-image: linear-gradient(90deg, transparent, #000 10%, #000 90%, transparent); mask-image: linear-gradient(90deg, transparent, #000 10%, #000 90%, transparent); }
 #tb-site .tb-marquee-track { display: flex; gap: 56px; width: max-content; animation: tb-marquee 40s linear infinite; }
 #tb-site .tb-marquee:hover .tb-marquee-track { animation-play-state: paused; }
-#tb-site .tb-marquee-item { height: 56px; display: flex; align-items: center; color: var(--tb-text-dim); font-family: var(--tb-fh); font-weight: 700; font-size: 18px; letter-spacing: -0.01em; opacity: .8; filter: grayscale(1); transition: opacity var(--tb-d), filter var(--tb-d); }
+#tb-site .tb-marquee-item { height: 64px; display: flex; align-items: center; color: var(--tb-text-dim); font-family: var(--tb-fh); font-weight: 700; font-size: 18px; letter-spacing: -0.01em; opacity: .8; filter: grayscale(1); transition: opacity var(--tb-d), filter var(--tb-d); }
 #tb-site .tb-marquee-item:hover { opacity: 1; filter: none; }
-#tb-site .tb-marquee-item img { height: 44px; width: auto; max-width: 170px; object-fit: contain; }
+/* --lh: alto óptico por logo (los cuadrados más altos que los horizontales) */
+#tb-site .tb-marquee-item img { height: var(--lh, 44px); width: auto; max-width: 190px; object-fit: contain; }
 @keyframes tb-marquee { to { transform: translateX(-50%); } }
 
 /* ---------- Línea de tiempo (método) ---------- */
