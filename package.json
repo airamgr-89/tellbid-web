@@ -1,6 +1,6 @@
 {
   "name": "tellbid-web",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "private": true,
   "description": "Web principal de TellBid: fragmentos para el elemento Código de GHL + CSS/JS compartido servido por jsDelivr.",
   "type": "module",

@@ -46,9 +46,10 @@
 @media (max-width: 640px) { #tb-site .tb-solgrid { grid-template-columns: minmax(0, 1fr); } }
 
 /* Modal de video (dialog nativo: foco, Esc y capa superior los gestiona el navegador) */
-#tb-site .tb-vmodal { position: fixed; inset: 0; margin: auto; height: fit-content; width: min(1100px, calc(100vw - 32px), calc((100vh - 120px) * 16 / 9)); max-width: none; max-height: none; padding: 0; border: 0; overflow: visible; background: transparent; color: #fff; }
+#tb-site .tb-vmodal { position: fixed; inset: 0; margin: auto; height: fit-content; width: min(1100px, calc(100vw - 32px), calc((100vh - 200px) * 16 / 9)); max-width: none; max-height: none; padding: 0; border: 0; overflow: visible; background: transparent; color: #fff; }
 #tb-site .tb-vmodal::backdrop { background: rgba(7,11,26,.82); backdrop-filter: blur(4px); }
-#tb-site .tb-vmodal-frame { position: relative; aspect-ratio: 16 / 9; max-height: calc(100vh - 120px); margin-inline: auto; border-radius: var(--tb-r-lg); overflow: hidden; background: var(--tb-ink); box-shadow: var(--tb-shadow-3); }
+#tb-site .tb-vmodal-frame { position: relative; aspect-ratio: 16 / 9; max-height: calc(100vh - 200px); margin-inline: auto; border-radius: var(--tb-r-lg); overflow: hidden; background: var(--tb-ink); box-shadow: var(--tb-shadow-3); }
+#tb-site .tb-vmodal-foot { display: flex; justify-content: center; margin-top: 20px; }
 #tb-site .tb-vmodal-frame iframe { position: absolute; inset: 0; width: 100%; height: 100%; border: 0; }
 #tb-site .tb-vmodal-close {
   position: absolute; right: 0; bottom: calc(100% + 12px); width: 44px; height: 44px; border-radius: 50%; display: grid; place-items: center;

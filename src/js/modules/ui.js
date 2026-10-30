@@ -187,8 +187,10 @@ export function videoModal() {
   const dlg = $('[data-tb-vmodal]');
   if (!dlg || typeof dlg.showModal !== 'function') return;
   const frame = $('.tb-vmodal-frame', dlg);
+  const cta = $('.tb-vmodal-foot a', dlg); // «Quiero esta solución»: form.js lo lleva al formulario y marca la necesidad
   const close = () => dlg.close();
   $('.tb-vmodal-close', dlg).addEventListener('click', close);
+  if (cta) cta.addEventListener('click', close); // cierra antes de que form.js haga scroll (se ejecuta antes que el listener de document)
   dlg.addEventListener('click', (e) => { if (e.target === dlg) close(); }); // clic en el fondo
   dlg.addEventListener('close', () => { frame.replaceChildren(); document.documentElement.style.overflow = ''; });
   $$('[data-tb-video-open]').forEach((btn) => {
@@ -203,6 +205,10 @@ export function videoModal() {
       f.allowFullscreen = true;
       frame.replaceChildren(f);
       dlg.setAttribute('aria-label', f.title);
+      if (cta) {
+        cta.dataset.tbCta = btn.dataset.tbModalCta || 'home-video';
+        if (btn.dataset.tbModalNeed) cta.dataset.tbNeed = btn.dataset.tbModalNeed; else delete cta.dataset.tbNeed;
+      }
       document.documentElement.style.overflow = 'hidden';
       dlg.showModal();
     });
