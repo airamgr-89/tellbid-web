@@ -25,6 +25,6 @@ Cada archivo trae el bloque `<script type="application/ld+json">` completo y lis
 
 ## Pendiente
 
-- `sameAs`: URLs reales de redes sociales (hoy vacío).
-- `logo`: confirmar la URL pública del logo (hoy `https://tellbid.io/logo.png`, sin verificar). Lo ideal es subir el logo a la biblioteca de medios de GHL y poner esa URL.
+- `logo`: el PNG actual es blanco sobre transparente. Google muestra los logos sobre fondo blanco, así que conviene una versión oscura o a color (mínimo 112×112 px) y cambiar la URL en los 7 archivos.
+- `sameAs`: si se abre LinkedIn de empresa o la ficha de Google Business Profile, añadir esas URLs.
 - Si la home sigue en `/inicio`, el canonical y estas URLs apuntan a `https://tellbid.io/`: deja así la home como página principal del dominio.

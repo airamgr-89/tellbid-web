@@ -75,5 +75,4 @@ Reglas:
 
 ## Pendiente
 - Validar el volumen de búsqueda de las palabras clave y ajustar la lista.
-- `sameAs` del JSON-LD de la home: URLs reales de redes sociales.
-- `logo` del JSON-LD: confirmar la URL pública del logo (hoy `https://tellbid.io/logo.png`).
+- `logo` del JSON-LD: el PNG actual es blanco; sustituirlo por una versión oscura o a color (ver `seo/schema/README.md`).
