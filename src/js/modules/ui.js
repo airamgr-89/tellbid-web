@@ -147,7 +147,12 @@ export function countUp() {
 }
 
 // ---------- Fachada de video: el iframe solo se carga al hacer clic ----------
-// <div class="tb-video" data-tb-video="YOUTUBE_ID" style="background-image:url(poster)"> <button class="tb-video-btn">…</button></div>
+// <div class="tb-video" data-tb-video="WISTIA_ID" [data-tb-provider="youtube"]> <button class="tb-video-btn">…</button></div>
+// Por defecto el ID es de Wistia; con data-tb-provider="youtube" se usa YouTube (sin cookies).
+const VIDEO_SRC = {
+  wistia: (id) => `https://fast.wistia.net/embed/iframe/${id}?autoPlay=true&playsinline=true`,
+  youtube: (id) => `https://www.youtube-nocookie.com/embed/${id}?autoplay=1&rel=0&modestbranding=1&playsinline=1`,
+};
 export function videos() {
   $$('[data-tb-video]').forEach((box) => {
     const btn = $('.tb-video-btn', box);
@@ -157,14 +162,15 @@ export function videos() {
       btn.disabled = true;
       const label = $('.tb-video-label', btn);
       if (label) label.textContent = 'Video disponible pronto';
-      const name = (btn.getAttribute('aria-label') || '').replace(/^Ver video:s*/, '');
+      const name = (btn.getAttribute('aria-label') || '').replace(/^Ver video:\s*/, '');
       btn.setAttribute('aria-label', 'Video disponible pronto: ' + name);
       return;
     }
     btn.addEventListener('click', () => {
-      const id = box.dataset.tbVideo;
+      const id = encodeURIComponent(box.dataset.tbVideo);
+      const src = VIDEO_SRC[box.dataset.tbProvider] || VIDEO_SRC.wistia;
       const f = document.createElement('iframe');
-      f.src = `https://www.youtube-nocookie.com/embed/${encodeURIComponent(id)}?autoplay=1&rel=0&modestbranding=1&playsinline=1`;
+      f.src = src(id);
       f.title = btn.getAttribute('aria-label') || 'Video';
       f.allow = 'autoplay; encrypted-media; picture-in-picture; fullscreen';
       f.allowFullscreen = true;

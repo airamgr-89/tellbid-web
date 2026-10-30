@@ -46,6 +46,11 @@
 @media (max-width: 960px) {
   #tb-site .tb-block { grid-template-columns: minmax(0, 1fr); }
   #tb-site .tb-block.is-flip > :first-child { order: 0; }
+  /* Con video: la columna de texto se «disuelve» para que el video quede sobre los botones */
+  #tb-site .tb-block:has(.tb-video) { display: flex; flex-direction: column; align-items: stretch; gap: 0; }
+  #tb-site .tb-block:has(.tb-video) > :first-child { display: contents; }
+  #tb-site .tb-block:has(.tb-video) > :first-child > .tb-ctas { order: 2; }
+  #tb-site .tb-block:has(.tb-video) > :last-child { order: 1; margin-top: 28px; }
 }
 
 /* Pasos de «cómo funciona» (secuencia real, numerada) */
