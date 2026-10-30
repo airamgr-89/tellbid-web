@@ -180,6 +180,35 @@ export function videos() {
   });
 }
 
+// ---------- Video en modal: <button data-tb-video-open="WISTIA_ID" [data-tb-provider]> + <dialog data-tb-vmodal> ----------
+// El iframe se crea al abrir y se elimina al cerrar (así el video se detiene). El <dialog> nativo
+// atrapa el foco, cierra con Esc y devuelve el foco al botón que lo abrió.
+export function videoModal() {
+  const dlg = $('[data-tb-vmodal]');
+  if (!dlg || typeof dlg.showModal !== 'function') return;
+  const frame = $('.tb-vmodal-frame', dlg);
+  const close = () => dlg.close();
+  $('.tb-vmodal-close', dlg).addEventListener('click', close);
+  dlg.addEventListener('click', (e) => { if (e.target === dlg) close(); }); // clic en el fondo
+  dlg.addEventListener('close', () => { frame.replaceChildren(); document.documentElement.style.overflow = ''; });
+  $$('[data-tb-video-open]').forEach((btn) => {
+    btn.addEventListener('click', () => {
+      const id = encodeURIComponent(btn.dataset.tbVideoOpen);
+      const src = VIDEO_SRC[btn.dataset.tbProvider] || VIDEO_SRC.wistia;
+      const name = btn.getAttribute('aria-label') || 'Video';
+      const f = document.createElement('iframe');
+      f.src = src(id);
+      f.title = name.replace(/^Ver video/, 'Video');
+      f.allow = 'autoplay; encrypted-media; picture-in-picture; fullscreen';
+      f.allowFullscreen = true;
+      frame.replaceChildren(f);
+      dlg.setAttribute('aria-label', f.title);
+      document.documentElement.style.overflow = 'hidden';
+      dlg.showModal();
+    });
+  });
+}
+
 // ---------- Botón para pausar/reanudar animaciones en bucle (WCAG 2.2.2) ----------
 // <button data-tb-pause-btn> dentro de [data-tb-engine], [data-tb-wf] o [data-tb-code]
 export function pauseButtons() {
